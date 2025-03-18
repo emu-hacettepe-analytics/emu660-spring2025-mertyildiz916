@@ -2,8 +2,8 @@
 title: "Welcome to My Analytics Lab"
 ---
 
-Hello!! My name is xxx xxxx.
+Hello!! My name is Mert Yildiz.
 
-This is my personal webpage.
+This is my personal webpage. I have created this one for a course (EMU 6609, I hope it will be useful for my future career also.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
