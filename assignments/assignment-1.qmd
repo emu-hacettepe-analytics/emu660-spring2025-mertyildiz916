@@ -8,8 +8,10 @@ title: "Assignment 1"
 1 + 1
 ```
 
-My first assignment has two parts.
+My first assignment has three parts.
 
 ## (a)
 
 ## (b)
+
+## (c)
