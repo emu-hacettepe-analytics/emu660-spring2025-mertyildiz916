@@ -41,6 +41,9 @@ R, Quarto, Git, Python, Energy Markets
 
 Folk Music Instruments
 
+# CV in PDF Form
+📄 [Download My CV](cv.pdf){.download target="_blank"}
+
 <div class="flame-container">
   <div class="flame"></div>
   <div class="flame"></div>
