@@ -3,38 +3,37 @@ title: "About Me"
 sidebar: false 
 ---
 
-![](assets/images/vesikalik.jpeg){fig-align="center"}
+![](images/pp.jpg){width="256"}
 
 # Education
 
--   B.S., ................................., ....................................University, Turkey, 20xx - 20xx.
--   M.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
--   Ph.D.., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, TOBB University of Economics and Technology, Turkey, 2018 - 2023.
+-   M.S., Industrial Engineering, Hacettepe University, Turkey, 2024 - ongoing.
 
 # Work Experience
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
+1.  GAMA Energy, Energy Market Modelling Analyst, 2023 - Ongoing
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  GAMA Energy, Modelling Intern, 2023 May - September
 
-2.  Firm bbb, position yyy, year yyy
+2.  HAVELSAN, H&R Intern, 2022 September - December
+
+3.  Presidency of the Republic of Türkiye, Business Analyst Intern, 2022 February - August
+
+4.  Nurol Tech., R&D Intern, 2021 May - September
 
 # Projects
 
-1.  TUBİTAK 1001..........................
-
-# Publications
-
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Ozturk, D. (2022) “UAV Routing for Reconnaissance Mission: A Multi-Objective Orienteering Problem with Time-Dependent Prizes and Multiple Connections”, Computers & Operations Research, 145: 105882.
+1.  YAEM 2023, Determination of Electric Charging Station Locations in Ankara and Decision Support System Design
 
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python, Energy Markets
 
 # Hobbies
+
+Folk Music Instruments
