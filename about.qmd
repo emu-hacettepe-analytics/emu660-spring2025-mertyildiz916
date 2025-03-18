@@ -1,6 +1,9 @@
 ---
 title: "About Me"
 sidebar: false 
+format:
+  html:
+    css: styles.css
 ---
 
 ![](images/pp.jpg){width="256"}
@@ -37,3 +40,10 @@ R, Quarto, Git, Python, Energy Markets
 # Hobbies
 
 Folk Music Instruments
+
+<div class="flame-container">
+  <div class="flame"></div>
+  <div class="flame"></div>
+  <div class="flame"></div>
+  <div class="flame"></div>
+</div>
