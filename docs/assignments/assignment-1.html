@@ -918,6 +918,46 @@ max      1.0000000 1.0000000 5.0000000 8.000000</code></pre>
 <pre><code>[1] "Standard Deviation: 1.22338043224169"</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"na_example"</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the median, ignoring NA values</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>median_value <span class="ot">&lt;-</span> <span class="fu">median</span>(na_example, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace NA with median</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>version1 <span class="ot">&lt;-</span> na_example</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>version1[<span class="fu">is.na</span>(version1)] <span class="ot">&lt;-</span> median_value</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract non-NA values</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>non_na_values <span class="ot">&lt;-</span> na_example[<span class="sc">!</span><span class="fu">is.na</span>(na_example)]</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace NA values with random values from the dataset</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)  <span class="co"># Set seed for reproducibility</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>version2 <span class="ot">&lt;-</span> na_example</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>version2[<span class="fu">is.na</span>(version2)] <span class="ot">&lt;-</span> <span class="fu">sample</span>(non_na_values, <span class="fu">sum</span>(<span class="fu">is.na</span>(version2)), <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute means and standard deviations</span></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>stats_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">Version =</span> <span class="fu">c</span>(<span class="st">"Original"</span>, <span class="st">"Median Imputed"</span>, <span class="st">"Random Imputed"</span>),</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">Mean =</span> <span class="fu">c</span>(<span class="fu">mean</span>(na_example, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>           <span class="fu">mean</span>(version1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>           <span class="fu">mean</span>(version2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">Standard_Deviation =</span> <span class="fu">c</span>(<span class="fu">sd</span>(na_example, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>                         <span class="fu">sd</span>(version1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>                         <span class="fu">sd</span>(version2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the results</span></span>
+<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(stats_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         Version     Mean Standard_Deviation
+1       Original 2.301754           1.223380
+2 Median Imputed 2.258000           1.136102
+3 Random Imputed 2.303000           1.238032</code></pre>
+</div>
+</div>
+<p>As seen on the table the version 2 array’s mean and SD values are closer to the original dataset. It means that, to obtain a new dataset with the characteristic of original one, changing NA values with the randomly selected data from original dataset is more relevant.</p>
 
 
 </section>

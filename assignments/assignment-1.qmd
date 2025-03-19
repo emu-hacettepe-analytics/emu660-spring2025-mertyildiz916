@@ -153,3 +153,43 @@ print(paste("Standard Deviation:", sd_value))
 
 
 ```
+
+```{r}
+
+library(dslabs)
+data("na_example")
+
+# Compute the median, ignoring NA values
+median_value <- median(na_example, na.rm = TRUE)
+
+# Replace NA with median
+version1 <- na_example
+version1[is.na(version1)] <- median_value
+
+# Extract non-NA values
+non_na_values <- na_example[!is.na(na_example)]
+
+# Replace NA values with random values from the dataset
+set.seed(42)  # Set seed for reproducibility
+version2 <- na_example
+version2[is.na(version2)] <- sample(non_na_values, sum(is.na(version2)), replace = TRUE)
+
+# Compute means and standard deviations
+stats_df <- data.frame(
+  Version = c("Original", "Median Imputed", "Random Imputed"),
+  Mean = c(mean(na_example, na.rm = TRUE),
+           mean(version1, na.rm = TRUE),
+           mean(version2, na.rm = TRUE)),
+  Standard_Deviation = c(sd(na_example, na.rm = TRUE),
+                         sd(version1, na.rm = TRUE),
+                         sd(version2, na.rm = TRUE))
+)
+
+# Print the results
+print(stats_df)
+
+
+
+```
+
+As seen on the table the version 2 array's mean and SD values are closer to the original dataset. It means that, to obtain a new dataset with the characteristic of original one, changing NA values with the randomly selected data from original dataset is more relevant.
