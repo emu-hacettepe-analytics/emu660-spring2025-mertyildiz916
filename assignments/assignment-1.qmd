@@ -12,6 +12,107 @@ My first assignment has three parts.
 
 ## (a)
 
-## (b)
+```{r}
+1 + 1
+```
+
+## (b.1)
+
+```{r}
+# Define the function
+compute_stats <- function(data) {
+  # Create an empty list to store results
+  results <- list()
+  
+  # Loop through each column
+  for (col_name in colnames(data)) {
+    # Extract column values
+    column_values <- data[[col_name]]
+    
+    # Calculate statistics
+    stats <- list(
+      mean = mean(column_values, na.rm = TRUE),
+      median = median(column_values, na.rm = TRUE),
+      variance = var(column_values, na.rm = TRUE),
+      IQR = IQR(column_values, na.rm = TRUE),
+      min = min(column_values, na.rm = TRUE),
+      max = max(column_values, na.rm = TRUE)
+    )
+    
+    # Store the results in the list
+    results[[col_name]] <- stats
+  }
+  
+  return(results)
+}
+
+# Load mtcars dataset
+data(mtcars)
+
+# Compute statistics for mtcars dataset
+stats_results <- compute_stats(mtcars)
+
+# Print the results
+print(stats_results)
+
+```
+
+## (b.2)
+
+```{r}
+# Define the function using sapply
+compute_stats_sapply <- function(data) {
+  stats <- sapply(data, function(column) {
+    list(
+      mean = mean(column, na.rm = TRUE),
+      median = median(column, na.rm = TRUE),
+      variance = var(column, na.rm = TRUE),
+      IQR = IQR(column, na.rm = TRUE),
+      min = min(column, na.rm = TRUE),
+      max = max(column, na.rm = TRUE)
+    )
+  }, simplify = FALSE)  # Ensure the result is returned as a list
+  
+  return(stats)
+}
+
+# Load mtcars dataset
+data(mtcars)
+
+# Compute statistics for mtcars dataset
+stats_results_sapply <- compute_stats_sapply(mtcars)
+
+# Print results
+print(stats_results_sapply)
+
+```
+
+## (b.3)
+
+```{r}
+# Define the function using apply()
+compute_stats_apply <- function(data) {
+  # Apply function to compute statistics for each column
+  stats_matrix <- apply(data, 2, function(column) {
+    c(
+      mean = mean(column, na.rm = TRUE),
+      median = median(column, na.rm = TRUE),
+      variance = var(column, na.rm = TRUE),
+      IQR = IQR(column, na.rm = TRUE),
+      min = min(column, na.rm = TRUE),
+      max = max(column, na.rm = TRUE)
+    )
+  })
+  
+  return(as.data.frame(stats_matrix))  # Convert matrix output to a dataframe
+}
+
+# Convert mtcars to matrix and apply function
+stats_results_apply <- compute_stats_apply(as.matrix(mtcars))
+
+# Print results
+print(stats_results_apply)
+
+```
 
 ## (c)
