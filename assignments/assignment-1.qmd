@@ -1,12 +1,11 @@
 ---
 title: "Assignment 1"
 ---
+Ps. All the codes below has written with the combined power of AI & HI.
+If you want to reach promts of codes that is used while preparing assignment, you can access the pdf document. 
+📄 [Download Prompts](prompts.pdf){.download target="_blank"}
 
-# Assignment 1
 
-```{r}
-1 + 1
-```
 
 My first assignment has three parts.
 
@@ -19,17 +18,12 @@ My first assignment has three parts.
 ## (b.1)
 
 ```{r}
-# Define the function
 compute_stats <- function(data) {
-  # Create an empty list to store results
   results <- list()
   
-  # Loop through each column
   for (col_name in colnames(data)) {
-    # Extract column values
     column_values <- data[[col_name]]
     
-    # Calculate statistics
     stats <- list(
       mean = mean(column_values, na.rm = TRUE),
       median = median(column_values, na.rm = TRUE),
@@ -39,20 +33,16 @@ compute_stats <- function(data) {
       max = max(column_values, na.rm = TRUE)
     )
     
-    # Store the results in the list
     results[[col_name]] <- stats
   }
   
   return(results)
 }
 
-# Load mtcars dataset
 data(mtcars)
 
-# Compute statistics for mtcars dataset
 stats_results <- compute_stats(mtcars)
 
-# Print the results
 print(stats_results)
 
 ```
@@ -60,7 +50,6 @@ print(stats_results)
 ## (b.2)
 
 ```{r}
-# Define the function using sapply
 compute_stats_sapply <- function(data) {
   stats <- sapply(data, function(column) {
     list(
@@ -71,18 +60,15 @@ compute_stats_sapply <- function(data) {
       min = min(column, na.rm = TRUE),
       max = max(column, na.rm = TRUE)
     )
-  }, simplify = FALSE)  # Ensure the result is returned as a list
+  }, simplify = FALSE)  
   
   return(stats)
 }
 
-# Load mtcars dataset
 data(mtcars)
 
-# Compute statistics for mtcars dataset
 stats_results_sapply <- compute_stats_sapply(mtcars)
 
-# Print results
 print(stats_results_sapply)
 
 ```
@@ -90,9 +76,7 @@ print(stats_results_sapply)
 ## (b.3)
 
 ```{r}
-# Define the function using apply()
 compute_stats_apply <- function(data) {
-  # Apply function to compute statistics for each column
   stats_matrix <- apply(data, 2, function(column) {
     c(
       mean = mean(column, na.rm = TRUE),
@@ -104,13 +88,11 @@ compute_stats_apply <- function(data) {
     )
   })
   
-  return(as.data.frame(stats_matrix))  # Convert matrix output to a dataframe
+  return(as.data.frame(stats_matrix))  
 }
 
-# Convert mtcars to matrix and apply function
 stats_results_apply <- compute_stats_apply(as.matrix(mtcars))
 
-# Print results
 print(stats_results_apply)
 
 ```
@@ -160,29 +142,45 @@ print(paste("Standard Deviation:", sd_value))
 library(dslabs)
 data("na_example")
 
-median_value <- median(na_example, na.rm = TRUE)
+mape <- function(actual, predicted) {
+  return(mean(abs((actual - predicted) / actual)) * 100)
+}
 
+library(dslabs)
+data("na_example")
+
+median_value <- median(na_example, na.rm = TRUE)
 version1 <- na_example
 version1[is.na(version1)] <- median_value
 
+set.seed(42)
 non_na_values <- na_example[!is.na(na_example)]
-
-set.seed(42)  # Set seed for reproducibility
 version2 <- na_example
 version2[is.na(version2)] <- sample(non_na_values, sum(is.na(version2)), replace = TRUE)
 
+means <- c(mean(na_example, na.rm = TRUE),
+           mean(version1, na.rm = TRUE),
+           mean(version2, na.rm = TRUE))
+
+sds <- c(sd(na_example, na.rm = TRUE),
+         sd(version1, na.rm = TRUE),
+         sd(version2, na.rm = TRUE))
+
+mape_means_v1 <- mape(means[1], means[2])
+mape_means_v2 <- mape(means[1], means[3])
+mape_sds_v1 <- mape(sds[1], sds[2])
+mape_sds_v2 <- mape(sds[1], sds[3])
+
 stats_df <- data.frame(
   Version = c("Original", "Median Imputed", "Random Imputed"),
-  Mean = c(mean(na_example, na.rm = TRUE),
-           mean(version1, na.rm = TRUE),
-           mean(version2, na.rm = TRUE)),
-  Standard_Deviation = c(sd(na_example, na.rm = TRUE),
-                         sd(version1, na.rm = TRUE),
-                         sd(version2, na.rm = TRUE))
+  Mean = means,
+  Standard_Deviation = sds,
+  MAPE_Mean = c(NA, mape_means_v1, mape_means_v2),  # MAPE for mean
+  MAPE_SD = c(NA, mape_sds_v1, mape_sds_v2)         # MAPE for standard deviation
 )
 
-# Print the results
 print(stats_df)
+
 
 
 
