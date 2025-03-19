@@ -116,3 +116,40 @@ print(stats_results_apply)
 ```
 
 ## (c)
+
+```{r}
+library(dslabs)
+data("na_example")
+na_example
+```
+
+```{r}
+
+na_count <- sum(is.na(na_example))
+
+print("Here, you can see the number of NA in this dataset:")
+print(na_count)
+
+```
+
+```{r}
+
+na_indexes <- which(is.na(na_example))
+
+print("Here, you can basicly see the indexes of NA data:")
+print(na_indexes)
+
+```
+```{r}
+
+library(dslabs)
+data("na_example")
+
+mean_value <- mean(na_example, na.rm = TRUE)
+sd_value <- sd(na_example, na.rm = TRUE)
+
+print(paste("Mean:", mean_value))
+print(paste("Standard Deviation:", sd_value))
+
+
+```
