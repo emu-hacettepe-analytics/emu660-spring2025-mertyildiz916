@@ -8,6 +8,8 @@ format:
 
 ![](images/pp.jpg){width="256"}
 
+# Mert YILDIZ
+
 # Education
 
 -   B.S., Industrial Engineering, TOBB University of Economics and Technology, Turkey, 2018 - 2023.
