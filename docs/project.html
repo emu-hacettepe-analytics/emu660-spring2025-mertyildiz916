@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -188,13 +222,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data" class="level1">
 <h1>2. Data</h1>
-<p>This project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project.</p>
+<p>This project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. The whole data used in this project starts in first hour of 2023 and end at the end of 2024.</p>
 <section id="data-source" class="level2">
 <h2 class="anchored" data-anchor-id="data-source">2.1 Data Source</h2>
 <p>This project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. Data sources can be reached by clicking links below.</p>
-<p>[EPİAŞ] (https://seffaflik.epias.com.tr/home)</p>
-<p>[TEİAŞ] (https://www.teias.gov.tr/sektor-raporlari)</p>
-<p>[BOTAŞ] (https://www.botas.gov.tr/Sayfa/satis-fiyat-tarifesi/439)</p>
+<p><a href="https://seffaflik.epias.com.tr/home">EPİAŞ</a></p>
+<p><a href="https://www.teias.gov.tr/sektor-raporlari">TEİAŞ</a></p>
+<p><a href="https://www.botas.gov.tr/Sayfa/satis-fiyat-tarifesi/439">BOTAŞ</a></p>
 </section>
 <section id="general-information-about-data" class="level2">
 <h2 class="anchored" data-anchor-id="general-information-about-data">2.2 General Information About Data</h2>
@@ -208,11 +242,48 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reason-of-choice" class="level2">
 <h2 class="anchored" data-anchor-id="reason-of-choice">2.3 Reason of Choice</h2>
-<p>xxxx</p>
+<p>The electricity market consists of various sub-markets. Making accurate price forecasts for short-term and long-term electricity sales can create significant added value. Especially in long-term purchase or sale agreements, forecasting electricity prices can facilitate more profitable commercial deals while minimizing risk. For instance, the analyses and models developed in this project can help establish a relationship between renewable energy generation and electricity prices over specific periods. These forecasts can then be used to assess buy and sell offers in the market for future periods, enabling more informed and strategic positioning.</p>
 </section>
 <section id="preprocessing" class="level2">
 <h2 class="anchored" data-anchor-id="preprocessing">2.4 Preprocessing</h2>
-<p>xxxxxx</p>
+<p>In the preprocessing stage, the data stored in Excel files was converted into RData format. No additional preprocessing steps were required at this stage.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>epias_data <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"epias_data.xlsx"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>botas_data <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"botas_data.xlsx"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(epias_data, botas_data, <span class="at">file =</span> <span class="st">"elektrik_verisi.RData"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(epias_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 17
+  date                hour   total naturalgas  wind lignite darkcoal
+  &lt;dttm&gt;              &lt;chr&gt;  &lt;dbl&gt;      &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;
+1 2023-01-01 00:00:00 00:00 25945.      3636.  988.   4646.      136
+2 2023-01-01 01:00:00 01:00 24494.      2939. 1056.   4646.      136
+3 2023-01-01 02:00:00 02:00 22631.      2495. 1123.   4694.      136
+4 2023-01-01 03:00:00 03:00 22022.      2667. 1227.   4878.      136
+5 2023-01-01 04:00:00 04:00 21404.      2334. 1308.   4910.      136
+6 2023-01-01 05:00:00 05:00 21586.      2177. 1406.   5016.      136
+# ℹ 10 more variables: importedcoal &lt;dbl&gt;, fueloil &lt;dbl&gt;, geothermal &lt;dbl&gt;,
+#   dam &lt;dbl&gt;, naphta &lt;dbl&gt;, biomass &lt;dbl&gt;, runofriver &lt;dbl&gt;, other &lt;dbl&gt;,
+#   demand &lt;dbl&gt;, price &lt;dbl&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(botas_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+   year month natgasprice
+  &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;
+1  2023     1       18000
+2  2023     2       15000
+3  2023     3       12000
+4  2023     4       10000
+5  2023     5       10000
+6  2023     6       10000</code></pre>
+</div>
+</div>
 </section>
 </section>
 <section id="analysis" class="level1">

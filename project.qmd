@@ -50,7 +50,7 @@ epias_data <- read_excel("epias_data.xlsx")
 
 botas_data <- read_excel("botas_data.xlsx")
 
-save(epias_data, botas_data, file = "elektrik_verisi.RData")
+save(epias_data, botas_data, file = "electricity.RData")
 
 head(epias_data)
 

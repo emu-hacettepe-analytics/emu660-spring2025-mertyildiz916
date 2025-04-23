@@ -18,7 +18,7 @@
     "href": "project.html#data-source",
     "title": "Electrcity Market Price Analysis",
     "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nThis project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. Data sources can be reached by clicking links below.\n[EPİAŞ] (https://seffaflik.epias.com.tr/home)\n[TEİAŞ] (https://www.teias.gov.tr/sektor-raporlari)\n[BOTAŞ] (https://www.botas.gov.tr/Sayfa/satis-fiyat-tarifesi/439)"
+    "text": "2.1 Data Source\nThis project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. Data sources can be reached by clicking links below.\nEPİAŞ\nTEİAŞ\nBOTAŞ"
   },
   {
     "objectID": "project.html#general-information-about-data",
@@ -32,14 +32,14 @@
     "href": "project.html#reason-of-choice",
     "title": "Electrcity Market Price Analysis",
     "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxx"
+    "text": "2.3 Reason of Choice\nThe electricity market consists of various sub-markets. Making accurate price forecasts for short-term and long-term electricity sales can create significant added value. Especially in long-term purchase or sale agreements, forecasting electricity prices can facilitate more profitable commercial deals while minimizing risk. For instance, the analyses and models developed in this project can help establish a relationship between renewable energy generation and electricity prices over specific periods. These forecasts can then be used to assess buy and sell offers in the market for future periods, enabling more informed and strategic positioning."
   },
   {
     "objectID": "project.html#preprocessing",
     "href": "project.html#preprocessing",
     "title": "Electrcity Market Price Analysis",
     "section": "2.4 Preprocessing",
-    "text": "2.4 Preprocessing\nxxxxxx"
+    "text": "2.4 Preprocessing\nIn the preprocessing stage, the data stored in Excel files was converted into RData format. No additional preprocessing steps were required at this stage.\n\nlibrary(readxl)\n\nepias_data &lt;- read_excel(\"epias_data.xlsx\")\n\nbotas_data &lt;- read_excel(\"botas_data.xlsx\")\n\nsave(epias_data, botas_data, file = \"elektrik_verisi.RData\")\n\nhead(epias_data)\n\n# A tibble: 6 × 17\n  date                hour   total naturalgas  wind lignite darkcoal\n  &lt;dttm&gt;              &lt;chr&gt;  &lt;dbl&gt;      &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;\n1 2023-01-01 00:00:00 00:00 25945.      3636.  988.   4646.      136\n2 2023-01-01 01:00:00 01:00 24494.      2939. 1056.   4646.      136\n3 2023-01-01 02:00:00 02:00 22631.      2495. 1123.   4694.      136\n4 2023-01-01 03:00:00 03:00 22022.      2667. 1227.   4878.      136\n5 2023-01-01 04:00:00 04:00 21404.      2334. 1308.   4910.      136\n6 2023-01-01 05:00:00 05:00 21586.      2177. 1406.   5016.      136\n# ℹ 10 more variables: importedcoal &lt;dbl&gt;, fueloil &lt;dbl&gt;, geothermal &lt;dbl&gt;,\n#   dam &lt;dbl&gt;, naphta &lt;dbl&gt;, biomass &lt;dbl&gt;, runofriver &lt;dbl&gt;, other &lt;dbl&gt;,\n#   demand &lt;dbl&gt;, price &lt;dbl&gt;\n\nhead(botas_data)\n\n# A tibble: 6 × 3\n   year month natgasprice\n  &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;\n1  2023     1       18000\n2  2023     2       15000\n3  2023     3       12000\n4  2023     4       10000\n5  2023     5       10000\n6  2023     6       10000"
   },
   {
     "objectID": "project.html#exploratory-data-analysis",
