@@ -1,36 +1,62 @@
 ---
-title: "Project X"
+title: "Electrcity Market Price Analysis"
 ---
 
-Welcome to my/our project page.
-
-Keep an eye on this space to stay updated with my project activities.
-
-(The titles below are provided as examples; please feel free to adjust them as necessary.)
+Welcome to my EMU660 project page.
 
 # 1. Project Overview and Scope
 
-xxxxxx
+Electricity has increasingly become a tradable commodity on global and Turkish stock exchanges, subject to specific regulations and limitations. In a liberalized market, it is uniquely characterized by a third dimension—time—alongside price and volume. In Turkey, electricity trading takes place across multiple market platforms, all overseen and regulated by the Energy Exchange Istanbul (EXIST). This project aims to analyze the formation of electricity prices and investigate the impact of total electricity demand as well as electricity generation from various sources on price formation. Specifically, the daily impact of renewable energy generation on electricity prices will be examined, while the influence of natural gas prices on the monthly average electricity price will also be explored. Electricity prices will be forecasted using multiple linear regression models at both daily and monthly resolutions, and the results will be evaluated accordingly.
 
 # 2. Data
 
-xxxxxx
+This project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. The whole data used in this project starts in first hour of 2023 and end at the end of 2024.
 
 ## 2.1 Data Source
 
-xxxxxx
+This project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. Data sources can be reached by clicking links below.
+
+[EPİAŞ](https://seffaflik.epias.com.tr/home)
+
+[TEİAŞ](https://www.teias.gov.tr/sektor-raporlari)
+
+[BOTAŞ](https://www.botas.gov.tr/Sayfa/satis-fiyat-tarifesi/439)
 
 ## 2.2 General Information About Data
 
-xxxxxx
+Data related to the Day-Ahead Market will be obtained from EPİAŞ. The data sourced from EPİAŞ can be categorized under three main headings.
+
+1)  FDDP (Final Daily Production Program): This data is provided at an hourly resolution for 12 different types of energy sources. It includes the planned generation amounts for the following day submitted by power plants operating under each source category. Every day, power plants enter their generation schedules into the system by 4 PM, and EPİAŞ collects and publishes this data aggregated by source type.
+
+2)  Real-Time Consumption: This data represents the total amount of electricity consumed across Turkey. It is provided on an hourly basis and can be referred to as the total electricity demand.
+
+3)  MCP (Market Clearing Price): This data refers to the electricity price determined for each hour in the Day-Ahead Market, formed by matching supply and demand for the traded electricity.
+
+Natural gas tariff data has been sourced from BOTAŞ. The prices of natural gas used for electricity generation are determined by BOTAŞ. Additionally, water inflow data to the main basin dams, provided by TEİAŞ, may be used if deemed necessary.
 
 ## 2.3 Reason of Choice
 
-xxxxxx
+The electricity market consists of various sub-markets. Making accurate price forecasts for short-term and long-term electricity sales can create significant added value. Especially in long-term purchase or sale agreements, forecasting electricity prices can facilitate more profitable commercial deals while minimizing risk. For instance, the analyses and models developed in this project can help establish a relationship between renewable energy generation and electricity prices over specific periods. These forecasts can then be used to assess buy and sell offers in the market for future periods, enabling more informed and strategic positioning.
 
 ## 2.4 Preprocessing
 
-xxxxxx
+In the preprocessing stage, the data stored in Excel files was converted into RData format. No additional preprocessing steps were required at this stage.
+
+```{r}
+
+library(readxl)
+
+epias_data <- read_excel("epias_data.xlsx")
+
+botas_data <- read_excel("botas_data.xlsx")
+
+save(epias_data, botas_data, file = "elektrik_verisi.RData")
+
+head(epias_data)
+
+head(botas_data)
+
+```
 
 # 3. Analysis
 

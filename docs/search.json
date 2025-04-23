@@ -9,63 +9,63 @@
   {
     "objectID": "project.html",
     "href": "project.html",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "",
-    "text": "Welcome to my/our project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
+    "text": "Welcome to my EMU660 project page."
   },
   {
     "objectID": "project.html#data-source",
     "href": "project.html#data-source",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
+    "text": "2.1 Data Source\nThis project will utilize three main data sources related to the electricity market or influence it. EPİAŞ (Energy Exchange Istanbul), TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ (Petroleum Pipeline Corporation) are public institutions in Turkey that act as decision-makers and regulators in the electricity market. The open-access data provided by these institutions will be used throughout the analysis and forecasting processes of the project. Data sources can be reached by clicking links below.\n[EPİAŞ] (https://seffaflik.epias.com.tr/home)\n[TEİAŞ] (https://www.teias.gov.tr/sektor-raporlari)\n[BOTAŞ] (https://www.botas.gov.tr/Sayfa/satis-fiyat-tarifesi/439)"
   },
   {
     "objectID": "project.html#general-information-about-data",
     "href": "project.html#general-information-about-data",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
+    "text": "2.2 General Information About Data\nData related to the Day-Ahead Market will be obtained from EPİAŞ. The data sourced from EPİAŞ can be categorized under three main headings.\n\nFDDP (Final Daily Production Program): This data is provided at an hourly resolution for 12 different types of energy sources. It includes the planned generation amounts for the following day submitted by power plants operating under each source category. Every day, power plants enter their generation schedules into the system by 4 PM, and EPİAŞ collects and publishes this data aggregated by source type.\nReal-Time Consumption: This data represents the total amount of electricity consumed across Turkey. It is provided on an hourly basis and can be referred to as the total electricity demand.\nMCP (Market Clearing Price): This data refers to the electricity price determined for each hour in the Day-Ahead Market, formed by matching supply and demand for the traded electricity.\n\nNatural gas tariff data has been sourced from BOTAŞ. The prices of natural gas used for electricity generation are determined by BOTAŞ. Additionally, water inflow data to the main basin dams, provided by TEİAŞ, may be used if deemed necessary."
   },
   {
     "objectID": "project.html#reason-of-choice",
     "href": "project.html#reason-of-choice",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
+    "text": "2.3 Reason of Choice\nxxxx"
   },
   {
     "objectID": "project.html#preprocessing",
     "href": "project.html#preprocessing",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "2.4 Preprocessing",
     "text": "2.4 Preprocessing\nxxxxxx"
   },
   {
     "objectID": "project.html#exploratory-data-analysis",
     "href": "project.html#exploratory-data-analysis",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "3.1 Exploratory Data Analysis",
     "text": "3.1 Exploratory Data Analysis\nxxxxxx"
   },
   {
     "objectID": "project.html#trend-analysis",
     "href": "project.html#trend-analysis",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "3.2 Trend Analysis",
     "text": "3.2 Trend Analysis\nxxxxxx"
   },
   {
     "objectID": "project.html#model-fitting",
     "href": "project.html#model-fitting",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "3.3 Model Fitting",
     "text": "3.3 Model Fitting\nxxxxxx"
   },
   {
     "objectID": "project.html#results",
     "href": "project.html#results",
-    "title": "Project X",
+    "title": "Electrcity Market Price Analysis",
     "section": "3.4 Results",
     "text": "3.4 Results\nxxxxxx"
   },
