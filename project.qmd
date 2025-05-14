@@ -1,5 +1,12 @@
 ---
 title: "It's Not Rocket Science, It's Electricity Market"
+author: "Mert YILDIZ"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true 
+    code-summary: "Show Code" 
 ---
 
 Welcome to my EMU660 project page.
