@@ -256,20 +256,16 @@ library(dplyr)
 library(ggplot2)
 library(lubridate)
 
-# 1. Veriyi hazırlayalım ve tahminleri ekleyelim
 reg_data <- epias_simplified_daily %>%
   select(date, price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
   na.omit()
 
-# 2. Tahminleri hesapla
 reg_data$predicted_price <- predict(model, newdata = reg_data)
 
-# 3. Sadece Aralık 2024 verisini al
 december_data <- reg_data %>%
   filter(date >= as.Date("2024-06-01") & date <= as.Date("2024-06-30"))
 
-# 4. Grafik
-ggplot(december_data, aes(x = date)) +
+actualvspredicted <- ggplot(december_data, aes(x = date)) +
   geom_line(aes(y = price, color = "Actual"), size = 1.2) +
   geom_line(aes(y = predicted_price, color = "Predicted"), size = 1.2, linetype = "dashed") +
   scale_color_manual(values = c("Actual" = "steelblue", "Predicted" = "orange")) +
@@ -282,7 +278,7 @@ ggplot(december_data, aes(x = date)) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 
-
+actualvspredicted
 
 ```
 
