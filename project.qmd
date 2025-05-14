@@ -1,5 +1,5 @@
 ---
-title: "Electrcity Market Price Analysis"
+title: "It's Not Rocket Science, It's Electricity Market"
 ---
 
 Welcome to my EMU660 project page.
@@ -58,9 +58,235 @@ head(botas_data)
 
 ```
 
-# 3. Analysis
+```{r}
 
-xxxxxx
+
+load("electricity.RData")
+library(dplyr)
+
+epias_data$date <- as.Date(epias_data$date)
+
+epias_data$year <- format(epias_data$date, "%Y")
+epias_data$month <- format(epias_data$date, "%m")
+
+botas_data$month <- sprintf("%02d", botas_data$month)
+
+botas_data$year <- as.character(botas_data$year)
+
+epias_merged <- left_join(epias_data, botas_data, by = c("year", "month"))
+
+head(epias_merged)
+
+save(epias_merged, file = "electricity_merged.RData")
+
+epias_merged <- epias_merged %>%
+  select(date, year, month, everything(), -year, -month)
+
+epias_merged <- epias_merged %>%
+  select(-price, everything(), price)
+
+save(epias_merged, file = "electricity_merged.RData")
+
+head(epias_merged)
+```
+
+```{r}
+library(dplyr)
+
+epias_daily <- epias_merged %>%
+  group_by(date) %>%
+  summarise(across(where(is.numeric), mean, na.rm = TRUE))
+
+head(epias_daily)
+```
+
+```{r}
+library(dplyr)
+
+epias_simplified_daily <- epias_daily %>%
+  mutate(
+    cheap_thermal = fueloil + naphta + lignite + darkcoal,
+    renewables = wind + runofriver + biomass + geothermal
+  ) %>%
+  select(
+    date, cheap_thermal, renewables,
+    importedcoal, naturalgas, solar, dam, demand, natgasprice, price
+  )
+save(epias_simplified_daily, file = "epias_simplified_daily.RData")
+
+head(epias_simplified_daily)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+nov_demand <- epias_merged %>%
+  filter(date >= as.Date("2024-11-01") & date <= as.Date("2024-11-10")) %>%
+  mutate(
+    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M"),
+    day_num = day(date) + hour(datetime) / 24 
+  )
+
+ggplot(nov_demand, aes(x = day_num, y = demand)) +
+  geom_line(color = "steelblue", size = 1.2) +
+  scale_x_continuous(breaks = 1:10) +
+  labs(
+    title = "November 2024 - First 10 Days Hourly Demand",
+    x = "Day of Month",
+    y = "Demand (MW)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+```
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+nov_renew <- epias_merged %>%
+  filter(date >= as.Date("2024-11-01") & date <= as.Date("2024-11-10")) %>%
+  mutate(
+    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M")
+  )
+
+ggplot(nov_renew, aes(x = datetime)) +
+  geom_line(aes(y = solar, color = "Solar"), size = 1.2) +
+  geom_line(aes(y = wind, color = "Wind"), size = 1.2) +
+  scale_color_manual(values = c("Solar" = "orange", "Wind" = "steelblue")) +
+  labs(
+    title = "Solar and Wind Generation – November 1–10, 2024",
+    x = "Datetime",
+    y = "Generation (MW)",
+    color = "Source"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(zoo)
+
+demand_yoy <- epias_merged %>%
+  filter(year(date) %in% c(2023, 2024)) %>%
+  arrange(date, hour) %>%
+  mutate(
+    year = year(date),
+    doy = yday(date),
+    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M")
+  ) %>%
+  group_by(year) %>%
+  arrange(datetime) %>%
+  mutate(
+    demand_7day_avg = rollmean(demand, k = 24 * 7, fill = NA, align = "right")
+  ) %>%
+  ungroup()
+
+ggplot(demand_yoy, aes(x = doy, y = demand_7day_avg, color = as.factor(year))) +
+  geom_line(size = 1.2) +
+  labs(
+    title = "Year-over-Year Demand Comparison (7-Day Moving Average)",
+    x = "Day of Year",
+    y = "Demand (MW)",
+    color = "Year"
+  ) +
+  scale_color_manual(values = c("2023" = "purple", "2024" = "gold")) +
+  expand_limits(y = 20000) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+
+```
+
+```{r}
+# Gerekli paketler
+library(dplyr)
+library(car)
+library(ggplot2)
+
+# 1. Veriyi hazırlama: sadece gerekli sütunları seç ve eksik değerleri çıkar
+reg_data <- epias_simplified_daily %>%
+  select(price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
+  na.omit()
+
+# 2. Regresyon modeli oluştur
+model <- lm(price ~ cheap_thermal + naturalgas + importedcoal + renewables + demand + solar + dam + natgasprice, data = reg_data)
+
+# 3. Modelin özetini al
+summary(model)
+
+# 4. Değişkenler arası çoklu bağlantıyı kontrol et (VIF)
+vif(model)
+
+# 5. Artıkların dağılımını kontrol et (lineerlik ve normallik varsayımları için)
+par(mfrow = c(2, 2))  # Tüm grafiklere bir pencerede bakmak için
+plot(model)
+par(mfrow = c(1, 1))  # Varsayılan görünüme dön
+
+# 6. Gerçek vs Tahmin edilen değerlerin grafiği
+reg_data$predicted_price <- predict(model)
+
+ggplot(reg_data, aes(x = predicted_price, y = price)) +
+  geom_point(color = "steelblue") +
+  geom_abline(slope = 1, intercept = 0, color = "darkred", linetype = "dashed") +
+  labs(
+    title = "Actual vs Predicted Electricity Price",
+    x = "Predicted Price",
+    y = "Actual Price"
+  ) +
+  theme_minimal()
+
+
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+# 1. Veriyi hazırlayalım ve tahminleri ekleyelim
+reg_data <- epias_simplified_daily %>%
+  select(date, price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
+  na.omit()
+
+# 2. Tahminleri hesapla
+reg_data$predicted_price <- predict(model, newdata = reg_data)
+
+# 3. Sadece Aralık 2024 verisini al
+december_data <- reg_data %>%
+  filter(date >= as.Date("2024-06-01") & date <= as.Date("2024-06-30"))
+
+# 4. Grafik
+ggplot(december_data, aes(x = date)) +
+  geom_line(aes(y = price, color = "Actual"), size = 1.2) +
+  geom_line(aes(y = predicted_price, color = "Predicted"), size = 1.2, linetype = "dashed") +
+  scale_color_manual(values = c("Actual" = "steelblue", "Predicted" = "orange")) +
+  labs(
+    title = "Actual vs Predicted Electricity Price – December 2024",
+    x = "Date",
+    y = "Electricity Price (TL/MWh)",
+    color = ""
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+
+
+```
+
+# 3. Analysis
 
 ## 3.1 Exploratory Data Analysis
 

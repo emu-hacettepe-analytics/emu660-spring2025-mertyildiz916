@@ -1,0 +1,891 @@
+"student_id","entry_year","graduation_date","graduation_cgpa","work_company","work_industry","work_position","work_startdate","work_enddate","work_city","work_country","erasmus_participation","erasmus_year","erasmus_school","erasmus_city","erasmus_country","graduation_year"
+20726914,2007,"23.07.2012",2.11,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","23.09.2013","25.10.2015","Ankara","Turkey",1,2010,"Technical University of Liberec","Liberec","Czech Republic",2012
+20726914,2007,"23.07.2012",2.11,"Şişecam","Glass","Technical Purchasing Specialist","16.08.2016","26.08.2017","İstanbul","Turkey",1,2010,"Technical University of Liberec","Liberec","Czech Republic",2012
+20726914,2007,"23.07.2012",2.11,"Sharkoon Taiwan","Computer Hardware","Marketing & Sales Engineer","02.01.2019","01.09.2019","Taipei","Taiwan",1,2010,"Technical University of Liberec","Liberec","Czech Republic",2012
+20726914,2007,"23.07.2012",2.11,"Sampa Otomotiv","Auto, Truck & Motorcycle Parts & Service","Commercial Product Group Purchasing Manager","11.11.2019","0000-00-00","Samsun","Turkey",1,2010,"Technical University of Liberec","Liberec","Czech Republic",2012
+20726928,2007,"13.06.2011",3.43,"THY - Türk Hava Yolları","Airlines","Engineer","23.09.2013","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2011
+20726933,2007,"04.06.2012",2.32,"CMS Jant ve Makina","Auto, Truck & Motorcycle Parts & Service","Cost Controller","05.01.2015","24.06.2016","İzmir","Turkey",NA,NA,"","","",2012
+20726933,2007,"04.06.2012",2.32,"CMS Jant ve Makina","Auto, Truck & Motorcycle Parts & Service","Production & Planning Engineer","01.07.2013","31.12.2014","İzmir","Turkey",NA,NA,"","","",2012
+20726933,2007,"04.06.2012",2.32,"ETAPAK Baskı Ambalaj","Paper Packaging","Project Engineer","04.02.2013","28.06.2013","İzmir","Turkey",NA,NA,"","","",2012
+20726933,2007,"04.06.2012",2.32,"Johnson Controls","Industrial Conglomerates","Cost Controller","06.06.2016","15.10.2017","İzmir","Turkey",NA,NA,"","","",2012
+20726933,2007,"04.06.2012",2.32,"MAHLE Filtre Sistemleri","Auto Vehicles, Parts & Service Retailers","Assistant Manager of Process Improvement","23.10.2017","0000-00-00","İzmir","Turkey",NA,NA,"","","",2012
+20726947,2007,"13.06.2011",2.99,"T.C. Ekonomi Bakanlığı","Public Sector","Foreign Trade Specialist","03.02.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2011
+20726947,2007,"13.06.2011",2.99,"T.C. Sağlık Bakanlığı","Public Sector","Engineer","05.08.2013","03.01.2014","Ankara","Turkey",NA,NA,"","","",2011
+20726947,2007,"13.06.2011",2.99,"DMO - Devlet Malzeme Ofisi","Public Sector","Purchasing Assistant Specialist","02.01.2012","02.08.2013","Ankara","Turkey",NA,NA,"","","",2011
+20726947,2007,"13.06.2011",2.99,"Experteam","Consulting","Functional Consultant","04.07.2011","30.12.2011","İstanbul","Turkey",NA,NA,"","","",2011
+20726952,2007,"04.06.2012",3.22,"EMEK Electrical Industry","Electrical Components & Equipment","Production & Planning Engineer","01.04.2014","31.12.2014","Ankara","Turkey",NA,NA,"","","",2012
+20726952,2007,"04.06.2012",3.22,"TAI - TUSAŞ","Aerospace & Defense","Planning Engineer","19.10.2015","01.11.2021","Ankara","Turkey",NA,NA,"","","",2012
+20726952,2007,"04.06.2012",3.22,"ST Microelectronics","Semiconductors","Senior Planner","01.06.2022","0000-00-00","","Malta",NA,NA,"","","",2012
+20726952,2007,"04.06.2012",3.22,"TAI - TUSAŞ","Aerospace & Defense","Project Engineer","01.11.2021","01.06.2022","Ankara","Turkey",NA,NA,"","","",2012
+20726971,2007,"04.06.2012",2.72,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","02.06.2014","0000-00-00","Ankara","Turkey",1,2010,"Technical University of Liberec","Liberec","Czech Republic",2012
+20726971,2007,"04.06.2012",2.72,"Ekodenge","Environmental Services","Research & Development Expert","05.09.2011","30.05.2014","Ankara","Turkey",1,2010,"Technical University of Liberec","Liberec","Czech Republic",2012
+20726985,2007,"18.02.2013",2.99,"Cengiz Enerji","Energy","Energy Trading Expert","01.10.2013","16.12.2018","Ankara","Turkey",1,2011,"University of Cassino","Cassino","Italy",2013
+20726985,2007,"18.02.2013",2.99,"TANAP","Oil and Gas Transportation Services","Commercial Operations Engineer","17.12.2018","0000-00-00","Ankara","Turkey",1,2011,"University of Cassino","Cassino","Italy",2013
+20726999,2007,"17.08.2012",2.24,"T.C. Bilim, Sanayi ve Teknoloji Bakanlığı","Public Sector","Assistant Specialist","25.03.2013","23.06.2017","Ankara","Turkey",NA,NA,"","","",2012
+20726999,2007,"17.08.2012",2.24,"T.C. Bilim, Sanayi ve Teknoloji Bakanlığı","Public Sector","Specialist","23.06.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727005,2007,"13.06.2011",3.07,"TAI - TUSAŞ","Aerospace & Defense","Engineer","01.05.2012","0000-00-00","Ankara","Turkey",NA,NA,"","","",2011
+20727019,2007,"04.06.2012",3.68,"Philip Morris Sigara ve Tütüncülük","Tobacco","Purchasing Engineer","25.02.2013","25.07.2014","İzmir","Turkey",NA,NA,"","","",2012
+20727019,2007,"04.06.2012",3.68,"Gates Powertrain","Industrial Machinery & Equipment","Engineer","03.09.2012","22.02.2013","İzmir","Turkey",NA,NA,"","","",2012
+20727019,2007,"04.06.2012",3.68,"Philip Morris Sigara ve Tütüncülük","Tobacco","Logistics Engineer","04.08.2014","06.05.2016","İzmir","Turkey",NA,NA,"","","",2012
+20727019,2007,"04.06.2012",3.68,"Philip Morris Sigara ve Tütüncülük","Tobacco","Purchasing Executive","09.05.2016","30.04.2018","İzmir","Turkey",NA,NA,"","","",2012
+20727019,2007,"04.06.2012",3.68,"Philip Morris Sigara ve Tütüncülük","Tobacco","Senior Planning Executive","01.05.2018","0000-00-00","İzmir","Turkey",NA,NA,"","","",2012
+20727024,2007,"13.06.2011",2.76,"Vestel Elektronik","Consumer Electronics","Engineer","01.04.2013","01.06.2015","Manisa","Turkey",NA,NA,"","","",2011
+20727024,2007,"13.06.2011",2.76,"Vestel","Consumer Electronics","Method Specialist","01.06.2015","0000-00-00","Manisa","Turkey",NA,NA,"","","",2011
+20727038,2007,"04.06.2012",2.54,"Maersk Line","Logistics and Freight Transportation","Analyst","10.07.2013","01.01.2015","İstanbul","Turkey",NA,NA,"","","",2012
+20727038,2007,"04.06.2012",2.54,"Sabancı Holding","Industrial Conglomerates","Management Systems Specialist","01.10.2012","01.07.2013","İstanbul","Turkey",NA,NA,"","","",2012
+20727038,2007,"04.06.2012",2.54,"Maersk Line","Logistics and Freight Transportation","AFLS Project Coordinator","01.04.2014","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2012
+20727043,2007,"04.06.2012",3.24,"Nurol Makina ve Sanayi","Industrial Machinery & Equipment","Quality Assurance Engineer","01.01.2014","01.07.2016","Ankara","Turkey",NA,NA,"","","",2012
+20727043,2007,"04.06.2012",3.24,"ASELSAN","Aerospace & Defense","Software Engineer","01.07.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727057,2007,"24.06.2013",3.3,"Sarten Ambalaj","Paper Packaging","Production Planning & Control Specialist","16.09.2014","17.01.2016","Manisa","Turkey",NA,NA,"","","",2013
+20727057,2007,"24.06.2013",3.3,"Küçükçalık Tekstil","Textiles & Leather Goods","System & Process Development Specialist","02.06.2016","0000-00-00","Bursa","Turkey",NA,NA,"","","",2013
+20727076,2007,"04.06.2012",2.85,"Küçükpazarlı Havacılık","Aerospace & Defense","Manager","06.06.2013","15.01.2016","Ankara","Turkey",NA,NA,"","","",2012
+20727076,2007,"04.06.2012",2.85,"ASELSAN","Aerospace & Defense","Planning Engineer","18.01.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727095,2007,"13.06.2011",3.89,"Harput Holding","Textiles & Leather Goods","Purchasing Engineer","10.10.2011","0000-00-00","Bursa","Turkey",NA,NA,"","","",2011
+20727095,2007,"13.06.2011",3.89,"Harput Holding","Textiles & Leather Goods","Occupational Safety Specialist","01.12.2012","0000-00-00","Bursa","Turkey",NA,NA,"","","",2011
+20727101,2007,"04.06.2012",2.59,"THY - Türk Hava Yolları","Airlines","Senior Manager","01.04.2016","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2012
+20727101,2007,"04.06.2012",2.59,"THY - Türk Hava Yolları","Airlines","Global Corporate Account Manager","01.10.2012","31.03.2016","İstanbul","Turkey",NA,NA,"","","",2012
+20727129,2007,"13.06.2011",2.89,"Delphi Automotive Systems","Auto, Truck & Motorcycle Parts & Service","Production Engineer","03.09.2012","30.09.2014","İzmir","Turkey",NA,NA,"","","",2011
+20727129,2007,"13.06.2011",2.89,"Delphi Automotive Systems","Auto, Truck & Motorcycle Parts & Service","Material Planning & Control Engineer","01.09.2014","0000-00-00","İzmir","Turkey",NA,NA,"","","",2011
+20727129,2007,"13.06.2011",2.89,"Eldor AFZ","Electrical Components & Equipment","Maintenance Engineer","01.09.2011","01.09.2012","İzmir","Turkey",NA,NA,"","","",2011
+20727148,2007,"04.06.2012",3.15,"ASELSAN","Aerospace & Defense","Engineer","04.01.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727148,2007,"04.06.2012",3.15,"Garanti Bankası","Banks","Auditor","02.07.2012","14.12.2015","İstanbul","Turkey",NA,NA,"","","",2012
+20727153,2007,"13.06.2011",2.93,"Şölen Çikolata","Food Processing","Production & Material Planning Engineer","12.09.2011","28.02.2014","İstanbul","Turkey",NA,NA,"","","",2011
+20727153,2007,"13.06.2011",2.93,"Acron Bilişim","IT Services & Consulting","SAP Consultant","03.03.2014","26.12.2015","Ankara","Turkey",NA,NA,"","","",2011
+20727153,2007,"13.06.2011",2.93,"HAVELSAN","Aerospace & Defense","SAP Consultant","28.12.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2011
+20727172,2007,"04.06.2012",2.7,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Production & Planning Engineer","06.08.2012","01.08.2014","Kocaeli","Turkey",NA,NA,"","","",2012
+20727172,2007,"04.06.2012",2.7,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Senior- Inventory Control and Analysis Engineer","01.08.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727172,2007,"04.06.2012",2.7,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Sales & Operation Planning Engineer","01.03.2017","01.01.2019","Ankara","Turkey",NA,NA,"","","",2012
+20727172,2007,"04.06.2012",2.7,"Kordsa Technique Textile","Textiles & Leather Goods","Global Sales and Operation Planning Specialist","08.04.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2012
+20727186,2007,"13.06.2011",3.47,"Yapı ve Kredi Bankası","Banks","Senior Business Analyst","07.04.2014","21.07.2019","İstanbul","Turkey",NA,NA,"","","",2011
+20727186,2007,"13.06.2011",3.47,"TEB Türk Ekonomi Bankası","Banks","Business Planning & Process Management Trainee","03.12.2012","25.04.2014","İstanbul","Turkey",NA,NA,"","","",2011
+20727186,2007,"13.06.2011",3.47,"Coşkunöz","Auto, Truck & Motorcycle Parts & Service","Engineer","07.11.2011","01.12.2012","Bursa","Turkey",NA,NA,"","","",2011
+20727186,2007,"13.06.2011",3.47,"Raiffeisen Bank International","Banks","Senior Business Analyst","01.10.2021","0000-00-00","Vienna","Austria",NA,NA,"","","",2011
+20727186,2007,"13.06.2011",3.47,"BTO Research","IT Services & Consulting","Project Consultant","24.07.2019","30.09.2021","Vienna","Austria",NA,NA,"","","",2011
+20727191,2007,"04.06.2012",3.02,"TÜBİTAK","Public Sector","Assistant Specialist","01.07.2013","01.04.2016","Ankara","Turkey",NA,NA,"","","",2012
+20727191,2007,"04.06.2012",3.02,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","10.05.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727191,2007,"04.06.2012",3.02,"KOSGEB","Software","Assistant Specialist","01.04.2013","28.06.2013","Ankara","Turkey",NA,NA,"","","",2012
+20727206,2007,"17.08.2012",2.39,"230 İnovasyon","Publishing","Co-founder","03.09.2012","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+20727206,2007,"17.08.2012",2.39,"Central Park Conservancy","Non-profit Organization","Tour Guide","06.06.2011","30.09.2011","New York","United States",NA,NA,"","","",2012
+20727211,2007,"13.06.2011",3.49,"ING Bank","Banks","Analytical CRM Specialist","03.10.2011","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2011
+20828806,2008,"04.06.2012",2.74,"HUGO BOSS","Apparel & Accessories","Production & Planning Engineer","01.07.2012","30.04.2014","İzmir","Turkey",NA,NA,"","","",2012
+20828825,2008,"24.06.2013",2.46,"Ekol Lojistik","Logistics and Freight Transportation","Engineer","0000-00-00","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20828839,2008,"24.06.2013",3.18,"AN Group Danışmanlık","Consulting","Project Assistant","06.09.2011","16.03.2012","Ankara","Turkey",NA,NA,"","","",2013
+20828839,2008,"24.06.2013",3.18,"Karacaören Danışmanlık","Consulting","Project Consultant","11.03.2013","20.11.2013","Ankara","Turkey",NA,NA,"","","",2013
+20828839,2008,"24.06.2013",3.18,"Clementon Amusement Park & Splash World","Leisure & Recreation","Team Member","11.06.2010","19.09.2010","NJ/Clementon","United States",NA,NA,"","","",2013
+20828839,2008,"24.06.2013",3.18,"THY - Türk Hava Yolları","Airlines","Business Analyst","16.12.2013","27.01.2017","İstanbul","Turkey",NA,NA,"","","",2013
+20828839,2008,"24.06.2013",3.18,"THY - Türk Hava Yolları","Airlines","Candidate Pilot","06.02.2017","13.02.2019","İstanbul","Turkey",NA,NA,"","","",2013
+20828839,2008,"24.06.2013",3.18,"THY - Türk Hava Yolları","Airlines","Pilot / First Officer","13.02.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20828858,2008,"24.06.2013",3.73,"Çalık Enerji","Energy","Project Procurement Engineer","02.01.2013","27.05.2016","Ankara","Turkey",NA,NA,"","","",2013
+20828858,2008,"24.06.2013",3.73,"STM","Aerospace & Defense","Supply & Logistics Coordinator","06.06.2016","07.11.2019","Ankara","Turkey",NA,NA,"","","",2013
+20828858,2008,"24.06.2013",3.73,"STM","Aerospace & Defense","Weapon Systems Group Leader","08.11.2019","08.02.2021","Ankara","Turkey",NA,NA,"","","",2013
+20828858,2008,"24.06.2013",3.73,"SSB - Savunma Sanayii Başkanlığı","Aerospace & Defense","Director of Security Projects","08.02.2021","30.06.2022","Ankara","Turkey",NA,NA,"","","",2013
+20828863,2008,"24.06.2013",2.41,"TAI - TUSAŞ","Aerospace & Defense","Enterprise Risk Management Specialist","09.11.2015","01.08.2021","Ankara","Turkey",NA,NA,"","","",2013
+20828863,2008,"24.06.2013",2.41,"TAI - TUSAŞ","Aerospace & Defense","Chief / Enterprise Risk Management","01.08.2021","0000-00-00","","Turkey",NA,NA,"","","",2013
+20828877,2008,"24.06.2013",3.26,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","02.09.2013","26.02.2016","Ankara","Turkey",NA,NA,"","","",2013
+20828877,2008,"24.06.2013",3.26,"TAI - TUSAŞ","Aerospace & Defense","Subcontract Administrator","29.02.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20828877,2008,"24.06.2013",3.26,"AVEA","Telecommunication Services","AveaMaster","04.02.2013","28.06.2013","Ankara","Turkey",NA,NA,"","","",2013
+20828882,2008,"29.09.2014",2.12,"Balıkesir Mobilya","Home Furnishing","Production & Planning Engineer","08.04.2015","28.08.2015","Balıkesir","Turkey",NA,NA,"","","",2014
+20828882,2008,"29.09.2014",2.12,"Yarış Kabin","Auto, Truck & Motorcycle Parts & Service","Assembly Technical Support Engineer","06.08.2017","0000-00-00","Balıkesir","Turkey",NA,NA,"","","",2014
+20828896,2008,"24.06.2013",3.68,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Sales Support Responsible","25.11.2013","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20828921,2008,"24.06.2013",3.61,"BNB Consulting","IT Services & Consulting","Project Development Specialist","08.10.2012","02.08.2013","Ankara","Turkey",NA,NA,"","","",2013
+20828921,2008,"24.06.2013",3.61,"Hacettepe University","Education","Research Assistant","02.09.2013","28.09.2021","Ankara","Turkey",NA,NA,"","","",2013
+20828921,2008,"24.06.2013",3.61,"State University of New York at Buffalo","Education","Visiting Scholar","28.02.2019","28.12.2019","Buffalo, New York","United States",NA,NA,"","","",2013
+20828921,2008,"24.06.2013",3.61,"Hacettepe University","Education","Assistant Professor","04.04.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20828921,2008,"24.06.2013",3.61,"Hacettepe University","Education","Admin","0000-00-00","0000-00-00","","Turkey",NA,NA,"","","",2013
+20828935,2008,"04.06.2012",3.55,"B/S/H/ Home Appliances Group","Appliances, Tools & Housewares","Factory Financial Controller","08.07.2013","31.08.2016","Tekirdağ","Turkey",NA,NA,"","","",2012
+20828935,2008,"04.06.2012",3.55,"Karadeniz Holding","Energy","Business Analyst","09.07.2012","01.07.2013","İstanbul","Turkey",NA,NA,"","","",2012
+20828935,2008,"04.06.2012",3.55,"B/S/H/ Home Appliances Group","Appliances, Tools & Housewares","Sales Financial Controller","01.09.2016","30.06.2017","İstanbul","Turkey",NA,NA,"","","",2012
+20828935,2008,"04.06.2012",3.55,"Valeo Automotive","Auto Vehicles, Parts & Service Retailers","Management Controller","01.07.2017","31.01.2018","İstanbul","Turkey",NA,NA,"","","",2012
+20828935,2008,"04.06.2012",3.55,"Schneider Electric","Electrical Components & Equipment","Finance Business Partner","01.02.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2012
+20828954,2008,"04.06.2012",2.57,"Roche","Generic & Specialty Pharmaceuticals","Sales Order Administrator","01.09.2014","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2012
+20828954,2008,"04.06.2012",2.57,"HSBC","Banks","Root Cause Analysis - Assistant Specialist","01.02.2013","30.06.2014","İstanbul","Turkey",NA,NA,"","","",2012
+20828968,2008,"24.06.2013",2.99,"UNILEVER","Personal Products","Demand Planning Specialist","11.07.2014","10.11.2014","İstanbul","Turkey",NA,NA,"","","",2013
+20828968,2008,"24.06.2013",2.99,"UNILEVER","Personal Products","WCM Customer Service & Logistics Lead","10.11.2014","26.02.2016","İstanbul","Turkey",NA,NA,"","","",2013
+20828968,2008,"24.06.2013",2.99,"UNILEVER","Personal Products","Customer Service Manager","01.03.2016","0000-00-00","Dubai","United Arab Emirates",NA,NA,"","","",2013
+20828973,2008,"24.06.2013",3.46,"BOSCH","Consumer Electronics","Engineer","01.04.2014","0000-00-00","Bursa","Turkey",NA,NA,"","","",2013
+20828973,2008,"24.06.2013",3.46,"BİS Enerji","Energy","Planning Engineer","27.01.2014","28.03.2014","Bursa","Turkey",NA,NA,"","","",2013
+20828987,2008,"24.06.2013",3,"Garanti Teknoloji","IT Services & Consulting","Business Analyst","15.07.2014","30.01.2015","İstanbul","Turkey",NA,NA,"","","",2013
+20828987,2008,"24.06.2013",3,"Garanti Teknoloji","IT Services & Consulting","Senior Business Analyst","30.01.2015","14.08.2015","İstanbul","Turkey",NA,NA,"","","",2013
+20828987,2008,"24.06.2013",3,"Lojika Field Labs","IT Services & Consulting","Analyst","15.09.2015","02.09.2016","İstanbul","Turkey",NA,NA,"","","",2013
+20828987,2008,"24.06.2013",3,"Intertech","IT Services & Consulting","Business Analyst","19.09.2016","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20828987,2008,"24.06.2013",3,"Caligo","Consulting","Senior Consultant","08.07.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20828992,2008,"24.06.2013",2.4,"DMO - Devlet Malzeme Ofisi","Public Sector","Purchasing Assistant Specialist","26.01.2014","11.03.2015","Ankara","Turkey",NA,NA,"","","",2013
+20828992,2008,"24.06.2013",2.4,"T.C. Ekonomi Bakanlığı","Public Sector","Foreign Trade Specialist","11.03.2015","05.04.2021","Ankara","Turkey",NA,NA,"","","",2013
+20828992,2008,"24.06.2013",2.4,"T.C. Ekonomi Bakanlığı","Public Sector","Commercial Counsellor of T.C. Tehran Embassy","05.04.2021","0000-00-00","","Iran, Islamic Republic of",NA,NA,"","","",2013
+20829007,2008,"24.06.2013",2.26,"SDT Uzay ve Savunma Teknolojileri","Aerospace & Defense","Project Engineer","06.11.2013","26.08.2016","Ankara","Turkey",NA,NA,"","","",2013
+20829007,2008,"24.06.2013",2.26,"B/S/H/ Home Appliances Group","Appliances, Tools & Housewares","Authorized Service Professional","19.09.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20829012,2008,"24.06.2013",3.1,"Garanti Bankası","Banks","SME Banking Strategic Planning Associate","05.08.2013","31.12.2015","İstanbul","Turkey",NA,NA,"","","",2013
+20829012,2008,"24.06.2013",3.1,"Garanti Bankası","Banks","SME Micro Marketing Product Management Supervisor","01.01.2016","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20829026,2008,"24.06.2013",2.86,"HC Evcil Hayvan Yem ve Gıda","Food Distribution & Convenience Stores","Manager","01.05.2012","02.02.2015","Ankara","Turkey",NA,NA,"","","",2013
+20829026,2008,"24.06.2013",2.86,"TAI - TUSAŞ","Aerospace & Defense","Engineer","02.11.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20829031,2008,"24.06.2013",3.28,"TAI - TUSAŞ","Aerospace & Defense","Subcontract Administrator","08.09.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20829045,2008,"20.01.2014",2.82,"LUT - Lappeenranta University of Technology","Education","Research Assistant","01.06.2016","30.11.2016","Lappeenranta","Finland",NA,NA,"","","",2014
+20829045,2008,"20.01.2014",2.82,"ENKA","Construction & Engineering","Commercial Planning & Reporting Analyst","03.04.2017","01.04.2019","İstanbul","Turkey",NA,NA,"","","",2014
+20829045,2008,"20.01.2014",2.82,"i2i Systems","Telecommunication Services","Business Analyst","01.05.2019","0000-00-00","Istanbul","Turkey",NA,NA,"","","",2014
+20829059,2008,"24.06.2013",3.04,"TED University","Education","Research Assistant","28.05.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20829064,2008,"04.06.2012",3.14,"Eutek Business Solutions","IT Services & Consulting","Senior Business Analyst","20.01.2014","01.11.2019","İstanbul","Turkey",NA,NA,"","","",2012
+20829064,2008,"04.06.2012",3.14,"Farplas Oto Yedek Parçaları","Auto, Truck & Motorcycle Parts & Service","Production & Planning Engineer","12.11.2012","17.01.2014","Kocaeli","Turkey",NA,NA,"","","",2012
+20829064,2008,"04.06.2012",3.14,"Eutek Business Solutions","IT Services & Consulting","Project Delivery Manager","01.11.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2012
+20829078,2008,"24.06.2013",3.32,"TEB Türk Ekonomi Bankası","Banks","Assistant Specialist","07.07.2013","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20829083,2008,"24.06.2013",2.84,"ÇözenAdam Elektronik Hizmetler","Consulting","Business Analyst","01.10.2013","29.04.2016","İstanbul","Turkey",NA,NA,"","","",2013
+20829083,2008,"24.06.2013",2.84,"Er-Kim İlaç","Generic & Specialty Pharmaceuticals","Business Analyst","04.04.2016","11.09.2017","İstanbul","Turkey",NA,NA,"","","",2013
+20829083,2008,"24.06.2013",2.84,"THY - Türk Hava Yolları","Airlines","Project Manager","25.09.2017","0000-00-00","","Turkey",NA,NA,"","","",2013
+20829097,2008,"24.06.2013",2.1,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Engineer","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20829103,2008,"24.06.2013",2.22,"Nüve İmalat","Medical Equipment, Supplies & Distribution","Research & Development Engineer","10.02.2014","02.09.2016","Ankara","Turkey",1,2011,"University of Cassino","Cassino","Italy",2013
+20829103,2008,"24.06.2013",2.22,"HAVAŞ","Airport Services","Passenger Service Developer","01.05.2012","01.10.2013","Ankara","Turkey",1,2011,"University of Cassino","Cassino","Italy",2013
+20829103,2008,"24.06.2013",2.22,"4P Automation and Software","Software","Business Development Specialist","02.10.2013","31.01.2014","Ankara","Turkey",1,2011,"University of Cassino","Cassino","Italy",2013
+20829122,2008,"24.06.2013",2.43,"TAI - TUSAŞ","Aerospace & Defense","Quality Systems Engineer","07.09.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20829136,2008,"24.06.2013",2.51,"Sivteks Tekstil","Textiles & Leather Goods","Engineer","0000-00-00","0000-00-00","Adana","Turkey",NA,NA,"","","",2013
+20829141,2008,"24.06.2013",2.38,"Özgüç Ambalaj","Paper Packaging","Production & Control Engineer","01.10.2014","0000-00-00","Antalya","Turkey",NA,NA,"","","",2013
+20829141,2008,"24.06.2013",2.38,"Von Hotels","Hotels, Motels & Cruiselines","Purchasing Engineer","01.09.2013","31.10.2014","Antalya","Turkey",NA,NA,"","","",2013
+20829155,2008,"24.06.2013",3.51,"Plascam","Auto, Truck & Motorcycle Parts & Service","Quality Assurance Engineer","04.08.2014","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2013
+20829155,2008,"24.06.2013",3.51,"Mutlu AKÜ","Auto, Truck & Motorcycle Parts & Service","Process Quality Engineer","21.08.2017","0000-00-00","","Turkey",NA,NA,"","","",2013
+20829169,2008,"24.06.2013",2.66,"Vodafone","Telecommunication Services","BI Strategy&Planning Manager","01.10.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20829169,2008,"24.06.2013",2.66,"Garanti Emeklilik ve Hayat","Insurance Brokers","Business Analyst","22.07.2013","14.10.2016","İstanbul","Turkey",NA,NA,"","","",2013
+20829169,2008,"24.06.2013",2.66,"Vodafone","Telecommunication Services","Data Modeller/BI PRoduct Owner","17.10.2016","01.10.2019","İstanbul","Turkey",NA,NA,"","","",2013
+20829193,2008,"05.06.2015",2.14,"KPMG","Consulting","IT Advisory Analyst","14.09.2015","01.03.2019","İstanbul","Turkey",NA,NA,"","","",2015
+20829193,2008,"05.06.2015",2.14,"Barikat Internet Güvenliği Bilişim","IT Services & Consulting","Security Analysis and Compliance Services Expert","04.03.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+20900748,2009,"09.06.2014",2.71,"Sekiza Savunma, Havacılık ve Uzay Teknolojileri","Aerospace & Defense","Project Assistant","27.08.2014","16.01.2015","Ankara","Turkey",NA,NA,"","","",2014
+20900748,2009,"09.06.2014",2.71,"TAI - TUSAŞ","Aerospace & Defense","Business Planning Specialist","20.10.2015","30.06.2019","Ankara","Turkey",NA,NA,"","","",2014
+20900748,2009,"09.06.2014",2.71,"TAI - TUSAŞ","Aerospace & Defense","Advanced Planning and Scheduling Engineer","01.07.2019","26.06.2020","Ankara","Turkey",NA,NA,"","","",2014
+20900748,2009,"09.06.2014",2.71,"Vanderlande","Other","Project Planner","01.12.2020","0000-00-00","Eindhoven","Netherlands",NA,NA,"","","",2014
+20900772,2009,"28.08.2015",2.75,"JD.ID","Computer Hardware","Merchandiser","07.11.2016","0000-00-00","","Indonesia",NA,NA,"","","",2015
+20900772,2009,"28.08.2015",2.75,"JD.ID","Computer Hardware","Management Trainee","02.11.2015","04.11.2016","","Indonesia",NA,NA,"","","",2015
+20929317,2009,"09.06.2014",3.08,"ASELSAN","Aerospace & Defense","R&D Planning Engineer","23.03.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929322,2009,"09.06.2014",2.69,"Huawei Telekomünikasyon","Telecommunication Services","Assistant Specialist","10.11.2015","19.01.2017","Ankara","Turkey",NA,NA,"","","",2014
+20929322,2009,"09.06.2014",2.69,"Vestel","Consumer Electronics","Business Development & Planning Specialist","18.09.2014","31.07.2015","Manisa","Turkey",NA,NA,"","","",2014
+20929322,2009,"09.06.2014",2.69,"Ernst & Young","Consulting","Analyst","22.01.2018","27.07.2018","Ankara","Turkey",NA,NA,"","","",2014
+20929322,2009,"09.06.2014",2.69,"İnnova","Software","Business Analyst","01.08.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929336,2009,"09.06.2014",2.5,"Akbank","Banks","Auditor","05.01.2015","19.01.2018","İstanbul","Turkey",NA,NA,"","","",2014
+20929336,2009,"09.06.2014",2.5,"SSB - Savunma Sanayii Başkanlığı","Aerospace & Defense","Project Engineer","01.02.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929341,2009,"09.06.2014",2.54,"Doğuş Otomotiv","Auto, Truck & Motorcycle Parts & Service","Sales Engineer","25.08.2014","0000-00-00","Bursa","Turkey",NA,NA,"","","",2014
+20929355,2009,"09.06.2014",3.12,"TAI - TUSAŞ","Aerospace & Defense","Procurement Specialist","17.11.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929369,2009,"09.06.2014",3.73,"Vodafone","Telecommunication Services","Management Trainee","14.07.2014","14.07.2015","İstanbul","Turkey",NA,NA,"","","",2014
+20929369,2009,"09.06.2014",3.73,"Vodafone","Telecommunication Services","Product Specialist","14.07.2015","31.03.2016","İstanbul","Turkey",NA,NA,"","","",2014
+20929369,2009,"09.06.2014",3.73,"Vodafone","Telecommunication Services","Product Associate Manager","01.04.2016","01.08.2016","İstanbul","Turkey",NA,NA,"","","",2014
+20929369,2009,"09.06.2014",3.73,"Vodafone","Telecommunication Services","Marketing Associate Manager","01.08.2016","29.11.2017","İstanbul","Turkey",NA,NA,"","","",2014
+20929369,2009,"09.06.2014",3.73,"Kariyer.net","Employment Services","Marketing Manager","04.12.2017","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2014
+20929388,2009,"09.06.2014",3.15,"Necmettin Erbakan University","Education","Research Assistant","02.12.2014","0000-00-00","Konya","Turkey",NA,NA,"","","",2014
+20929393,2009,"24.06.2013",2.55,"Ziraat Teknoloji","Software","Business Analyst","13.04.2015","15.02.2016","İstanbul","Turkey",NA,NA,"","","",2013
+20929393,2009,"24.06.2013",2.55,"TÜBİTAK","Public Sector","Business Analyst","26.12.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20929408,2009,"09.06.2014",3.17,"Vakıflar Bankası","Banks","Engineer","0000-00-00","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2014
+20929432,2009,"28.02.2015",2.61,"TAI - TUSAŞ","Aerospace & Defense","Project Engineer","18.07.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+20929432,2009,"28.02.2015",2.61,"TOBB University of Economics and Technology","Education","Research Assistant","20.07.2015","15.07.2016","Ankara","Turkey",NA,NA,"","","",2015
+20929446,2009,"24.06.2013",3.46,"Türkiye İş Bankası","Banks","Specialist","05.08.2013","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+20929465,2009,"09.06.2014",3.07,"Vestel Elektronik","Consumer Electronics","Planning Engineer","02.10.2014","20.11.2015","Manisa","Turkey",NA,NA,"","","",2014
+20929465,2009,"09.06.2014",3.07,"Power-Packer Turkey","Auto, Truck & Motorcycle Parts & Service","Expeditor","23.11.2015","0000-00-00","Manisa","Turkey",NA,NA,"","","",2014
+20929484,2009,"09.06.2014",3.14,"Erciyes University","Education","Research Assistant","15.12.2014","15.03.2023","Kayseri","Turkey",NA,NA,"","","",2014
+20929484,2009,"09.06.2014",3.14,"Leiden University","Education","Researcher","01.06.2023","0000-00-00","Leiden","Netherlands",NA,NA,"","","",2014
+20929498,2009,"08.01.2016",2.8,"Kitapçı Dergisi","Publishing","Editor","12.05.2012","31.12.2015","İstanbul","Turkey",NA,NA,"","","",2016
+20929498,2009,"08.01.2016",2.8,"MİTAŞ Endüstri","Steel","Planning Team Leader","01.03.2016","15.01.2020","Ankara","Turkey",NA,NA,"","","",2016
+20929498,2009,"08.01.2016",2.8,"TAI - TUSAŞ","Aerospace & Defense","Subcontract Administrator","20.01.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+20929506,2009,"09.06.2014",2.59,"İnan Danışmanlık","Consulting","Engineer","01.06.2014","01.11.2014","Mersin","Turkey",NA,NA,"","","",2014
+20929506,2009,"09.06.2014",2.59,"Arena System ERP Yazılım ve Yönetim Danışmanlık","Software","Company Official","01.04.2016","0000-00-00","Mersin","Turkey",NA,NA,"","","",2014
+20929511,2009,"24.06.2013",3.18,"THY - Türk Hava Yolları","Airlines","Specialist","21.07.2014","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2013
+20929525,2009,"03.02.2015",3.28,"BOSCH","Consumer Electronics","Production & Planning Engineer","15.12.2015","15.09.2018","Bursa","Turkey",1,2013,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2015
+20929539,2009,"09.06.2014",3.53,"KPMG","Consulting","Resource Planning & Reporting Specialist","04.08.2014","15.07.2016","İstanbul","Turkey",NA,NA,"","","",2014
+20929539,2009,"09.06.2014",3.53,"Enerjisa","Electric Utilities","Business Development Specialist","18.07.2016","17.11.2017","İstanbul","Turkey",NA,NA,"","","",2014
+20929539,2009,"09.06.2014",3.53,"Yapı ve Kredi Bankası","Banks","Business Development Specialist","04.12.2017","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2014
+20929544,2009,"24.06.2014",2.92,"Decathlon","Department Stores","Retail Supplier","02.02.2015","0000-00-00","İstanbul","Turkey",1,2012,"University of Cassino","Cassino","Italy",2014
+20929544,2009,"24.06.2014",2.92,"Decathlon","Department Stores","Supply Chain Team Leader","26.10.2016","0000-00-00","İstanbul","Turkey",1,2012,"University of Cassino","Cassino","Italy",2014
+20929558,2009,"09.06.2014",2.64,"T.C. Milli Savunma Bakanlığı","Public Sector","Production & Control Engineer","07.01.2020","0000-00-00","Kayseri","Turkey",NA,NA,"","","",2014
+20929558,2009,"09.06.2014",2.64,"FERRA Filter","Auto Vehicles, Parts & Service Retailers","Customer Account Manager","09.10.2017","20.12.2019","Osmaniye","Turkey",NA,NA,"","","",2014
+20929563,2009,"09.06.2014",3.27,"Decathlon","Department Stores","Logistics Department Manager","06.08.2014","29.02.2016","Gebze","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+20929563,2009,"09.06.2014",3.27,"Decathlon","Department Stores","Decathlon fast-paced MBA (HOPE Project)","01.03.2016","30.06.2016","Lille","France",1,2012,"University of Malaga","Malaga","Spain",2014
+20929563,2009,"09.06.2014",3.27,"Decathlon","Department Stores","Store Department Manager","01.07.2016","31.12.2016","İstanbul","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+20929563,2009,"09.06.2014",3.27,"Decathlon","Department Stores","Demand & Supply Planner","01.01.2017","17.04.2020","İstanbul","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+20929563,2009,"09.06.2014",3.27,"Coca-Cola İçecek","Beverages","Customer Supply Chain Specialist","20.04.2020","20.11.2020","Istanbul","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+20929563,2009,"09.06.2014",3.27,"IKEA","Home Furnishing","Need Planner","01.12.2020","0000-00-00","Almhult","Sweden",1,2012,"University of Malaga","Malaga","Spain",2014
+20929577,2009,"09.06.2014",3.29,"T.C. Ekonomi Bakanlığı","Public Sector","Assistant Specialist","01.03.2015","01.11.2017","Ankara","Turkey",NA,NA,"","","",2014
+20929577,2009,"09.06.2014",3.29,"TCMB - Türkiye Cumhuriyet Merkez Bankası","Banks","Assistant Specialist","01.11.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929582,2009,"05.06.2015",2.86,"THY - Türk Hava Yolları","Airlines","Specialist","04.04.2016","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+20929582,2009,"05.06.2015",2.86,"Yeryüzü Doktorları","Non-profit Organization","Quality & Corporate Development Manager","23.09.2014","29.02.2016","İstanbul","Turkey",NA,NA,"","","",2015
+20929596,2009,"02.06.2017",2.53,"TEI","Aerospace & Defense","Supplier Development Engineer","08.11.2017","0000-00-00","Eskişehir","Turkey",NA,NA,"","","",2017
+20929602,2009,"09.06.2014",3.73,"TSKGV - Türk Silahlı Kuvvetlerini Güçlendirme Vakfı","Aerospace & Defense","Specialist","17.12.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929602,2009,"09.06.2014",3.73,"Türkiye Teknoloji Geliştirme Vakfı","Other","Specialist","14.12.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929602,2009,"09.06.2014",3.73,"Türkiye Teknoloji Geliştirme Vakfı","Other","Specialist","14.12.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929616,2009,"09.06.2014",3.31,"Hazine Müsteşarlığı","Public Sector","Contract Manager","13.10.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929616,2009,"09.06.2014",3.31,"Bilgi Teknolojileri ve İletişim Kurumu","Public Sector","Assistant Expert","15.09.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929621,2009,"09.06.2014",3.18,"Atilla Makine","Construction & Engineering","Budget Planning Engineer","25.08.2014","12.06.2015","Ankara","Turkey",NA,NA,"","","",2014
+20929621,2009,"09.06.2014",3.18,"Atilla Makine","Construction & Engineering","Project Planning Engineer","15.06.2015","04.08.2017","İzmir","Turkey",NA,NA,"","","",2014
+20929621,2009,"09.06.2014",3.18,"Atilla Makine","Construction & Engineering","Planning Engineer","07.08.2017","0000-00-00","Samsun","Turkey",NA,NA,"","","",2014
+20929635,2009,"09.06.2014",3.5,"ASELSAN","Aerospace & Defense","Production & Control Engineer","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929649,2009,"09.06.2014",2.56,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","08.07.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929654,2009,"09.06.2014",3.34,"ORS Bearings","Industrial Machinery & Equipment","SAP Project Engineer","15.09.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929654,2009,"09.06.2014",3.34,"Yandex Turkey","Software","Assessor","05.11.2012","12.06.2015","Ankara","Turkey",NA,NA,"","","",2014
+20929654,2009,"09.06.2014",3.34,"ASELSAN","Aerospace & Defense","Project Management Engineer","07.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929668,2009,"09.06.2014",3.19,"Mavinci Bilişim","Software","Business Analyst","01.04.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+20929673,2009,"20.01.2017",2.9,"TURKplast Sağlık Ürünleri","Healthcare Facilities & Services","Production Planning & Control Specialist","11.05.2017","29.08.2018","Ankara","Turkey",NA,NA,"","","",2017
+20929673,2009,"20.01.2017",2.9,"MİTAŞ Endüstri","Steel","Planning Engineer","03.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+20929687,2009,"09.06.2014",3.22,"Turgut Ozal University","Education","Research Assistant","12.01.2015","23.07.2016","Ankara","Turkey",NA,NA,"","","",2014
+20929687,2009,"09.06.2014",3.22,"Başkent University","Education","Research Assistant","19.10.2016","31.12.2018","Ankara","Turkey",NA,NA,"","","",2014
+20929687,2009,"09.06.2014",3.22,"SunExpress","Air Freight & Courier Services","Crew Resource Planning Assistant Specialist","01.04.2019","31.01.2022","Antalya","Turkey",NA,NA,"","","",2014
+20929687,2009,"09.06.2014",3.22,"SunExpress","Air Freight & Courier Services","Operational Planning Engineer","01.02.2022","0000-00-00","Antalya","Turkey",NA,NA,"","","",2014
+20929712,2009,"29.09.2014",2.33,"Kale Seramik Çanakkale Seramik Kalebodu","Home Furnishing","Production & Planning Engineer","16.03.2015","0000-00-00","Çanakkale","Turkey",NA,NA,"","","",2014
+20970151,2009,"13.06.2011",3.4,"TOBB University of Economics and Technology","Education","Research Assistant","06.09.2011","10.03.2015","Ankara","Turkey",NA,NA,"","","",2011
+20970151,2009,"13.06.2011",3.4,"T.C. Ekonomi Bakanlığı","Public Sector","Assistant Foreign Trade Expert","11.03.2015","10.07.2018","Ankara","Turkey",NA,NA,"","","",2011
+20970151,2009,"13.06.2011",3.4,"T.C. Ticaret Bakanlığı","Public Sector","Trade Expert","10.07.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2011
+20970321,2009,"04.06.2012",3.33,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","Truck Operating System & Kaizen Coordinator","01.01.2012","31.12.2014","Aksaray","Turkey",NA,NA,"","","",2012
+20970321,2009,"04.06.2012",3.33,"ABB","Electrical Components & Equipment","Value Chain Engineer","02.10.2017","0000-00-00","Turgi","Switzerland",NA,NA,"","","",2012
+20970354,2009,"04.06.2012",3.23,"UNILEVER","Personal Products","Management Trainee","11.07.2012","07.03.2014","İstanbul","Turkey",NA,NA,"","","",2012
+20970354,2009,"04.06.2012",3.23,"ASELSAN","Aerospace & Defense","Planning Engineer","11.03.2014","0000-00-00","Ankara","Turkey",NA,NA,"","","",2012
+21000532,2010,"05.06.2015",2.45,"Akakçe","IT Services & Consulting","Project Manager","07.10.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030179,2010,"05.06.2015",3.47,"Gülermak","Construction & Engineering","ERP Project Engineer","02.11.2015","03.06.2016","Ankara","Turkey",NA,NA,"","","",2015
+21030179,2010,"05.06.2015",3.47,"ASELSAN","Aerospace & Defense","Planning Engineer","14.06.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030198,2010,"12.02.2016",2.46,"NUVE Eğitim Danışmanlık","Consulting","General Coordinator","07.11.2011","27.07.2012","Ankara","Turkey",NA,NA,"","","",2016
+21030198,2010,"12.02.2016",2.46,"BSM Finansal Danışmanlık","Consulting","Foreign Trade Manager","06.08.2012","01.03.2013","Ankara","Turkey",NA,NA,"","","",2016
+21030198,2010,"12.02.2016",2.46,"AltınKüre Eğitim ve Danışmanlık","Consulting","Chief Executive Officer","06.05.2013","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21030204,2010,"05.06.2015",2.54,"Vendeka Information Technologies","IT Services & Consulting","Engineer","24.08.2014","23.10.2014","Ankara","Turkey",NA,NA,"","","",2015
+21030204,2010,"05.06.2015",2.54,"SURATAM - Sürdürülebilir Üretim ArGe ve Tasarım Merkezi","Environmental Services","Business Development Specialist","02.05.2017","11.10.2018","İstanbul","Turkey",NA,NA,"","","",2015
+21030204,2010,"05.06.2015",2.54,"Doğa HSE Group","Consulting","Operational Excellence Manager","05.11.2018","05.05.2019","İstanbul","Turkey",NA,NA,"","","",2015
+21030204,2010,"05.06.2015",2.54,"Migros Ticaret","Retail Supermarket","Consultant","13.05.2019","04.02.2021","İstanbul","Turkey",NA,NA,"","","",2015
+21030204,2010,"05.06.2015",2.54,"KPMG","Consulting","Sustainability Consultant","15.02.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+21030218,2010,"05.06.2015",2.77,"Vestel","Consumer Electronics","Procurement Specialist","20.04.2016","27.04.2018","Manisa","Turkey",NA,NA,"","","",2015
+21030218,2010,"05.06.2015",2.77,"Vestel","Consumer Electronics","Method Specialist","29.04.2018","0000-00-00","Manisa","Turkey",NA,NA,"","","",2015
+21030237,2010,"05.06.2015",3.09,"ASELSAN","Aerospace & Defense","Engineer","04.01.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030242,2010,"05.06.2015",2.83,"ETİ Gıda Sanayi ve Ticaret","Food Processing","Sales & Logistics Operations Engineer","28.09.2015","27.11.2017","Ankara","Turkey",NA,NA,"","","",2015
+21030242,2010,"05.06.2015",2.83,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","After Sales Logistics Engineer","18.07.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030256,2010,"05.06.2015",2.84,"Borusan Logistics","Logistics and Freight Transportation","Planning Engineer","28.12.2015","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+21030275,2010,"08.01.2016",2.39,"Uysal Makina","Construction & Engineering","Production Engineer","0000-00-00","0000-00-00","İzmir","Turkey",NA,NA,"","","",2016
+21030294,2010,"05.06.2015",2.95,"Schneider Electric","Electrical Components & Equipment","Production & Material Planning Engineer","20.12.2015","20.01.2017","İzmir","Turkey",NA,NA,"","","",2015
+21030294,2010,"05.06.2015",2.95,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Production & Material Planning Engineer","20.01.2017","26.10.2017","Ankara","Turkey",NA,NA,"","","",2015
+21030294,2010,"05.06.2015",2.95,"ASELSAN","Aerospace & Defense","Project Planning Engineer","08.11.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030309,2010,"05.06.2015",2.76,"Etiya Bilgi Teknolojileri","IT Services & Consulting","Business Analyst","18.01.2016","27.07.2018","Ankara","Turkey",NA,NA,"","","",2015
+21030309,2010,"05.06.2015",2.76,"TCMB - Türkiye Cumhuriyet Merkez Bankası","Banks","Governance, Risk and Compliance Specialist","27.08.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030314,2010,"05.06.2015",3.51,"TOFAŞ Turkish Automotive Company","Auto, Truck & Motorcycle Manufacturers","Prova Plus Trainee","10.02.2015","29.05.2015","Bursa","Turkey",NA,NA,"","","",2015
+21030314,2010,"05.06.2015",3.51,"Gülermak","Construction & Engineering","ERP Specialist","02.11.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030328,2010,"05.06.2015",2.55,"DNC Construction","Construction & Engineering","Planning Engineer","06.07.2015","11.12.2015","Tekirdağ","Turkey",NA,NA,"","","",2015
+21030328,2010,"05.06.2015",2.55,"Koleksiyon Furniture","Home Furnishing","Planning Specialist","05.12.2016","21.08.2017","Tekirdağ","Turkey",NA,NA,"","","",2015
+21030328,2010,"05.06.2015",2.55,"ELK Motor","Electrical Components & Equipment","Production Planning Engineer","18.09.2017","28.06.2019","Tekirdağ","Turkey",NA,NA,"","","",2015
+21030328,2010,"05.06.2015",2.55,"B/S/H/ Home Appliances Group","Appliances, Tools & Housewares","Material Planning Engineer","08.07.2019","05.09.2019","Tekirdağ","Turkey",NA,NA,"","","",2015
+21030328,2010,"05.06.2015",2.55,"ELK Motor","Electrical Components & Equipment","Production Planning Engineer","23.09.2019","01.06.2020","Tekirdağ","Turkey",NA,NA,"","","",2015
+21030328,2010,"05.06.2015",2.55,"ELK Motor","Electrical Components & Equipment","Production Planning Team Leader","01.06.2020","0000-00-00","Tekirdağ","Turkey",NA,NA,"","","",2015
+21030333,2010,"09.06.2014",3.38,"Oyak-Renault Otomobil Fabrikaları","Auto, Truck & Motorcycle Manufacturers","Quality Responsible","15.09.2014","0000-00-00","Bursa","Turkey",NA,NA,"","","",2014
+21030347,2010,"05.06.2015",3.39,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","01.03.2016","03.03.2018","Ankara","Turkey",NA,NA,"","","",2015
+21030347,2010,"05.06.2015",3.39,"ASELSAN","Aerospace & Defense","Project Engineer","03.03.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030366,2010,"12.02.2016",2.5,"Enerjisa","Electric Utilities","SAP Consultant","25.07.2016","30.11.2018","Ankara","Turkey",NA,NA,"","","",2016
+21030366,2010,"12.02.2016",2.5,"HAVELSAN","Aerospace & Defense","SAP Consultant","03.12.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21030371,2010,"05.06.2015",3.31,"Radyo Hacettepe","Broadcasting","Radio Programmer/Coordinator","01.08.2010","01.01.2015","Ankara","Turkey",NA,NA,"","","",2015
+21030371,2010,"05.06.2015",3.31,"ETİ Gıda Sanayi ve Ticaret","Food Processing","SAP Business Processes Engineer","01.10.2015","24.12.2015","Eskişehir","Turkey",NA,NA,"","","",2015
+21030371,2010,"05.06.2015",3.31,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","08.02.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030385,2010,"05.06.2015",3.34,"Enerjisa","Electric Utilities","Specialist","21.12.2015","21.04.2017","Ankara","Turkey",NA,NA,"","","",2015
+21030385,2010,"05.06.2015",3.34,"ASELSAN","Aerospace & Defense","Assistant Specialist","24.04.2017","31.07.2018","Ankara","Turkey",NA,NA,"","","",2015
+21030385,2010,"05.06.2015",3.34,"ASELSAN","Aerospace & Defense","Project Management Engineer","01.08.2018","02.02.2020","Ankara","Turkey",NA,NA,"","","",2015
+21030385,2010,"05.06.2015",3.34,"Koç Bilgi ve Savunma","Aerospace & Defense","Project Manager","18.07.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030385,2010,"05.06.2015",3.34,"TÜBİTAK - Sage","Aerospace & Defense","Project Management Specialist","03.02.2020","14.07.2022","Ankara","Turkey",NA,NA,"","","",2015
+21030399,2010,"09.06.2014",3.1,"HAVELSAN","Aerospace & Defense","SAP Business Processes Engineer","01.05.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2014
+21030399,2010,"09.06.2014",3.1,"Bilkent Holding","Industrial Conglomerates","SAP Consultant","16.03.2015","31.03.2016","Ankara","Turkey",NA,NA,"","","",2014
+21030405,2010,"05.06.2015",3.08,"Kuveyt Türk Katılım Bankası","Banks","Process Development Specialist","03.08.2015","31.12.2017","Kocaeli","Turkey",NA,NA,"","","",2015
+21030405,2010,"05.06.2015",3.08,"ASAŞ Alüminyum","Aluminum","Process Development Specialist","02.01.2018","01.03.2019","Sakarya","Turkey",NA,NA,"","","",2015
+21030405,2010,"05.06.2015",3.08,"ASAŞ Alüminyum","Aluminum","Production Planning Engineer","01.03.2019","0000-00-00","Sakarya","Turkey",NA,NA,"","","",2015
+21030419,2010,"05.06.2015",2.98,"Martur Automotive Seating and Interiors","Auto, Truck & Motorcycle Parts & Service","SAP Industrial Process Development Asst. Specialist","09.11.2015","0000-00-00","Bursa","Turkey",NA,NA,"","","",2015
+21030424,2010,"05.06.2015",2.65,"BPlas Bursa Plastik Metal","Auto, Truck & Motorcycle Parts & Service","Cost & Improvement Engineer","01.09.2015","01.01.2017","Bursa","Turkey",NA,NA,"","","",2015
+21030424,2010,"05.06.2015",2.65,"Coşkunöz","Auto, Truck & Motorcycle Parts & Service","Sales Engineer","02.01.2017","0000-00-00","Bursa","Turkey",NA,NA,"","","",2015
+21030438,2010,"05.06.2015",2.81,"Ekol Lojistik","Logistics and Freight Transportation","Assistant Business Development Specialist","17.08.2015","04.04.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21030438,2010,"05.06.2015",2.81,"Eczacıbaşı Tüketim Ürünleri Grubu","Construction Materials, Supplies & Fittings","Logistics Process Development Assistant Specialist","04.04.2016","05.12.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21030438,2010,"05.06.2015",2.81,"Getinge Group","Healthcare Facilities & Services","Process Engineer","05.12.2016","0000-00-00","Antalya","Turkey",NA,NA,"","","",2015
+21030443,2010,"05.06.2015",2.92,"Decathlon","Department Stores","Retail Supplier","14.09.2015","30.09.2016","İstanbul","Turkey",1,2013,"University of Malaga","Malaga","Spain",2015
+21030443,2010,"05.06.2015",2.92,"Samsung Electronics Turkey","Consumer Electronics","Supply Chain Specialist","02.10.2016","0000-00-00","İstanbul","Turkey",1,2013,"University of Malaga","Malaga","Spain",2015
+21030443,2010,"05.06.2015",2.92,"Samsung Electronics Turkey","Consumer Electronics","Product Marketing Specialist","01.04.2018","10.07.2018","İstanbul","Turkey",1,2013,"University of Malaga","Malaga","Spain",2015
+21030443,2010,"05.06.2015",2.92,"TAI - TUSAŞ","Aerospace & Defense","Enterprise Process Management Engineer","06.08.2018","30.01.2019","Ankara","Turkey",1,2013,"University of Malaga","Malaga","Spain",2015
+21030443,2010,"05.06.2015",2.92,"Doğadan Gıda","Food Processing","Demand Planning Executive","05.08.2019","0000-00-00","Ankara","Turkey",1,2013,"University of Malaga","Malaga","Spain",2015
+21030457,2010,"05.06.2015",2.43,"THY - Türk Hava Yolları","Airlines","Engineer","18.04.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030462,2010,"09.06.2014",3.58,"Hacettepe University","Education","Research Assistant","01.12.2014","14.07.2017","Ankara","Turkey",NA,NA,"","","",2014
+21030462,2010,"09.06.2014",3.58,"Technische Universiteit Eindhoven","Education","PhD Candidate","01.09.2017","0000-00-00","Eindhoven","Netherlands",NA,NA,"","","",2014
+21030481,2010,"05.06.2015",3,"GTS Brake Systems","Auto Vehicles, Parts & Service Retailers","Production Planning & Control Specialist","04.01.2016","10.09.2018","Konya","Turkey",NA,NA,"","","",2015
+21030481,2010,"05.06.2015",3,"Filkar Otomotiv","Auto, Truck & Motorcycle Manufacturers","Quality Assurance Engineer","10.09.2018","0000-00-00","Konya","Turkey",NA,NA,"","","",2015
+21030495,2010,"05.06.2015",2.77,"Organik İnsan Kaynakları ve Danışmanlık","Consulting","Project Manager","05.08.2016","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+21030495,2010,"05.06.2015",2.77,"İnfoloji Kurumsal Danışmanlık","Consulting","Business Development Specialist","28.07.2015","05.08.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21030516,2010,"05.06.2015",3.06,"IKEA","Home Furnishing","Team Member","01.08.2012","01.10.2012","Ankara","Turkey",NA,NA,"","","",2015
+21030516,2010,"05.06.2015",3.06,"Danone","Food Processing","Assistant Supply Planning Executive","03.08.2015","04.11.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21030516,2010,"05.06.2015",3.06,"Danone","Food Processing","Assistant Demand Planning Executive","07.11.2016","03.07.2017","İstanbul","Turkey",NA,NA,"","","",2015
+21030516,2010,"05.06.2015",3.06,"Danone","Food Processing","Demand Planning Executive","03.07.2017","01.04.2019","İstanbul","Turkey",NA,NA,"","","",2015
+21030516,2010,"05.06.2015",3.06,"Danone","Food Processing","Profitable Revenue Growth Management Executive","01.04.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+21030521,2010,"19.01.2015",2.73,"Hacettepe University","Education","Research Assistant","25.10.2018","14.09.2020","Ankara","Turkey",NA,NA,"","","",2015
+21030535,2010,"05.06.2015",2.57,"Özel Çakabey Okulları","Education","Evaluate & Planning Manager","01.02.2016","0000-00-00","İzmir","Turkey",NA,NA,"","","",2015
+21030549,2010,"12.02.2016",2.18,"Turkuaz Seramik","Ceramics","Planning Engineer","18.07.2016","05.09.2016","Kayseri","Turkey",NA,NA,"","","",2016
+21030549,2010,"12.02.2016",2.18,"Enerjisa","Electric Utilities","SAP Consultant","19.09.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21030554,2010,"09.06.2014",3.14,"T.C. Ziraat Bankası","Banks","Auditor","05.08.2014","28.10.2015","İstanbul","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+21030554,2010,"09.06.2014",3.14,"THY - Türk Hava Yolları","Airlines","Project Development Specialist","02.11.2015","06.04.2017","Ankara","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+21030554,2010,"09.06.2014",3.14,"ASELSAN","Aerospace & Defense","Project Management Engineer","11.04.2017","0000-00-00","Ankara","Turkey",1,2012,"University of Malaga","Malaga","Spain",2014
+21030568,2010,"05.06.2015",2.97,"T.C. Kalkınma Bakanlığı","Public Sector","Assistant Specialist","15.06.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21030587,2010,"08.01.2016",2.64,"Nokia","Telecommunication Services","Project Financial Controller","01.11.2016","30.09.2019","Anvers","Belgium",NA,NA,"","","",2016
+21030587,2010,"08.01.2016",2.64,"VF Corporation","Apparel & Accessories","Business Analyst","12.11.2019","0000-00-00","Bornem","Belgium",NA,NA,"","","",2016
+21030592,2010,"29.09.2017",2.63,"WEBHRAIN Software","Software","Boss","16.10.2017","0000-00-00","Doha","Qatar",NA,NA,"","","",2017
+21030607,2010,"05.06.2015",2.96,"LC Waikiki","Textiles & Leather Goods","Assistant Merchandiser","04.01.2016","06.06.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21030607,2010,"05.06.2015",2.96,"Arçelik","Consumer Electronics","Industrial Engineer","06.06.2016","30.05.2019","İstanbul","Turkey",NA,NA,"","","",2015
+21030607,2010,"05.06.2015",2.96,"Arçelik","Consumer Electronics","Specialist- Production Technologies & Industry 4.0","30.05.2019","01.06.2019","İstanbul","Turkey",NA,NA,"","","",2015
+21030607,2010,"05.06.2015",2.96,"Arçelik","Consumer Electronics","Specialist-Simulation and Modelling","01.06.2019","01.05.2021","İstanbul","Turkey",NA,NA,"","","",2015
+21030607,2010,"05.06.2015",2.96,"Arçelik","Consumer Electronics","Specialist - Logistics Engineering","01.05.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+21030612,2010,"09.06.2014",2.67,"EMEK Electrical Industry","Electrical Components & Equipment","Quality Control Engineer","28.08.2014","21.12.2014","Ankara","Turkey",NA,NA,"","","",2014
+21030612,2010,"09.06.2014",2.67,"EMEK Electrical Industry","Electrical Components & Equipment","Production & Planning Engineer","21.12.2014","28.07.2017","Ankara","Turkey",NA,NA,"","","",2014
+21030612,2010,"09.06.2014",2.67,"Arçelik","Consumer Electronics","International Order Management Associate","20.11.2017","17.01.2020","İstanbul","Turkey",NA,NA,"","","",2014
+21030612,2010,"09.06.2014",2.67,"IKEA","Home Furnishing","Supply Planner","20.01.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2014
+21030626,2010,"05.06.2015",3.3,"Erdemir Demir Çelik","Steel","Management Systems Engineer","28.09.2015","16.09.2016","Zonguldak","Turkey",NA,NA,"","","",2015
+21030626,2010,"05.06.2015",3.3,"Erdemir Demir Çelik","Steel","Operational Excellence Specialist","19.09.2016","28.06.2018","Zonguldak","Turkey",NA,NA,"","","",2015
+21030626,2010,"05.06.2015",3.3,"TAI - TUSAŞ","Aerospace & Defense","Continuous Improvement Engineer","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21072951,2010,"08.07.2013",2.94,"ASELSAN","Aerospace & Defense","Production & Control Engineer","16.11.2015","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+21072951,2010,"08.07.2013",2.94,"AFS Boru San.","Construction Materials, Supplies & Fittings","Procurement Specialist","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2013
+21072979,2010,"24.06.2013",2.45,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","17.09.2015","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2013
+21101191,2011,"05.06.2015",3.1,"LUT - Lappeenranta University of Technology","Education","Research Assistant","01.03.2017","0000-00-00","Lappeenranta","Finland",NA,NA,"","","",2015
+21130346,2011,"11.06.2018",2.75,"MIP","Logistics and Freight Transportation","Procces Excellance Specialist","07.10.2020","0000-00-00","Mersin","Turkey",NA,NA,"","","",2018
+21130346,2011,"11.06.2018",2.75,"Abalıoğlu Yumurta ve Besicilik","Food Processing","Financial Analyst","23.12.2019","25.09.2020","Denizli","Turkey",NA,NA,"","","",2018
+21130346,2011,"11.06.2018",2.75,"Sanifoam Sünger","Home Furnishing","Quality Engineer","07.01.2019","13.12.2019","Tekirda","Turkey",NA,NA,"","","",2018
+21130351,2011,"20.01.2017",2.95,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Procurement Assistant Specialist","21.10.2016","15.02.2017","Ankara","Turkey",NA,NA,"","","",2017
+21130351,2011,"20.01.2017",2.95,"Vestel","Consumer Electronics","Procurement Engineer","01.11.2017","30.07.2018","Manisa","Turkey",NA,NA,"","","",2017
+21130351,2011,"20.01.2017",2.95,"ASELSAN","Aerospace & Defense","Project Management Engineer","01.08.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21130384,2011,"03.06.2016",3.08,"Türk Eximbank","Banks","Assistant Specialist","15.11.2016","0000-00-00","İstanbul","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130398,2011,"05.06.2015",2.79,"Netmarble","IT Services & Consulting","Product Specialist","06.06.2016","30.12.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21130398,2011,"05.06.2015",2.79,"OneDome","Software","Data Scientist","12.11.2018","31.12.2019","London","United Kingdom",NA,NA,"","","",2015
+21130404,2011,"20.01.2017",2.5,"Pulsar Robotik","Industrial Machinery & Equipment","Back-office Manager","01.08.2017","31.12.2017","Ankara","Turkey",NA,NA,"","","",2017
+21130404,2011,"20.01.2017",2.5,"Enerjisa","Electric Utilities","SAP Consultant","07.08.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21130418,2011,"05.06.2015",3.28,"ETİ Gıda Sanayi ve Ticaret","Food Processing","Senior Demand Planning Specialist","02.11.2015","31.05.2020","İstanbul","Turkey",NA,NA,"","","",2015
+21130418,2011,"05.06.2015",3.28,"ETİ Gıda Sanayi ve Ticaret","Food Processing","Senior Sales Budget Planning and Follow-up Specialist","01.07.2020","02.08.2020","İstanbul","Turkey",NA,NA,"","","",2015
+21130437,2011,"29.09.2015",3.46,"ASELSAN","Aerospace & Defense","Project Engineer","18.04.2018","0000-00-00","Ankara","Turkey",1,2014,"University of Malaga","Malaga","Spain",2015
+21130456,2011,"05.06.2015",2.54,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Sales Technical Engineer","06.07.2015","15.05.2017","Ankara","Turkey",NA,NA,"","","",2015
+21130456,2011,"05.06.2015",2.54,"MAN Truck & Bus AG","Heavy Machinery & Vehicles","Sales Engineer","01.06.2017","0000-00-00","Munich","Germany",NA,NA,"","","",2015
+21130461,2011,"16.08.2016",2.93,"Erzurum Teknik Üniversitesi","Education","Research Assistant","15.06.2020","0000-00-00","Erzurum","Turkey",NA,NA,"","","",2016
+21130501,2011,"28.08.2015",2.54,"Mata Automotive","Auto Vehicles, Parts & Service Retailers","Planning Engineer","21.12.2016","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2015
+21130529,2011,"03.06.2016",3.63,"ASELSAN","Aerospace & Defense","Project Planning & Control","14.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130534,2011,"03.06.2016",2.96,"Akdeniz Elektrik Dağıtım","Electric Utilities","Management Trainee","03.10.2016","01.12.2017","Antalya","Turkey",NA,NA,"","","",2016
+21130534,2011,"03.06.2016",2.96,"Akdeniz Elektrik Dağıtım","Electric Utilities","Process Analyst","01.12.2017","12.07.2018","Antalya","Turkey",NA,NA,"","","",2016
+21130534,2011,"03.06.2016",2.96,"A101","Retail Supermarket","Process Analyst","10.02.2020","0000-00-00","Adana","Turkey",NA,NA,"","","",2016
+21130534,2011,"03.06.2016",2.96,"Koluman Automotive Industry","Auto, Truck & Motorcycle Manufacturers","Logistics Engineer","16.07.2018","07.02.2020","Mersin","Turkey",NA,NA,"","","",2016
+21130553,2011,"01.07.2016",2.68,"Best Alüminyum","Aluminum","Engineer","12.12.2017","21.05.2018","Ankara","Turkey",NA,NA,"","","",2016
+21130567,2011,"03.06.2016",3.55,"TAI - TUSAŞ","Aerospace & Defense","Production Planning & Control Specialist","18.07.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130567,2011,"03.06.2016",3.55,"TAI - TUSAŞ","Aerospace & Defense","Warehouse Management Engineer","25.06.2018","24.03.2019","Ankara","Turkey",NA,NA,"","","",2016
+21130567,2011,"03.06.2016",3.55,"TAI - TUSAŞ","Aerospace & Defense","Fixed-Wing Component Warehouse Chief","24.03.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130586,2011,"22.01.2016",2.73,"Zivella Ofis Mobilyaları","Office Equipment","CRM Specialist","08.12.2015","02.09.2016","İstanbul","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130586,2011,"22.01.2016",2.73,"Vektora Bilişim Sistemleri","Consulting","SAP Consultant","05.09.2016","31.12.2016","İstanbul","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130586,2011,"22.01.2016",2.73,"Remotify.co","IT Services & Consulting","Co-founder","01.01.2019","0000-00-00","İstanbul","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130586,2011,"22.01.2016",2.73,"Voyacon Bilişim Teknolojileri","IT Services & Consulting","SAP Consultant","01.01.2017","0000-00-00","İstanbul","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130591,2011,"03.06.2016",3.82,"BOSCH","Consumer Electronics","Production & Customer Order Planning Engineer","01.07.2016","0000-00-00","Bursa","Turkey",NA,NA,"","","",2016
+21130606,2011,"03.06.2016",3.14,"Eczacıbaşı Tüketim Ürünleri Grubu","Construction Materials, Supplies & Fittings","Logistics Assistant Specialist","01.08.2016","18.05.2017","Yalova","Turkey",NA,NA,"","","",2016
+21130606,2011,"03.06.2016",3.14,"ASELSAN","Aerospace & Defense","Engineer","05.06.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130611,2011,"19.07.2016",3.04,"Gülermak","Construction & Engineering","ERP Project Engineer","13.07.2016","28.05.2018","Ankara","Turkey",NA,NA,"","","",2016
+21130611,2011,"19.07.2016",3.04,"ROKETSAN","Aerospace & Defense","Software Process Management Engineer","06.06.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130625,2011,"02.06.2017",2.59,"Samsung Electronics Turkey","Consumer Electronics","Sales Support Engineer","02.09.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2017
+21130644,2011,"21.06.2018",2.47,"T.C. Milli Savunma Bakanlığı","Public Sector","Assistant Expert","13.10.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21130663,2011,"01.07.2016",2.58,"Arçelik","Consumer Electronics","Project Engineer","01.02.2016","01.06.2016","Ankara","Turkey",NA,NA,"","","",2016
+21130663,2011,"01.07.2016",2.58,"Arçelik","Consumer Electronics","Patent/Trademark Attorney","01.06.2016","13.02.2018","Ankara","Turkey",NA,NA,"","","",2016
+21130663,2011,"01.07.2016",2.58,"Arçelik","Consumer Electronics","Patent/Trademark Attorney","14.02.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2016
+21130677,2011,"08.01.2016",2.96,"Girişim Merkezi","Business Support Services & Supplies","Business Analyst","01.04.2016","06.12.2019","Ankara","Turkey",1,2014,"University of Malaga","Malaga","Spain",2016
+21130677,2011,"08.01.2016",2.96,"ASELSAN","Aerospace & Defense","Project Engineer","09.12.2019","0000-00-00","Ankara","Turkey",1,2014,"University of Malaga","Malaga","Spain",2016
+21130682,2011,"03.06.2016",2.86,"BOSCH","Consumer Electronics","Material Planning Engineer","01.08.2016","04.05.2018","Bursa","Turkey",NA,NA,"","","",2016
+21130682,2011,"03.06.2016",2.86,"İstikbal Mobilya","Home Furnishing","Continuous Improvement Engineer","01.03.2019","0000-00-00","Kayseri","Turkey",NA,NA,"","","",2016
+21130682,2011,"03.06.2016",2.86,"İstikbal Mobilya","Home Furnishing","Foreign Trade Assistant Specialist","14.05.2018","28.02.2019","Kayseri","Turkey",NA,NA,"","","",2016
+21130696,2011,"03.06.2016",2.44,"FTA","Airlines","Production & Control Engineer","05.09.2016","03.11.2016","İzmir","Turkey",NA,NA,"","","",2016
+21130702,2011,"03.06.2016",3.29,"Türkiye İş Bankası","Banks","Auditor","01.08.2016","01.04.2019","İstanbul","Turkey",1,2013,"University of Malaga","Malaga","Spain",2016
+21130702,2011,"03.06.2016",3.29,"Ernst & Young","Consulting","Senior Associate","24.04.2019","01.08.2021","İstanbul","Turkey",1,2013,"University of Malaga","Malaga","Spain",2016
+21130702,2011,"03.06.2016",3.29,"EY UK","Consulting","Executive","18.10.2021","0000-00-00","London","United Kingdom",1,2013,"University of Malaga","Malaga","Spain",2016
+21130702,2011,"03.06.2016",3.29,"Ernst & Young","Consulting","Manager","02.08.2021","30.09.2021","İstanbul","Turkey",1,2013,"University of Malaga","Malaga","Spain",2016
+21130721,2011,"03.06.2016",3.14,"Arçelik","Consumer Electronics","Business Analyst","17.08.2016","0000-00-00","İstanbul","Turkey",1,2014,"University of Malaga","Malaga","Spain",2016
+21130721,2011,"03.06.2016",3.14,"Runecast Solutions","Software","Salesforce Administrator","07.03.2022","0000-00-00","","Turkey",1,2014,"University of Malaga","Malaga","Spain",2016
+21130735,2011,"03.06.2016",3.42,"TAI - TUSAŞ","Aerospace & Defense","Process Management Engineer","04.06.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130754,2011,"05.06.2015",3.41,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","04.04.2016","12.05.2017","Ankara","Turkey",NA,NA,"","","",2015
+21130754,2011,"05.06.2015",3.41,"TAI - TUSAŞ","Aerospace & Defense","Subcontract Administrator","22.05.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21130773,2011,"03.06.2016",3.35,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","Investment Planning Engineer","19.07.2016","22.09.2017","Aksaray","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130773,2011,"03.06.2016",3.35,"ASELSAN","Aerospace & Defense","Planning Engineer","02.10.2017","01.01.2019","Ankara","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130773,2011,"03.06.2016",3.35,"ASELSAN","Aerospace & Defense","Process Quality Engineer","01.01.2019","0000-00-00","Ankara","Turkey",1,2014,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2016
+21130792,2011,"03.06.2016",3.21,"Sarar","Apparel & Accessories","Industrial Engineer","28.06.2017","20.07.2017","Eskişehir","Turkey",NA,NA,"","","",2016
+21130792,2011,"03.06.2016",3.21,"Esgaz","Energy","Management Trainee","19.10.2017","02.02.2018","Eskişehir","Turkey",NA,NA,"","","",2016
+21130792,2011,"03.06.2016",3.21,"SSB - Savunma Sanayii Başkanlığı","Aerospace & Defense","Assistant Specialist","30.04.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21130807,2011,"11.06.2018",3.19,"ESO Recycling S.R.L.","Industrial Machinery & Equipment","Trainee","18.06.2018","0000-00-00","Palermo","Italy",NA,NA,"","","",2018
+21170788,2011,"10.06.2016",2.72,"Türk Telekom","Telecommunication Services","Trade Marketing Assistant Specialist","01.08.2016","01.08.2017","İstanbul","Turkey",NA,NA,"","","",2016
+21170788,2011,"10.06.2016",2.72,"Türk Telekom","Telecommunication Services","Marketing Assistant Specialist","01.08.2017","06.07.2018","İstanbul","Turkey",NA,NA,"","","",2016
+21170788,2011,"10.06.2016",2.72,"Has Food","Food Processing","Planning Specialist","20.11.2018","19.05.2020","Antwerp","Belgium",NA,NA,"","","",2016
+21170788,2011,"10.06.2016",2.72,"Capgemini","IT Services & Consulting","SAP Technical Consultant","06.09.2021","0000-00-00","Brussels","Belgium",NA,NA,"","","",2016
+21171598,2011,"09.06.2014",3.01,"THY - Türk Hava Yolları","Airlines","Specialist","05.02.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2014
+21231797,2012,"02.06.2017",3.32,"TOFAŞ Turkish Automotive Company","Auto, Truck & Motorcycle Manufacturers","Project Intern","03.10.2016","21.05.2017","Bursa","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231797,2012,"02.06.2017",3.32,"BOSCH","Consumer Electronics","Logistics Engineer","02.04.2018","29.08.2018","Bursa","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231797,2012,"02.06.2017",3.32,"TAI - TUSAŞ","Aerospace & Defense","Production Planning & Control Engineer","03.09.2018","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231803,2012,"31.08.2020",2.92,"Aktif Elektroteknik","Electrical Components & Equipment","Method Engineer","07.01.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21231817,2012,"02.06.2017",2.82,"LC Waikiki","Textiles & Leather Goods","Sales Support Responsible","04.01.2015","30.09.2015","Ankara","Turkey",NA,NA,"","","",2017
+21231817,2012,"02.06.2017",2.82,"TAI - TUSAŞ","Aerospace & Defense","Digital Transformation Engineer","07.01.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231822,2012,"02.06.2017",3.42,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","15.11.2017","28.03.2018","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231822,2012,"02.06.2017",3.42,"ASELSAN","Aerospace & Defense","Project Planning Engineer","04.04.2018","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231836,2012,"02.06.2017",3.54,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Internal Logistics & Warehouses Assistant","21.06.2016","12.05.2017","Ankara","Turkey",NA,NA,"","","",2017
+21231836,2012,"02.06.2017",3.54,"Esen Sistem Entegrasyon","Aerospace & Defense","Statistical Data Analytics Specialist","06.08.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231841,2012,"02.06.2017",3.78,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","PEP Trainee","21.09.2016","02.06.2017","Aksaray","Turkey",NA,NA,"","","",2017
+21231841,2012,"02.06.2017",3.78,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","Production & Planning Engineer","10.07.2017","07.09.2018","Aksaray","Turkey",NA,NA,"","","",2017
+21231841,2012,"02.06.2017",3.78,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","24.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231869,2012,"02.06.2017",3.59,"ASELSAN","Aerospace & Defense","Planning Engineer","14.08.2017","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231874,2012,"16.06.2017",2.8,"FNSS Savunma Sistemleri","Aerospace & Defense","Planning Engineer","10.07.2017","0000-00-00","Ankara","Turkey",1,2015,"University of Malaga","Malaga","Spain",2017
+21231888,2012,"02.06.2017",3.05,"ASELSAN","Aerospace & Defense","Project Engineer","05.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231893,2012,"02.06.2017",3.42,"HAVELSAN","Aerospace & Defense","Research & Development Engineer","01.08.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231908,2012,"15.02.2018",2.51,"Tepe Servis ve Yönetim","Business Support Services & Supplies","Portfolio Management Specialist","31.01.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21231913,2012,"02.06.2017",3.24,"Meteksan Savunma","Aerospace & Defense","Project Management Engineer","28.06.2017","19.10.2018","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231913,2012,"02.06.2017",3.24,"TAI - TUSAŞ","Aerospace & Defense","Subcontract Administrator","05.11.2018","08.11.2019","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231913,2012,"02.06.2017",3.24,"Meteksan Savunma","Aerospace & Defense","Project Senior Engineer","11.11.2019","16.06.2023","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231913,2012,"02.06.2017",3.24,"STM","Aerospace & Defense","Project Manager","19.06.2023","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231927,2012,"02.06.2017",3.08,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Part-time Trainee","08.06.2016","18.05.2017","Ankara","Turkey",NA,NA,"","","",2017
+21231927,2012,"02.06.2017",3.08,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Engineer","19.06.2017","20.11.2018","Ankara","Turkey",NA,NA,"","","",2017
+21231927,2012,"02.06.2017",3.08,"ASELSAN","Aerospace & Defense","Process Design and Product Development","22.11.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231932,2012,"02.06.2017",3.27,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","PEP Trainee","21.09.2016","02.06.2017","Aksaray","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231932,2012,"02.06.2017",3.27,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Production Management System Engineer","03.07.2017","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231932,2012,"02.06.2017",3.27,"ASELSAN","Aerospace & Defense","Production Planning & Control Specialist","23.07.2018","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231946,2012,"02.06.2017",3.79,"ROKETSAN","Aerospace & Defense","Long-Term Intern","06.12.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231946,2012,"02.06.2017",3.79,"ROKETSAN","Aerospace & Defense","Research & Development Engineer","22.11.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21231951,2012,"16.06.2017",2.53,"Makim Makina Teknolojileri","Industrial Machinery & Equipment","Quality Systems Engineer","13.05.2019","10.08.2020","Ankara","Turkey",NA,NA,"","","",2017
+21231951,2012,"16.06.2017",2.53,"LC Waikiki","Textiles & Leather Goods","International Store Merchandiser","01.12.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2017
+21231965,2012,"03.06.2016",3,"MotorK","Auto Vehicles, Parts & Service Retailers","Junior Operations Analyst","21.01.2019","30.11.2019","Milano","Italy",NA,NA,"","","",2016
+21231965,2012,"03.06.2016",3,"ProntoPro","IT Services & Consulting","Junior Business Analyst","13.01.2020","07.02.2020","Milano","Italy",NA,NA,"","","",2016
+21231965,2012,"03.06.2016",3,"FlixBus","Passenger Transportation, Ground & Sea","Junior Business Analyst","16.03.2020","0000-00-00","Berlin","Germany",NA,NA,"","","",2016
+21231979,2012,"19.01.2018",2.65,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Industrial Relations & Human Resources Assistant","06.07.2017","30.11.2017","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21231979,2012,"19.01.2018",2.65,"ODS Consulting Group","Consulting","Global Business Development & Export Consultant","09.03.2020","05.03.2021","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21231979,2012,"19.01.2018",2.65,"Polipiyer","Construction Materials, Supplies & Fittings","Senior Business Development Specialist","08.03.2021","0000-00-00","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21231984,2012,"02.06.2017",3.39,"FNSS Savunma Sistemleri","Aerospace & Defense","Production & Planning Engineer","05.09.2017","14.09.2020","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231984,2012,"02.06.2017",3.39,"FNSS Savunma Sistemleri","Aerospace & Defense","R&D And Business Development Engineer","15.09.2020","0000-00-00","Ankara","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21231998,2012,"02.06.2017",2.71,"Bilgi Teknolojileri ve İletişim Kurumu","Public Sector","Engineer","15.09.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232004,2012,"03.06.2016",3.74,"Technische Universiteit Eindhoven","Education","Research Assistant","03.06.2019","0000-00-00","Eindhoven","Netherlands",NA,NA,"","","",2016
+21232037,2012,"02.06.2017",2.97,"TÜBİTAK - Sage","Aerospace & Defense","Researcher","01.02.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232042,2012,"02.06.2017",3.45,"TAI - TUSAŞ","Aerospace & Defense","Production Planning & Control Engineer","05.11.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232061,2012,"02.06.2017",3.25,"Eczacıbaşı Tüketim Ürünleri Grubu","Construction Materials, Supplies & Fittings","Supply Chain Specialist","10.07.2017","01.03.2020","Yalova","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232061,2012,"02.06.2017",3.25,"Eczacıbaşı Tüketim Ürünleri Grubu","Construction Materials, Supplies & Fittings","Trade Marketing Specialist","01.03.2020","0000-00-00","İstanbul","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232089,2012,"02.06.2017",2.74,"Ray Informatics","Software","Co-founder","01.09.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232109,2012,"02.06.2017",2.98,"ASELSAN","Aerospace & Defense","Project Engineer","08.07.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232114,2012,"17.06.2016",2.77,"TEB Türk Ekonomi Bankası","Banks","Business Process Management Assistant Specialist","19.09.2016","11.01.2018","İstanbul","Turkey",NA,NA,"","","",2016
+21232114,2012,"17.06.2016",2.77,"TEB Türk Ekonomi Bankası","Banks","Business Process Management Specialist","14.01.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2016
+21232128,2012,"02.06.2017",3.19,"Eke Tekstil","Textiles & Leather Goods","Production Engineer","01.11.2018","01.01.2019","Denizli","Turkey",NA,NA,"","","",2017
+21232128,2012,"02.06.2017",3.19,"Vatan Tekstil","Textiles & Leather Goods","Production & Control Engineer","01.07.2019","0000-00-00","Denizli","Turkey",NA,NA,"","","",2017
+21232147,2012,"02.06.2017",3.1,"ORS Bearings","Industrial Machinery & Equipment","Purchasing Engineer","05.03.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232147,2012,"02.06.2017",3.1,"SBB - T.C. Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı","Public Sector","Strategy and Budget Assistant Specialist","20.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232152,2012,"04.02.2019",2.73,"Organik İnsan Kaynakları ve Danışmanlık","Consulting","Project Engineer","08.10.2018","13.11.2020","Ankara","Turkey",NA,NA,"","","",2019
+21232152,2012,"04.02.2019",2.73,"Türk Patent Enstitüsü","Public Sector","Patent/Trademark Attorney","30.11.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21232166,2012,"26.08.2019",3.41,"Kanat Boya","Paint","Management Trainee","07.01.2020","30.04.2020","İzmir","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21232166,2012,"26.08.2019",3.41,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","11.05.2020","0000-00-00","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21232171,2012,"02.06.2017",2.63,"THY - Türk Hava Yolları","Airlines","Part-time Trainee","21.09.2016","30.06.2017","İstanbul","Turkey",NA,NA,"","","",2017
+21232171,2012,"02.06.2017",2.63,"THY - Türk Hava Yolları","Airlines","Junior Business Analyst","07.08.2017","31.10.2018","İstanbul","Turkey",NA,NA,"","","",2017
+21232171,2012,"02.06.2017",2.63,"THY - Türk Hava Yolları","Airlines","Global Corporate Account Manager","01.11.2018","16.03.2022","İstanbul","Turkey",NA,NA,"","","",2017
+21232171,2012,"02.06.2017",2.63,"Salesforce","IT Services & Consulting","Trailblazer","15.03.2022","0000-00-00","Remote","Turkey",NA,NA,"","","",2017
+21232171,2012,"02.06.2017",2.63,"Instagram","Advertising & Marketing","Content creator","01.05.2022","0000-00-00","BIRMINGHAM","United Kingdom",NA,NA,"","","",2017
+21232171,2012,"02.06.2017",2.63,"HILTON HOTELS","Leisure & Recreation","Receptionist","30.01.2023","0000-00-00","Birmingham","United Kingdom",NA,NA,"","","",2017
+21232171,2012,"02.06.2017",2.63,"TravelPerk","Software","Customer Care Agent","05.07.2023","0000-00-00","Birmingham","United Kingdom",NA,NA,"","","",2017
+21232185,2012,"06.07.2017",3.18,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Part-time Trainee","21.06.2016","01.02.2017","Ankara","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232185,2012,"06.07.2017",3.18,"CMS Jant ve Makina","Auto, Truck & Motorcycle Parts & Service","Supply Planning Specialist","19.02.2018","05.12.2018","İzmir","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232185,2012,"06.07.2017",3.18,"ASELSAN","Aerospace & Defense","Production Planning & Control Engineer","07.12.2018","0000-00-00","Ankara","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232199,2012,"11.04.2017",3.02,"itelligence Türkiye","IT Services & Consulting","Consultant","29.10.2018","0000-00-00","İstanbul","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232199,2012,"11.04.2017",3.02,"MBIS","IT Services & Consulting","Consultant","23.07.2018","26.10.2018","Ankara","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232199,2012,"11.04.2017",3.02,"MİTAŞ Endüstri","Steel","SAP Consultant","28.05.2017","20.07.2018","Ankara","Turkey",1,2016,"Technical University of Liberec","Liberec","Czech Republic",2017
+21232205,2012,"03.06.2016",3.31,"ASELSAN","Aerospace & Defense","Warehouse Management Engineer","12.09.2018","06.07.2020","Ankara","Turkey",NA,NA,"","","",2016
+21232205,2012,"03.06.2016",3.31,"ASELSAN","Aerospace & Defense","Production Planning Engineer","06.07.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2016
+21232219,2012,"11.06.2018",3.15,"Sanko Makina","Auto, Truck & Motorcycle Manufacturers","Production & Planning Engineer","18.07.2018","13.01.2020","İzmir","Turkey",NA,NA,"","","",2018
+21232219,2012,"11.06.2018",3.15,"Vestel Elektronik","Consumer Electronics","Production Specialist","14.01.2020","0000-00-00","Manisa","Turkey",NA,NA,"","","",2018
+21232224,2012,"25.03.2020",2.61,"Aktif Elektroteknik","Electrical Components & Equipment","Method Engineer","07.01.2019","16.07.2020","Ankara","Turkey",NA,NA,"","","",2020
+21232224,2012,"25.03.2020",2.61,"ASELSAN","Aerospace & Defense","Planning Engineer","15.02.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21232243,2012,"05.02.2020",2.77,"Kumtel | Dayanıklı Tüketim Malları Plastik San. ve Tic. A.Ş.","Household Products","Warehouse Management Engineer","05.07.2021","0000-00-00","Kayseri","Turkey",NA,NA,"","","",2020
+21232243,2012,"05.02.2020",2.77,"İstikbal Mobilya","Home Furnishing","Purchasing Engineer","24.04.2023","14.09.2023","Kayseri","Turkey",NA,NA,"","","",2020
+21232243,2012,"05.02.2020",2.77,"ASELSAN","Aerospace & Defense","Purchasing Engineer","02.10.2023","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21232257,2012,"02.06.2017",3.63,"TOFAŞ Turkish Automotive Company","Auto, Truck & Motorcycle Manufacturers","Prova Plus Trainee","03.10.2016","30.05.2017","Bursa","Turkey",NA,NA,"","","",2017
+21232257,2012,"02.06.2017",3.63,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","04.10.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232262,2012,"22.06.2017",3.23,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Industrial Engineer","04.10.2017","11.05.2018","Sakarya","Turkey",1,2016,"University of Malaga","Malaga","Spain",2017
+21232262,2012,"22.06.2017",3.23,"ASELSAN","Aerospace & Defense","Delivery Management Engineer","15.05.2018","04.08.2020","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2017
+21232262,2012,"22.06.2017",3.23,"ASELSAN","Aerospace & Defense","Project Manager","04.08.2020","0000-00-00","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2017
+21232276,2012,"02.06.2017",2.7,"BOTAŞ","Oil and Gas Transportation Services","Industrial Engineer","31.10.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232281,2012,"04.02.2019",2.87,"Thales Bilişim","IT Services & Consulting","ERP Consultant","27.11.2017","30.05.2018","Ankara","Turkey",NA,NA,"","","",2019
+21232295,2012,"02.06.2017",3.22,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","PEP Trainee","21.09.2016","31.05.2017","Aksaray","Turkey",NA,NA,"","","",2017
+21232295,2012,"02.06.2017",3.22,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","08.08.2017","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21232301,2012,"08.06.2017",2.88,"Oyak-Renault Otomobil Fabrikaları","Auto, Truck & Motorcycle Manufacturers","Process Engineer","20.09.2017","23.11.2017","Bursa","Turkey",NA,NA,"","","",2017
+21232301,2012,"08.06.2017",2.88,"İnoksan","Industrial Machinery & Equipment","Logistics Engineer","26.03.2018","0000-00-00","Bursa","Turkey",NA,NA,"","","",2017
+21279241,2012,"05.06.2015",3.19,"Enerjisa","Electric Utilities","SAP Consultant","19.09.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2015
+21279269,2012,"05.06.2015",2.96,"Ceva Logistics","Logistics and Freight Transportation","FTL Operations","17.08.2015","19.02.2016","İstanbul","Turkey",NA,NA,"","","",2015
+21279269,2012,"05.06.2015",2.96,"UNILEVER","Personal Products","Logistics Specialist","01.03.2016","06.08.2019","Kocaeli","Turkey",NA,NA,"","","",2015
+21279269,2012,"05.06.2015",2.96,"Group Rocher / Flormar","Cosmetics","Senior Logistics Specialist","01.11.2019","09.04.2020","Kocaeli","Turkey",NA,NA,"","","",2015
+21279269,2012,"05.06.2015",2.96,"Brisa Bridgestone","Tires & Rubber Products","Logistics Specialist","13.04.2020","26.11.2021","Kocaeli","Turkey",NA,NA,"","","",2015
+21279269,2012,"05.06.2015",2.96,"Eczacıbaşı VitrA","Construction Materials, Supplies & Fittings","Logistics Executive","06.12.2021","0000-00-00","Eskişehir","Turkey",NA,NA,"","","",2015
+21279313,2012,"05.06.2015",3.14,"Arçelik","Consumer Electronics","Logistics Engineer","06.02.2017","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2015
+21279521,2012,"24.06.2019",2.56,"Evolamp Aydınlatma","Electrical Components & Equipment","Research & Development Engineer","28.01.2020","24.07.2020","Ankara","Turkey",NA,NA,"","","",2019
+21279521,2012,"24.06.2019",2.56,"Comodo","Software","Software Engineer","11.10.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331484,2013,"28.02.2019",3.4,"MEFA Group","Appliances, Tools & Housewares","Human Resources Intern","07.08.2017","25.03.2018","Ankara","Turkey",1,2018,"University of Lodz","Łódź","Poland",2019
+21331484,2013,"28.02.2019",3.4,"Autoliv","Auto, Truck & Motorcycle Parts & Service","Supply Chain Specialist","08.02.2021","0000-00-00","İstanbul","Turkey",1,2018,"University of Lodz","Łódź","Poland",2019
+21331484,2013,"28.02.2019",3.4,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","WCM Customer Service & Logistics Lead","27.03.2018","03.08.2018","Ankara","Turkey",1,2018,"University of Lodz","Łódź","Poland",2019
+21331484,2013,"28.02.2019",3.4,"Vestel Elektronik","Consumer Electronics","Supply Chain Specialist","20.05.2019","05.02.2021","Manisa","Turkey",1,2018,"University of Lodz","Łódź","Poland",2019
+21331498,2013,"04.03.2019",2.55,"Albert Genau","Construction Materials, Supplies & Fittings","Production Manager","15.08.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331505,2013,"11.06.2018",3,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Part-time Trainee","14.08.2017","08.06.2018","Ankara","Turkey",NA,NA,"","","",2018
+21331505,2013,"11.06.2018",3,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","07.02.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331519,2013,"11.06.2018",2.57,"Abalıoğlu Yumurta ve Besicilik","Food Processing","Research & Development Expert","08.10.2018","0000-00-00","Denizli","Turkey",NA,NA,"","","",2018
+21331524,2013,"24.06.2019",3.03,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","26.11.2018","31.05.2019","Ankara","Turkey",NA,NA,"","","",2019
+21331557,2013,"11.06.2018",3.61,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","05.11.2018","0000-00-00","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21331576,2013,"16.09.2019",2.62,"Etohum","Other","Operations Assistant","24.02.2020","07.08.2020","İstanbul","Turkey",NA,NA,"","","",2019
+21331576,2013,"16.09.2019",2.62,"ASELSAN","Aerospace & Defense","Project Financial Evaluation and Analysis Engineer","01.12.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331581,2013,"21.06.2018",2.77,"SimBT Simülasyon Bilim ve Teknolojileri","Aerospace & Defense","Quality and Process Engineer","05.02.2019","01.04.2019","Ankara","Turkey",NA,NA,"","","",2018
+21331581,2013,"21.06.2018",2.77,"UNILEVER","Personal Products","Order Validation Specialist","08.04.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331581,2013,"21.06.2018",2.77,"UNILEVER","Personal Products","Performance Delivery Network-Deliver/Collect","16.02.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331581,2013,"21.06.2018",2.77,"UNILEVER","Personal Products","Claims Specialist","01.04.2021","15.02.2022","İstanbul","Turkey",NA,NA,"","","",2018
+21331595,2013,"27.06.2018",2.85,"Vestel Elektronik","Consumer Electronics","Cost Assistant Specialist","22.10.2019","20.08.2021","Manisa","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21331595,2013,"27.06.2018",2.85,"Bluebird Nordic","Airlines","Technical Supply Engineer","03.11.2022","0000-00-00","Vilnius","Lithuania",1,2016,"University of Malaga","Malaga","Spain",2018
+21331595,2013,"27.06.2018",2.85,"Freebird Airlines","Airlines","Technical Supply Engineer","01.03.2022","31.08.2022","İstanbul","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21331595,2013,"27.06.2018",2.85,"Flokser Kimya","Chemicals: Commodity, Agricultural, Specialty","Puchasing Responsible","13.09.2021","14.02.2022","İstanbul","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21331601,2013,"04.03.2019",2.48,"Ekomera","Consulting","SAP Consultant","05.10.2019","04.03.2020","Ankara","Turkey",NA,NA,"","","",2019
+21331615,2013,"04.03.2019",2.83,"Aygersan","Auto Vehicles, Parts & Service Retailers","Marketing & Sales Engineer","17.06.2019","22.08.2019","Ankara","Turkey",1,2017,"RWTH Aachen University","Aachen","Germany",2019
+21331615,2013,"04.03.2019",2.83,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Business Analyst","17.08.2020","0000-00-00","Ankara","Turkey",1,2017,"RWTH Aachen University","Aachen","Germany",2019
+21331629,2013,"11.06.2018",2.92,"Bilgi Teknolojileri ve İletişim Kurumu","Public Sector","ICT Expert","02.07.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331634,2013,"16.02.2018",2.86,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Research & Development Engineer","21.05.2018","21.05.2019","Ankara","Turkey",1,2015,"University of Malaga","Malaga","Spain",2018
+21331634,2013,"16.02.2018",2.86,"Pegasus Hava Taşımacılığı","Airport Services","Cost Analysis Specialst","10.06.2019","0000-00-00","İstanbul","Turkey",1,2015,"University of Malaga","Malaga","Spain",2018
+21331648,2013,"25.08.2017",2.99,"KPMG","Consulting","IT Auditor","02.10.2017","25.09.2018","İstanbul","Turkey",NA,NA,"","","",2017
+21331648,2013,"25.08.2017",2.99,"TAI - TUSAŞ","Aerospace & Defense","Enterprise Resource Management Engineer","01.10.2018","23.12.2020","Ankara","Turkey",NA,NA,"","","",2017
+21331648,2013,"25.08.2017",2.99,"KPMG","Consulting","Senior IT Auditor","24.12.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2017
+21331653,2013,"04.03.2019",2.46,"A101","Retail Supermarket","Business Analyst","16.01.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21331667,2013,"11.06.2018",2.61,"SimBT Simülasyon Bilim ve Teknolojileri","Aerospace & Defense","Project Engineer","20.03.2019","28.02.2020","Ankara","Turkey",NA,NA,"","","",2018
+21331667,2013,"11.06.2018",2.61,"Tarnet","Software","Product Owner","04.03.2020","30.09.2020","Ankara","Turkey",NA,NA,"","","",2018
+21331667,2013,"11.06.2018",2.61,"Turkish Airlines Technology","IT Services & Consulting","Team Lead","01.11.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331667,2013,"11.06.2018",2.61,"Turkish Airlines Technology","IT Services & Consulting","Business Analyst","05.10.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331672,2013,"24.06.2019",3.23,"Vestel","Consumer Electronics","Planning Engineer","24.09.2019","0000-00-00","Manisa","Turkey",NA,NA,"","","",2019
+21331691,2013,"17.08.2018",2.68,"itelligence Türkiye","IT Services & Consulting","SAP Consultant","11.03.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331706,2013,"26.08.2019",2.89,"Justsnap Technology","IT Services & Consulting","Data Scientist","28.09.2020","0000-00-00","İstanbul","Turkey",1,2016,"University of Malaga","Malaga","Spain",2019
+21331711,2013,"11.06.2018",3.41,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","PEP Trainee","13.11.2017","01.06.2018","Aksaray","Turkey",NA,NA,"","","",2018
+21331711,2013,"11.06.2018",3.41,"HUGO BOSS","Apparel & Accessories","Management Trainee","03.09.2018","0000-00-00","İzmir","Turkey",NA,NA,"","","",2018
+21331711,2013,"11.06.2018",3.41,"HUGO BOSS","Apparel & Accessories","Production Engineer","25.01.2019","23.10.2019","İzmir","Turkey",NA,NA,"","","",2018
+21331711,2013,"11.06.2018",3.41,"Philip Morris Sigara ve Tütüncülük","Tobacco","Process Lead","11.11.2019","0000-00-00","İzmir","Turkey",NA,NA,"","","",2018
+21331725,2013,"11.06.2018",2.51,"Thales Bilişim","IT Services & Consulting","ERP Consultant","16.10.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331725,2013,"11.06.2018",2.51,"Sedat Tahir","Paper Packaging","Commercial Planning & Reporting Analyst","11.06.2018","05.07.2019","Ankara","Turkey",NA,NA,"","","",2018
+21331725,2013,"11.06.2018",2.51,"Bilişim A.Ş.","IT Services & Consulting","Sales Manager","12.05.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331739,2013,"11.06.2018",3.17,"ASELSAN","Aerospace & Defense","Part-Time Quality Management Engineer","24.05.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331739,2013,"11.06.2018",3.17,"ASELSAN","Aerospace & Defense","Quality Management Engineer","02.07.2018","30.06.2021","Ankara","Turkey",NA,NA,"","","",2018
+21331739,2013,"11.06.2018",3.17,"ASELSAN","Aerospace & Defense","Airworthiness Certification Engineer","01.07.2021","0000-00-00","","Turkey",NA,NA,"","","",2018
+21331744,2013,"11.06.2018",2.98,"Autoliv","Auto, Truck & Motorcycle Parts & Service","Supply Chain Engineer","16.07.2018","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2018
+21331744,2013,"11.06.2018",2.98,"ASELSAN","Aerospace & Defense","Production Planning & Control Engineer","11.02.2019","0000-00-00","","Turkey",NA,NA,"","","",2018
+21331763,2013,"11.06.2018",3.01,"ASELSAN","Aerospace & Defense","Project Planning Engineer","05.11.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331782,2013,"11.06.2018",3.23,"MEFA Group","Appliances, Tools & Housewares","Part-time Trainee","25.09.2017","27.10.2017","Ankara","Turkey",NA,NA,"","","",2018
+21331782,2013,"11.06.2018",3.23,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Part-time Trainee","01.11.2017","08.06.2018","Ankara","Turkey",NA,NA,"","","",2018
+21331782,2013,"11.06.2018",3.23,"ASELSAN","Aerospace & Defense","Project Engineer","01.10.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331796,2013,"04.02.2019",2.6,"Hiperteknoloji Savunma","Aerospace & Defense","Production & Planning Engineer","08.04.2019","31.10.2020","Ankara","Turkey",NA,NA,"","","",2019
+21331796,2013,"04.02.2019",2.6,"ASTOR Transformatör","Electrical Components & Equipment","Planning Engineer","01.07.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331802,2013,"11.06.2018",3,"ASELSAN","Aerospace & Defense","Quality Management Engineer","12.10.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331816,2013,"04.03.2019",2.74,"STM","Aerospace & Defense","Industrial Engineer","01.01.2020","24.12.2021","","Turkey",NA,NA,"","","",2019
+21331816,2013,"04.03.2019",2.74,"STG Engineering","Aerospace & Defense","Industrial and System Engineer","14.10.2019","14.10.2020","Ankara","Turkey",NA,NA,"","","",2019
+21331816,2013,"04.03.2019",2.74,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Procurement Engineer","29.12.2021","0000-00-00","","Turkey",NA,NA,"","","",2019
+21331816,2013,"04.03.2019",2.74,"STG Engineering","Aerospace & Defense","Project Engineer","14.10.2020","26.12.2021","Ankara","Turkey",NA,NA,"","","",2019
+21331821,2013,"21.06.2018",2.81,"Vestel Elektronik","Consumer Electronics","Production & Planning Engineer","01.04.2019","28.05.2020","Manisa","Turkey",NA,NA,"","","",2018
+21331821,2013,"21.06.2018",2.81,"ASELSAN","Aerospace & Defense","ILS Planning & Analysis Engineer","01.06.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331835,2013,"21.06.2018",3.3,"itelligence Türkiye","IT Services & Consulting","SAP PLM Consultant","15.04.2019","14.07.2021","İstanbul","Turkey",1,2017,"RWTH Aachen University","Aachen","Germany",2018
+21331835,2013,"21.06.2018",3.3,"Accenture","Consulting","Senior Consultant","02.08.2021","0000-00-00","Utrecht","Netherlands",1,2017,"RWTH Aachen University","Aachen","Germany",2018
+21331849,2013,"05.09.2018",2.8,"Tosyalı Toyo Çelik","Steel","Production Planning Engineer","07.04.2021","0000-00-00","Osmaniye","Turkey",NA,NA,"","","",2018
+21331868,2013,"07.02.2019",2.64,"Zorlu Holding","Textiles & Leather Goods","Assistant Business Development Specialist","02.09.2019","15.08.2020","","Turkey",NA,NA,"","","",2019
+21331868,2013,"07.02.2019",2.64,"Arçelik","Consumer Electronics","Project Engineer","07.03.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331868,2013,"07.02.2019",2.64,"Yapı ve Kredi Bankası","Banks","Commercial Banking Assistant Portfolio Manager","01.02.2021","10.04.2021","Ankara","Turkey",NA,NA,"","","",2019
+21331873,2013,"11.06.2018",2.48,"PRM Yazılım","Consulting","Consultant","25.02.2019","06.12.2019","Ankara","Turkey",NA,NA,"","","",2018
+21331873,2013,"11.06.2018",2.48,"ETİ Gıda Sanayi ve Ticaret","Food Processing","Project Specialist","16.12.2019","06.11.2020","Eskişehir","Turkey",NA,NA,"","","",2018
+21331873,2013,"11.06.2018",2.48,"Beat Software Solutions","IT Services & Consulting","Consultant","03.01.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331887,2013,"11.06.2018",3.14,"Enerjisa","Electric Utilities","IT Specialist","09.07.2018","09.09.2018","Ankara","Turkey",NA,NA,"","","",2018
+21331887,2013,"11.06.2018",3.14,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","14.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331892,2013,"11.06.2018",2.69,"Kuveyt Türk Katılım Bankası","Banks","Assistant Inspector","01.07.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331892,2013,"11.06.2018",2.69,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","01.06.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331907,2013,"04.02.2019",2.47,"SPRO Teknoloji","Consulting","SAP PM Consultant","15.04.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21331912,2013,"11.06.2018",3.73,"Statkraft","Energy","Working Student in Sales and Product Development","01.06.2019","27.12.2019","Düsseldorf","Germany",1,2016,"RWTH Aachen University","Aachen","Germany",2018
+21331912,2013,"11.06.2018",3.73,"P&G","Household Products","TUW and Sustainability Manager","15.10.2020","0000-00-00","Frankfurt Am Main","Germany",1,2016,"RWTH Aachen University","Aachen","Germany",2018
+21331945,2013,"11.06.2018",3.22,"ASELSAN","Aerospace & Defense","Part-Time Production Planning Engineer","18.04.2018","30.06.2018","Ankara","Turkey",NA,NA,"","","",2018
+21331945,2013,"11.06.2018",3.22,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","01.07.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21331959,2013,"11.06.2018",2.66,"Abalıoğlu Yumurta ve Besicilik","Food Processing","Purchasing Engineer","13.05.2019","0000-00-00","Denizli","Turkey",NA,NA,"","","",2018
+21331964,2013,"04.02.2019",2.61,"Anova Proje & Danışmanlık","Aerospace & Defense","Project Management Engineer","27.07.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331964,2013,"04.02.2019",2.61,"ASELSAN","Aerospace & Defense","Planning Engineer","16.08.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21331964,2013,"04.02.2019",2.61,"DEİCO","Industrial Machinery & Equipment","Project Management Engineer","23.09.2020","06.08.2021","Ankara","Turkey",NA,NA,"","","",2019
+21331978,2013,"11.06.2018",2.67,"LC Waikiki","Textiles & Leather Goods","International Store Merchandiser","20.08.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21331983,2013,"11.06.2018",3.12,"ASELSAN","Aerospace & Defense","Part-Time Production Planning Engineer","02.05.2018","0000-00-00","Ankara","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21331997,2013,"02.06.2017",3.2,"ASPİLSAN","Energy","Business Development Engineer","19.03.2018","27.03.2019","Kayseri","Turkey",NA,NA,"","","",2017
+21331997,2013,"02.06.2017",3.2,"Simfer","Consumer Electronics","Production & Planning Engineer","01.04.2019","0000-00-00","","Turkey",NA,NA,"","","",2017
+21331997,2013,"02.06.2017",3.2,"HES Kablo","Electrical Components & Equipment","Software Developer","01.10.2019","0000-00-00","Kayseri","Turkey",NA,NA,"","","",2017
+21380429,2013,"16.05.2019",2.91,"KAREL","Electrical Components & Equipment","Industrial Engineer","04.11.2019","04.04.2020","Ankara","Turkey",NA,NA,"","","",2019
+21380429,2013,"16.05.2019",2.91,"Yıldız Holding","Food Processing","Data Scientist","04.01.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21383013,2013,"23.03.2017",3.45,"DEVS Yazılım ve İletişim Teknolojileri A.Ş.","Software","Business Analyst","26.08.2021","0000-00-00","Ankara","Turkey",1,2016,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21383013,2013,"23.03.2017",3.45,"Bisoft Information Technology","IT Services & Consulting","Business Analyst","01.02.2016","01.04.2016","Ankara","Turkey",1,2016,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21383065,2013,"26.10.2017",2.83,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Industrial Engineer","19.03.2018","19.06.2020","Eskişehir","Turkey",NA,NA,"","","",2017
+21383065,2013,"26.10.2017",2.83,"Nurol Technology","IT Services & Consulting","Production Engineer","22.06.2020","01.11.2021","Ankara","Turkey",NA,NA,"","","",2017
+21383065,2013,"26.10.2017",2.83,"Nurol Technology","IT Services & Consulting","Lead of Production","01.11.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21400906,2014,"11.06.2018",3.21,"THY - Türk Hava Yolları","Airlines","Purchasing Specialist","08.10.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21403062,2014,"17.08.2018",3.1,"UNILEVER","Personal Products","Order Validation Specialist","21.02.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21430381,2014,"11.06.2018",2.72,"Verart Grup İç Mimarlık ve Mühendislik","Construction & Engineering","Foreign Trade Assistant Specialist","21.09.2017","21.12.2017","Ankara","Turkey",NA,NA,"","","",2018
+21430381,2014,"11.06.2018",2.72,"Enerjisa","Electric Utilities","ERP Specialist","17.09.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21430395,2014,"10.10.2019",3.13,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","31.05.2019","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21430395,2014,"10.10.2019",3.13,"Vodafone","Telecommunication Services","Contract Management Specialist","03.07.2020","19.10.2020","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21430401,2014,"24.06.2019",3.05,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","31.05.2019","Ankara","Turkey",NA,NA,"","","",2019
+21430401,2014,"24.06.2019",3.05,"TAI - TUSAŞ","Aerospace & Defense","Project Engineer","05.08.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430415,2014,"24.06.2019",2.78,"LC Waikiki","Textiles & Leather Goods","International Store Merchandiser","15.06.2020","11.01.2021","İstanbul","Turkey",1,2017,"Technical University of Liberec","Liberec","Czech Republic",2019
+21430415,2014,"24.06.2019",2.78,"Vilsan İlaç","Chemicals: Commodity, Agricultural, Specialty","Production Specialist","03.10.2022","0000-00-00","Ankara","Turkey",1,2017,"Technical University of Liberec","Liberec","Czech Republic",2019
+21430429,2014,"08.08.2019",3.07,"Ekol Lojistik","Logistics and Freight Transportation","Planning and Business Development Assistant Specialist","15.02.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21430434,2014,"29.04.2020",3.01,"ASELSAN","Aerospace & Defense","Project Engineer","15.11.2021","0000-00-00","Ankara","Turkey",1,2019,"University of Malaga","Malaga","Spain",2020
+21430434,2014,"29.04.2020",3.01,"Garanti Bankası","Banks","Risk Technology Business Development Associate","07.09.2020","08.11.2021","İstanbul","Turkey",1,2019,"University of Malaga","Malaga","Spain",2020
+21430448,2014,"11.06.2018",3.26,"Garanti Teknoloji","IT Services & Consulting","Business Analyst","03.09.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2018
+21430467,2014,"04.02.2019",3,"Bites Savunma Havacılık Uzay","Aerospace & Defense","Augmented Reality Engineer","21.12.2020","0000-00-00","Ankara","Turkey",1,2017,"Technical University of Liberec","Liberec","Czech Republic",2019
+21430467,2014,"04.02.2019",3,"MildMania","Software","Junior Game Developer","31.08.2020","18.12.2020","Ankara","Turkey",1,2017,"Technical University of Liberec","Liberec","Czech Republic",2019
+21430472,2014,"08.08.2019",2.84,"ASELSAN","Aerospace & Defense","Project Engineer","18.10.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430472,2014,"08.08.2019",2.84,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Process and Application Development Engineer","01.03.2021","08.10.2021","Ankara","Turkey",NA,NA,"","","",2019
+21430472,2014,"08.08.2019",2.84,"Optima Mühendislik","Heavy Machinery & Vehicles","Sales Support Engineer","01.09.2020","28.02.2021","Ankara","Turkey",NA,NA,"","","",2019
+21430486,2014,"06.07.2020",2.9,"T-Kalıp","Aerospace & Defense","Production Planning Engineer","14.09.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21430491,2014,"05.09.2018",3.15,"Vestel Elektronik","Consumer Electronics","Purchasing Engineer","01.10.2019","0000-00-00","Manisa","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21430507,2014,"24.06.2019",3.12,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","24.05.2019","Ankara","Turkey",NA,NA,"","","",2019
+21430507,2014,"24.06.2019",3.12,"TAI - TUSAŞ","Aerospace & Defense","Project Engineer","05.08.2019","13.11.2019","Ankara","Turkey",NA,NA,"","","",2019
+21430507,2014,"24.06.2019",3.12,"Atiker Yazılım","Software","ERP Project Engineer","16.03.2020","16.03.2022","Ankara","Turkey",NA,NA,"","","",2019
+21430507,2014,"24.06.2019",3.12,"Plentific","Software","Software Engineer","21.03.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430531,2014,"28.06.2019",3.33,"LAV","Ceramics","Production & Planning Engineer","12.07.2021","0000-00-00","Kütahya","Turkey",NA,NA,"","","",2019
+21430559,2014,"24.06.2019",2.53,"ING Bank","Banks","Portfolio Management Specialist","24.07.2019","07.02.2020","Ankara","Turkey",NA,NA,"","","",2019
+21430559,2014,"24.06.2019",2.53,"ROKETSAN","Aerospace & Defense","Procurement Engineer","08.08.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430559,2014,"24.06.2019",2.53,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","09.06.2021","10.06.2022","Ankara","Turkey",NA,NA,"","","",2019
+21430559,2014,"24.06.2019",2.53,"Thales Bilişim","IT Services & Consulting","ERP Consultant","09.09.2020","02.06.2021","Ankara","Turkey",NA,NA,"","","",2019
+21430564,2014,"26.02.2020",3.2,"Demir Export","Specialty Mining & Metals","Data Analyst","24.05.2021","14.01.2022","","Turkey",1,2019,"Technical University of Liberec","Liberec","Czech Republic",2020
+21430564,2014,"26.02.2020",3.2,"Sade Yazılım ve Danışmanlık","Software","Data Analyst","24.01.2022","0000-00-00","","Turkey",1,2019,"Technical University of Liberec","Liberec","Czech Republic",2020
+21430583,2014,"08.08.2019",3.56,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","13.04.2020","0000-00-00","Ankara","Turkey",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2019
+21430669,2014,"24.06.2019",2.7,"Vestel","Consumer Electronics","Budget Planning Engineer","18.02.2020","0000-00-00","Manisa","Turkey",NA,NA,"","","",2019
+21430688,2014,"01.07.2019",2.77,"MİTAŞ Endüstri","Steel","Planning Engineer","10.02.2020","13.01.2021","Ankara","Turkey",NA,NA,"","","",2019
+21430688,2014,"01.07.2019",2.77,"ASELSAN","Aerospace & Defense","Planning Engineer","18.01.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430693,2014,"24.06.2019",3.33,"Nobel İlaç","Healthcare Facilities & Services","Sales Force Effectiveness Analyst","11.11.2019","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21430708,2014,"06.07.2020",2.48,"Modern Karton","Paper Products","Purchasing Engineer","17.03.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21430713,2014,"24.06.2019",3.06,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","31.05.2019","Ankara","Turkey",NA,NA,"","","",2019
+21430713,2014,"24.06.2019",3.06,"TAI - TUSAŞ","Aerospace & Defense","IT Software Engineer","22.07.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430727,2014,"06.07.2020",2.68,"Vestel Elektronik","Consumer Electronics","Production Engineer","27.04.2021","0000-00-00","Manisa","Turkey",NA,NA,"","","",2020
+21430732,2014,"24.06.2019",3.14,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","02.12.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21430746,2014,"31.08.2018",3.43,"ASELSAN","Aerospace & Defense","Purchasing Engineer","13.11.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21430751,2014,"24.06.2019",2.58,"Zafer Walnut Production Line","Forest & Wood Products","Founder","21.06.2019","0000-00-00","Niğde","Turkey",NA,NA,"","","",2019
+21430751,2014,"24.06.2019",2.58,"SASA Polyester","Chemicals: Commodity, Agricultural, Specialty","Production & Planning Engineer","07.12.2020","0000-00-00","Adana","Turkey",NA,NA,"","","",2019
+21430765,2014,"28.06.2019",3.6,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","0000-00-00","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21430765,2014,"28.06.2019",3.6,"Ango AI","IT Services & Consulting","Labeling Operations Lead","03.01.2021","0000-00-00","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21430779,2014,"16.12.2020",2.59,"Giresun Yeşil Kent Yapı Denetim","Construction & Engineering","Chief Executive Officer","25.09.2019","0000-00-00","Giresun","Turkey",NA,NA,"","","",2020
+21430798,2014,"16.06.2022",2,"Nisan Mekatronik","Construction & Engineering","Industrial Engineer","01.02.2022","12.08.2022","İstanbul","Turkey",NA,NA,"","","",2022
+21430798,2014,"16.06.2022",2,"Türkiye Sigorta A.Ş.","Insurance Brokers","Software Developer","15.08.2022","0000-00-00","Remote","Turkey",NA,NA,"","","",2022
+21430804,2014,"24.06.2019",2.79,"Unite BT","IT Services & Consulting","RPA Developer","10.01.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21430804,2014,"24.06.2019",2.79,"Aksan Çelik Dövme","Steel","Research & Development Engineer","14.01.2021","12.11.2021","Ankara","Turkey",NA,NA,"","","",2019
+21430818,2014,"03.02.2020",3.07,"Turkcell Global Bilgi","Telecommunication Services","GYK Platform Tester","02.01.2018","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21430823,2014,"28.06.2019",3.27,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","31.05.2019","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21430823,2014,"28.06.2019",3.27,"ASELSAN","Aerospace & Defense","Project Engineer","01.07.2019","0000-00-00","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21430837,2014,"24.06.2019",3.06,"Solvia Digital Solutions","Consulting","Application Consultant","21.09.2020","0000-00-00","Istanbul","Turkey",NA,NA,"","","",2019
+21430842,2014,"02.03.2020",3,"ASELSAN","Aerospace & Defense","Production Planning Engineer","22.03.2022","0000-00-00","Ankara","Turkey",1,2019,"University of Lodz","Łódź","Poland",2020
+21430842,2014,"02.03.2020",3,"Brisa Bridgestone","Tires & Rubber Products","Industrial Engineer","18.01.2021","15.03.2022","Kocaeli","Turkey",1,2019,"University of Lodz","Łódź","Poland",2020
+21430856,2014,"06.07.2020",3.08,"Durukan Confectionery","Food Distribution & Convenience Stores","Project Intern","17.09.2018","28.09.2018","Ankara","Turkey",1,2018,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2020
+21430856,2014,"06.07.2020",3.08,"Improva","Consulting","Application Consultant","17.08.2020","0000-00-00","İstanbul","Turkey",1,2018,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2020
+21430894,2014,"24.06.2019",3.12,"Köfteci Yusuf","Food Processing","Specialist","01.02.2021","0000-00-00","Bursa","Turkey",NA,NA,"","","",2019
+21430894,2014,"24.06.2019",3.12,"Messe Home Furniture","Home Furnishing","Assistant Manager of Process Improvement","01.12.2021","31.10.2021","Bursa","Turkey",NA,NA,"","","",2019
+21481353,2014,"02.06.2017",3.73,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Industrial Engineer","21.11.2017","0000-00-00","Kocaeli","Turkey",1,2015,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2017
+21481386,2014,"02.06.2017",3.81,"Gazi University","Education","Research Assistant","10.05.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21481852,2014,"19.01.2018",2.85,"SDT Uzay ve Savunma Teknolojileri","Aerospace & Defense","Production & Planning Engineer","01.05.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21485086,2014,"04.03.2019",2.39,"ADA Yapı Ürünleri","Construction Materials, Supplies & Fittings","Site Engineer","29.06.2020","0000-00-00","New Liberty","Liberia",NA,NA,"","","",2019
+21504858,2015,"24.06.2019",3.61,"Üntes Isıtma Klima Soğutma Havalandırma","Consumer Electronics","Export Sales Assistant","04.02.2019","0000-00-00","Ankara","Turkey",1,2017,"Technical University of Liberec","Liberec","Czech Republic",2019
+21530499,2015,"06.07.2020",3.58,"HEPER GROUP","Electrical Components & Equipment","Candidate Engineer","17.02.2020","0000-00-00","Ankara","Turkey",1,2018,"University of Malaga","Malaga","Spain",2020
+21530499,2015,"06.07.2020",3.58,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Business Process & Application Analyst","20.07.2020","0000-00-00","","Turkey",1,2018,"University of Malaga","Malaga","Spain",2020
+21530506,2015,"01.07.2021",3.05,"Groupe PSA","Auto Vehicles, Parts & Service Retailers","Logistic Responsible","15.09.2021","16.12.2022","İstanbul","Turkey",NA,NA,"","","",2021
+21530506,2015,"01.07.2021",3.05,"Anadolu Efes","Beverages","Long-Term Intern","15.02.2021","13.08.2021","Ankara","Turkey",NA,NA,"","","",2021
+21530506,2015,"01.07.2021",3.05,"Nissan","Auto Vehicles, Parts & Service Retailers","Sales Planning Specialist","21.12.2023","0000-00-00","Istanbul","Turkey",NA,NA,"","","",2021
+21530511,2015,"06.07.2020",2.91,"GURUWAGA","Real Estate Development & Operations","Business Development Manager","07.12.2020","31.05.2022","Remote","Turkey",1,2018,"University of Malaga","Malaga","Spain",2020
+21530511,2015,"06.07.2020",2.91,"Action","Discount Stores","Real Estate Process Manager","01.06.2022","0000-00-00","Zwaagdijk-oost","Netherlands",1,2018,"University of Malaga","Malaga","Spain",2020
+21530525,2015,"06.07.2020",2.88,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Part-time Trainee","10.12.2019","29.05.2020","Ankara","Turkey",NA,NA,"","","",2020
+21530525,2015,"06.07.2020",2.88,"Vestel Beyaz Eşya","Household Products","Supply Chain Specialist","07.09.2020","18.08.2023","Manisa","Turkey",NA,NA,"","","",2020
+21530525,2015,"06.07.2020",2.88,"Arçelik","Consumer Electronics","Senior Specialist","18.09.2023","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21530544,2015,"06.07.2020",3.57,"Daiichi Sankyo Europe GmbH","Diversified Pharmaceuticals","Procurement Working Student","15.06.2021","0000-00-00","Munich","Germany",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2020
+21530558,2015,"24.06.2019",2.6,"DeFacto","Apparel & Accessories Retailers","Supply Chain System Development Specialist","27.11.2019","03.11.2021","İstanbul","Turkey",NA,NA,"","","",2019
+21530558,2015,"24.06.2019",2.6,"NTT Data Business Solutions","IT Services & Consulting","Customer Engagement Manager","27.06.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2019
+21530558,2015,"24.06.2019",2.6,"Akinon İnternet Yatırım ve Proje Geliştirme","Software","Product Owner","08.11.2021","22.06.2022","İstanbul","Turkey",NA,NA,"","","",2019
+21530563,2015,"06.07.2020",3.08,"Güncel Yazılım","Software","ERP Project Engineer","21.06.2021","0000-00-00","Bursa","Turkey",NA,NA,"","","",2020
+21530563,2015,"06.07.2020",3.08,"Sinerjim Bilgi Sistemleri","IT Services & Consulting","ERP Project Engineer","05.10.2020","18.06.2021","Bursa","Turkey",NA,NA,"","","",2020
+21530577,2015,"06.07.2020",3.19,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Efficiency and Capacity Engineer","14.03.2022","0000-00-00","","Turkey",NA,NA,"","","",2020
+21530577,2015,"06.07.2020",3.19,"Arçelik","Consumer Electronics","Project Engineer","21.10.2020","13.03.2022","İstanbul","Turkey",NA,NA,"","","",2020
+21530582,2015,"06.07.2020",3.04,"Kaleliler Bağlantı Elemanları","Construction Materials, Supplies & Fittings","System & Process Development Specialist","22.10.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21530616,2015,"24.06.2019",3.62,"P&G","Household Products","Material Development and Supply Manager","01.03.2022","0000-00-00","Crailsheim","Germany",1,2017,"Technical University of Liberec","Liberec","Czech Republic",2019
+21530621,2015,"22.07.2020",2.84,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Vehicle Production Planning & Control Engineer","02.02.2021","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2020
+21530635,2015,"24.06.2019",3.51,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","31.05.2019","Ankara","Turkey",1,2017,"University of Cassino","Cassino","Italy",2019
+21530635,2015,"24.06.2019",3.51,"TAI - TUSAŞ","Aerospace & Defense","Production Planning & Control Engineer","22.07.2019","0000-00-00","Ankara","Turkey",1,2017,"University of Cassino","Cassino","Italy",2019
+21530649,2015,"06.07.2020",3.05,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","04.01.2021","0000-00-00","","Turkey",NA,NA,"","","",2020
+21530654,2015,"06.07.2020",3.58,"Tüpraş","Oil and Gas Refining and Marketing","Project Assistant","01.10.2019","27.07.2020","Kırıkkale","Turkey",1,2017,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530654,2015,"06.07.2020",3.58,"iMarine Technologies","Aerospace & Defense","Project Engineer","27.07.2020","0000-00-00","İzmir","Turkey",1,2017,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530668,2015,"15.02.2021",2.92,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Management Trainee","05.03.2020","08.01.2021","Ankara","Turkey",1,2018,"University of Salamanca","Salamanca","Spain",2021
+21530668,2015,"15.02.2021",2.92,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","28.04.2021","0000-00-00","Ankara","Turkey",1,2018,"University of Salamanca","Salamanca","Spain",2021
+21530673,2015,"06.07.2020",2.79,"Karadeniz Teknik Üniversitesi","Other","Research Assistant","20.12.2021","0000-00-00","Trabzon","Turkey",NA,NA,"","","",2020
+21530687,2015,"06.07.2020",3.82,"ASELSAN","Aerospace & Defense","Candidate Engineer","11.12.2019","31.07.2020","Ankara","Turkey",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2020
+21530687,2015,"06.07.2020",3.82,"ASELSAN","Aerospace & Defense","Workshop Planning Engineer","01.08.2020","0000-00-00","Ankara","Turkey",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2020
+21530692,2015,"06.07.2020",3.43,"ASELSAN","Aerospace & Defense","Candidate Engineer","11.12.2019","0000-00-00","Ankara","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21530692,2015,"06.07.2020",3.43,"ASELSAN","Aerospace & Defense","Quality Control Engineer","04.08.2020","0000-00-00","Ankara","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21530707,2015,"06.07.2020",3.08,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","17.08.2020","11.02.2022","Ankara","Turkey",1,2018,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2020
+21530707,2015,"06.07.2020",3.08,"ASELSAN","Aerospace & Defense","Purchasing Engineer","01.03.2022","0000-00-00","Ankara","Turkey",1,2018,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2020
+21530712,2015,"21.05.2020",2.69,"Vestel Elektronik","Consumer Electronics","Quality Control Engineer","19.04.2022","0000-00-00","İzmir","Turkey",1,2019,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2020
+21530726,2015,"24.06.2019",3.14,"İskenderun Demir ve Çelik Fabrikaları","Steel","Purchasing Engineer","24.12.2019","0000-00-00","Hatay","Turkey",NA,NA,"","","",2019
+21530731,2015,"06.07.2020",3.19,"Arçelik","Consumer Electronics","Project Management Engineer","14.12.2020","0000-00-00","Bolu","Turkey",1,2019,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530745,2015,"06.07.2020",3.64,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","26.11.2018","10.12.2019","Ankara","Turkey",1,2017,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530745,2015,"06.07.2020",3.64,"ASELSAN","Aerospace & Defense","Candidate Engineer","11.12.2019","01.08.2020","Ankara","Turkey",1,2017,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530745,2015,"06.07.2020",3.64,"ASELSAN","Aerospace & Defense","Project Engineer","02.08.2020","0000-00-00","Ankara","Turkey",1,2017,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530764,2015,"06.07.2020",3.03,"Ersoplast Plastik","Household Products","Project Manager","02.06.2020","0000-00-00","Adana","Turkey",1,2018,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2020
+21530783,2015,"01.07.2021",3.28,"GE Vernova","Energy","Material Planning Engineer","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21530797,2015,"06.07.2020",3.23,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Part Export Business Engineer","08.02.2021","0000-00-00","Kocaeli","Turkey",1,2019,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21530803,2015,"06.07.2020",3.36,"Wilderness Hotel & Golf Resorts","Hotels, Motels & Cruiselines","Housekeeper","08.06.2017","14.09.2017","Wisconsin Dells","United States",1,2018,"University of Lodz","Łódź","Poland",2020
+21530803,2015,"06.07.2020",3.36,"FNSS Savunma Sistemleri","Aerospace & Defense","Candidate Engineer","01.10.2019","30.06.2020","Ankara","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21530803,2015,"06.07.2020",3.36,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Business Process & Data Analyst","20.07.2020","0000-00-00","","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21530817,2015,"01.07.2021",3.15,"ASELSAN","Aerospace & Defense","Candidate Engineer","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21530822,2015,"06.07.2020",2.75,"ASİSGUARD","Aerospace & Defense","Candidate Engineer","07.10.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21530836,2015,"03.02.2020",2.73,"Türk Kızılayı","Public Sector","Data Analysis and Information Assistant","13.04.2020","30.09.2022","Ankara","Turkey",1,2018,"RWTH Aachen University","Aachen","Germany",2020
+21530836,2015,"03.02.2020",2.73,"Param","Financial & Commodity Market Operators","Reporting and Statistics Specialist","10.10.2022","0000-00-00","Ankara","Turkey",1,2018,"RWTH Aachen University","Aachen","Germany",2020
+21530841,2015,"06.07.2020",3.2,"ASELSAN","Aerospace & Defense","Candidate Engineer","17.12.2019","24.07.2020","Ankara","Turkey",NA,NA,"","","",2020
+21530841,2015,"06.07.2020",3.2,"ASELSAN","Aerospace & Defense","Supplier Relationship Management/Engineer","04.08.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21530869,2015,"06.07.2020",3.43,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","18.11.2020","0000-00-00","Ankara","Turkey",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2020
+21530874,2015,"06.07.2020",2.91,"Ekol Lojistik","Logistics and Freight Transportation","Process Development Assistant","16.11.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21530893,2015,"06.07.2020",3.12,"TAI - TUSAŞ","Aerospace & Defense","Engineering Intern","19.11.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21530893,2015,"06.07.2020",3.12,"AVS Mühendislik","Medical Equipment, Supplies & Distribution","Planning Engineer","20.01.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21530927,2015,"06.07.2020",2.81,"OTOKAR Otomotiv ve Savunma Sanayi A.Ş.","Other","Material Planning Engineer","16.08.2021","0000-00-00","Sakarya","Turkey",NA,NA,"","","",2020
+21530927,2015,"06.07.2020",2.81,"Arçelik","Consumer Electronics","Project Engineer","05.07.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21530927,2015,"06.07.2020",2.81,"LAV","Ceramics","Production & Planning Engineer","26.10.2020","05.07.2021","","Turkey",NA,NA,"","","",2020
+21530932,2015,"01.07.2021",2,"Amec Industries","Medical Equipment, Supplies & Distribution","Industrial Engineer","10.10.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21530951,2015,"18.11.2020",3.01,"FNSS Savunma Sistemleri","Aerospace & Defense","Candidate Engineer","02.10.2019","0000-00-00","Ankara","Turkey",1,2017,"University of Malaga","Malaga","Spain",2020
+21530951,2015,"18.11.2020",3.01,"FNSS Savunma Sistemleri","Aerospace & Defense","Production Planning Engineer","04.04.2022","0000-00-00","Ankara","Turkey",1,2017,"University of Malaga","Malaga","Spain",2020
+21530951,2015,"18.11.2020",3.01,"FNSS Savunma Sistemleri","Aerospace & Defense","Project Management Engineer","07.11.2019","04.04.2022","Ankara","Turkey",1,2017,"University of Malaga","Malaga","Spain",2020
+21530965,2015,"03.02.2020",2.88,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","RPA Developer","08.11.2020","0000-00-00","","Turkey",1,2017,"University of Cassino","Cassino","Italy",2020
+21530979,2015,"08.09.2020",2.95,"BİİS","Software","Brand Ambassador","01.05.2018","25.09.2018","İstanbul","Turkey",NA,NA,"","","",2020
+21530979,2015,"08.09.2020",2.95,"Wilderness Hotel & Golf Resorts","Hotels, Motels & Cruiselines","Lifeguard","17.06.2016","19.09.2019","Wisconsin Dells","Turkey",NA,NA,"","","",2020
+21530979,2015,"08.09.2020",2.95,"Koçtaş","Home Improvement Products & Services Retailers","Assistant Product Owner","16.09.2019","11.09.2020","Ankara","Turkey",NA,NA,"","","",2020
+21530979,2015,"08.09.2020",2.95,"Meteksan Savunma","Aerospace & Defense","Project Management Engineer","05.01.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21530979,2015,"08.09.2020",2.95,"Albert Genau","Construction Materials, Supplies & Fittings","Production Planning Engineer","21.09.2020","28.12.2020","Ankara","Turkey",NA,NA,"","","",2020
+21530998,2015,"06.07.2020",3.42,"burdanalcam.com","Advertising & Marketing","Administrative Manager","01.01.2018","21.07.2019","Ankara","Turkey",NA,NA,"","","",2020
+21530998,2015,"06.07.2020",3.42,"Palace Entertainment","Entertainment Production","Admissions Attendant","13.06.2018","04.09.2018","Portsmouth","United States",NA,NA,"","","",2020
+21530998,2015,"06.07.2020",3.42,"ASELSAN","Aerospace & Defense","Candidate Engineer","06.12.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21531004,2015,"18.11.2020",2.82,"TAI - TUSAŞ","Aerospace & Defense","Enterprise Resource Management Engineer","07.06.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21580322,2015,"09.08.2018",3.15,"ZEO Agency","Advertising & Marketing","Outreach and Content Specialist","07.09.2020","0000-00-00","İstanbul","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21580322,2015,"09.08.2018",3.15,"Kolay İK","Software","Growth and Marketing Assistant","06.01.2020","06.05.2020","İstanbul","Turkey",1,2016,"University of Malaga","Malaga","Spain",2018
+21580369,2015,"04.02.2019",3.19,"IBTech","IT Services & Consulting","Business Analyst","16.03.2020","31.08.2022","Kocaeli","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21584333,2015,"12.10.2020",2.65,"ARMTEK Elektrik","Electrical Components & Equipment","Sales Engineer","01.09.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21590386,2015,"06.07.2020",2.97,"Bozankaya Otomotiv","Auto, Truck & Motorcycle Manufacturers","Work Preperation and Change Management Engineer","04.08.2020","12.03.2021","Ankara","Turkey",NA,NA,"","","",2020
+21590386,2015,"06.07.2020",2.97,"Enerjisa","Electric Utilities","Business Analyst","21.03.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21590386,2015,"06.07.2020",2.97,"Bozankaya Otomotiv","Auto, Truck & Motorcycle Manufacturers","Technical Project Management Office Lead","01.12.2021","04.02.2022","Ankara","Turkey",NA,NA,"","","",2020
+21590386,2015,"06.07.2020",2.97,"Bozankaya Otomotiv","Auto, Truck & Motorcycle Manufacturers","Project Engineer","01.02.2021","30.11.2021","Ankara","Turkey",NA,NA,"","","",2020
+21605601,2016,"06.07.2020",3.68,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","07.06.2022","0000-00-00","","Turkey",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2020
+21605601,2016,"06.07.2020",3.68,"Sade Yazılım ve Danışmanlık","Software","Data Analyst","18.01.2021","27.05.2022","Ankara","Turkey",1,2018,"Technical University of Liberec","Liberec","Czech Republic",2020
+21607311,2016,"11.06.2018",3.6,"Simsoft Bilgi Teknolojileri","Aerospace & Defense","Industrial Engineer","19.09.2018","23.11.2018","Ankara","Turkey",NA,NA,"","","",2018
+21607311,2016,"11.06.2018",3.6,"ASELSAN","Aerospace & Defense","Project Planning Engineer","03.12.2018","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21607421,2016,"03.02.2020",3.17,"MilSOFT","Software","System Test Engineer","02.08.2021","17.03.2023","Ankara","Turkey",1,2017,"University of Malaga","Malaga","Spain",2020
+21607421,2016,"03.02.2020",3.17,"Swisslog GmbH","IT Services & Consulting","Software Test Engineer","19.06.2023","0000-00-00","Dortmund","Germany",1,2017,"University of Malaga","Malaga","Spain",2020
+21607449,2016,"24.06.2019",3.84,"Simsoft Bilgi Teknolojileri","Aerospace & Defense","Part-time Trainee","20.07.2018","28.03.2019","Ankara","Turkey",NA,NA,"","","",2019
+21607449,2016,"24.06.2019",3.84,"ASELSAN","Aerospace & Defense","Project Engineer","10.09.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21607492,2016,"24.06.2019",3.37,"GAMA Energy","Energy","Mechanical Maintenance Engineer","08.07.2018","28.09.2018","Kırıkkale","Turkey",NA,NA,"","","",2019
+21607492,2016,"24.06.2019",3.37,"STG Engineering","Aerospace & Defense","Project Manager","04.03.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21607492,2016,"24.06.2019",3.37,"STG Engineering","Aerospace & Defense","Engineer","15.03.2021","04.03.2022","Ankara","Turkey",NA,NA,"","","",2019
+21607492,2016,"24.06.2019",3.37,"Kozanoğlu Kozmaksan","Auto Vehicles, Parts & Service Retailers","Quality Management Engineer","01.02.2021","11.03.2021","Ankara","Turkey",NA,NA,"","","",2019
+21630887,2016,"06.07.2020",3.03,"Samsung Electronics Turkey","Consumer Electronics","Sales Support Engineer","05.10.2020","0000-00-00","İstanbul","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21630887,2016,"06.07.2020",3.03,"Stellantis","Auto, Truck & Motorcycle Manufacturers","Business Development Specialist","19.12.2022","0000-00-00","İstanbul","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21630892,2016,"01.07.2021",3.06,"ASELSAN","Aerospace & Defense","Delivery Management Engineer","21.03.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21630931,2016,"01.07.2021",2.98,"LC Waikiki","Textiles & Leather Goods","SAP FI Assistant Specialist","02.08.2021","0000-00-00","İstanbul","Turkey",1,2019,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2021
+21630945,2016,"01.07.2021",3.63,"TEI","Aerospace & Defense","Raw Material Planning & Fulfillment Engineer","20.09.2021","0000-00-00","Eskişehir","Turkey",NA,NA,"","","",2021
+21630945,2016,"01.07.2021",3.63,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Intraprenurship and Innovation Assistant","14.12.2020","28.05.2021","Ankara","Turkey",NA,NA,"","","",2021
+21630959,2016,"01.07.2021",3.09,"ASELSAN","Aerospace & Defense","Integrated Logistics Support Planning and Analysis Engineer","01.03.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21630959,2016,"01.07.2021",3.09,"Klimasan Klima","Consumer Electronics","Long-Term Intern","20.04.2021","15.02.2022","Manisa","Turkey",NA,NA,"","","",2021
+21630983,2016,"01.07.2021",3.23,"Yapı Kredi Yatırım","Banks","Assistant Business Analyst","11.10.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2021
+21630983,2016,"01.07.2021",3.23,"Fibabanka","Banks","Long-Term Intern","01.03.2021","30.06.2021","İstanbul","Turkey",NA,NA,"","","",2021
+21630983,2016,"01.07.2021",3.23,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Long-Term Intern","14.12.2020","28.05.2021","Sakarya","Turkey",NA,NA,"","","",2021
+21630997,2016,"01.07.2021",3.62,"ASELSAN","Aerospace & Defense","Configuration Management Engineer","01.07.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21630997,2016,"01.07.2021",3.62,"ASELSAN","Aerospace & Defense","Candidate Engineer","16.11.2020","30.06.2021","Ankara","Turkey",NA,NA,"","","",2021
+21631003,2016,"17.01.2022",2.99,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Project Coordinator","04.07.2022","0000-00-00","Ankara","Turkey",1,2019,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2022
+21631017,2016,"01.07.2021",3.44,"ASELSAN","Aerospace & Defense","Project Engineer","21.12.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21631022,2016,"06.07.2020",2.96,"ROKETSAN","Aerospace & Defense","ERP Applications Developer and Data Analyst","01.02.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21631022,2016,"06.07.2020",2.96,"ULAK Haberleşme","IT Services & Consulting","Quality Assurance Engineer","12.10.2020","13.01.2021","Ankara","Turkey",NA,NA,"","","",2020
+21631036,2016,"01.07.2021",3.24,"KPMG","Consulting","IT Auditor","02.08.2021","11.02.2022","","Turkey",NA,NA,"","","",2021
+21631036,2016,"01.07.2021",3.24,"ASELSAN","Aerospace & Defense","Warehouse Management Engineer","21.02.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21631041,2016,"01.07.2021",3.69,"ASELSAN","Aerospace & Defense","Project Engineer","01.07.2021","0000-00-00","Ankara","Turkey",1,2019,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2021
+21631041,2016,"01.07.2021",3.69,"ASELSAN","Aerospace & Defense","Candidate Engineer","16.11.2020","0000-00-00","Ankara","Turkey",1,2019,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2021
+21631069,2016,"01.07.2021",3.62,"HAVELSAN","Aerospace & Defense","Product Manager","01.07.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21631069,2016,"01.07.2021",3.62,"HAVELSAN","Aerospace & Defense","Candidate Engineer","01.02.2021","30.06.2021","Ankara","Turkey",NA,NA,"","","",2021
+21631088,2016,"01.07.2021",3.37,"Garanti BBVA Teknoloji","Banks","Senior Business Analyst","01.04.2022","0000-00-00","Remote","Turkey",NA,NA,"","","",2021
+21631088,2016,"01.07.2021",3.37,"Garanti BBVA Teknoloji","Banks","Junior Business Analyst","24.05.2021","01.04.2022","","Turkey",NA,NA,"","","",2021
+21631088,2016,"01.07.2021",3.37,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Project Development Assistant","23.01.2021","21.05.2021","","Turkey",NA,NA,"","","",2021
+21631093,2016,"06.07.2020",3.32,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","01.10.2020","0000-00-00","Ankara","Turkey",1,2019,"University of Malaga","Malaga","Spain",2020
+21631113,2016,"17.01.2022",2.73,"Robusta Cognitive Automation","IT Services & Consulting","RPA Consultant","18.10.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21631132,2016,"01.07.2021",3.01,"BHK Greenhouse","Other","Technical Office Engineer","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21631151,2016,"17.01.2022",2.71,"Autoliv","Auto, Truck & Motorcycle Parts & Service","Supply Chain Engineer","21.03.2022","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2022
+21631165,2016,"01.07.2021",3.4,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Part-time Trainee","01.10.2019","01.07.2020","Ankara","Turkey",NA,NA,"","","",2021
+21631165,2016,"01.07.2021",3.4,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","03.01.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21631165,2016,"01.07.2021",3.4,"Anadolu Efes","Beverages","Long-Term Intern","15.02.2021","17.07.2021","Ankara","Turkey",NA,NA,"","","",2021
+21631184,2016,"30.05.2022",2,"Manas Energy Management","Energy","Project Engineer","05.09.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21631198,2016,"01.07.2021",3,"Erdemir Mühendislik","Steel","Feasibility Engineer","16.12.2021","0000-00-00","Zonguldak","Turkey",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21631204,2016,"01.07.2021",3.29,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","0000-00-00","0000-00-00","","Turkey",NA,NA,"","","",2021
+21631256,2016,"17.01.2022",3.04,"LC Waikiki","Textiles & Leather Goods","IT Business Analyst Assistant Specialist","09.08.2021","0000-00-00","","Turkey",NA,NA,"","","",2022
+21631261,2016,"01.07.2021",3,"ASELSAN","Aerospace & Defense","Project Manager","01.09.2021","0000-00-00","Ankara","Turkey",1,2019,"Technical University of Liberec","Liberec","Czech Republic",2021
+21631261,2016,"01.07.2021",3,"ASELSAN","Aerospace & Defense","Candidate Engineer","16.11.2020","31.08.2021","Ankara","Turkey",1,2019,"Technical University of Liberec","Liberec","Czech Republic",2021
+21631275,2016,"01.07.2021",2.87,"Otokoç Otomotiv","Auto Vehicles, Parts & Service Retailers","Management Trainee","02.08.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2021
+21631294,2016,"01.07.2021",3.68,"Palace Entertainment","Entertainment Production","Cashier","16.06.2018","21.09.2018","Portsmouth","United States",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21631294,2016,"01.07.2021",3.68,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","18.10.2021","0000-00-00","","Turkey",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21631294,2016,"01.07.2021",3.68,"TEI","Aerospace & Defense","Business Development Engineer","15.03.2021","0000-00-00","Eskişehir","Turkey",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21631309,2016,"01.07.2021",3,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Logistics Engineer","23.08.2021","0000-00-00","Sakarya","Turkey",NA,NA,"","","",2021
+21631309,2016,"01.07.2021",3,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Long-Term Intern","14.12.2020","28.05.2021","","Turkey",NA,NA,"","","",2021
+21631314,2016,"02.02.2022",3.03,"LC Waikiki","Textiles & Leather Goods","Assistant Product Owner","0000-00-00","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2022
+21631328,2016,"06.07.2020",3.29,"Nurol Technology","IT Services & Consulting","Logistics Engineer","01.04.2021","29.04.2022","Ankara","Turkey",NA,NA,"","","",2020
+21631328,2016,"06.07.2020",3.29,"ASELSAN","Aerospace & Defense","Product Support Engineer","09.05.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21631347,2016,"17.01.2022",3.21,"Transporeon","Logistics and Freight Transportation","Analyst","17.10.2022","0000-00-00","Mannheim","Germany",1,2019,"University of Alcalá","Madrid","Spain",2022
+21631347,2016,"17.01.2022",3.21,"BASF","Chemicals: Commodity, Agricultural, Specialty","Automation Engineer","01.07.2022","15.10.2022","Berlin","Germany",1,2019,"University of Alcalá","Madrid","Spain",2022
+21684586,2016,"01.07.2021",3.51,"SAS Institute","Software","Associate Analytical Consultant","01.06.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21684586,2016,"01.07.2021",3.51,"SAS Institute","Software","Long Term Consulting Intern","06.04.2021","01.06.2022","Ankara","Turkey",NA,NA,"","","",2021
+21684644,2016,"06.07.2020",3.53,"ASELSAN","Aerospace & Defense","Candidate Engineer","12.12.2019","03.07.2020","Ankara","Turkey",NA,NA,"","","",2020
+21684644,2016,"06.07.2020",3.53,"ASELSAN","Aerospace & Defense","Production Planning Engineer","06.07.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21684773,2016,"01.07.2021",3,"ROKETSAN","Aerospace & Defense","Supply Chain Engineer","03.01.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21685013,2016,"18.11.2020",2.86,"Teknik Bilgi İşlem","Software","ERP Project Engineer","01.08.2019","0000-00-00","Amasya","Turkey",NA,NA,"","","",2020
+21691157,2016,"27.07.2017",3.56,"Eczacıbaşı VitrA","Construction Materials, Supplies & Fittings","Logistics Assistant Specialist","26.03.2018","01.04.2019","Bilecik","Turkey",NA,NA,"","","",2017
+21691157,2016,"27.07.2017",3.56,"TAI - TUSAŞ","Aerospace & Defense","Production Planning & Control Engineer","15.04.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2017
+21691267,2016,"26.07.2018",3.01,"Aksan Çelik Dövme","Steel","Planning Engineer","17.02.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21692006,2016,"01.07.2021",2.23,"MİTAŞ Endüstri","Steel","Planning & Optimization Engineer","01.03.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21692006,2016,"01.07.2021",2.23,"KeyDATA Bilişim Teknolojileri","Software","Software Engineer","05.10.2020","26.02.2021","Ankara","Turkey",NA,NA,"","","",2021
+21692231,2016,"08.07.2020",2.68,"Kodzer - İnternet ve Bilişim Hizmetleri","IT Services & Consulting","Founder","21.01.2016","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21692231,2016,"08.07.2020",2.68,"Sun Rent a Car","Auto Vehicles, Parts & Service Retailers","Sales Manager","01.06.2017","01.09.2017","Ankara","Turkey",NA,NA,"","","",2020
+21692231,2016,"08.07.2020",2.68,"Xendaba Bilişim","Computer Hardware","Business Development Engineer","17.02.2020","31.05.2020","Ankara","Turkey",NA,NA,"","","",2020
+21692231,2016,"08.07.2020",2.68,"Battal Holding","Biotechnology & Medical Research","IT Specialist","01.07.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21692231,2016,"08.07.2020",2.68,"SHIPY Information Technologies","IT Services & Consulting","Founder","24.04.2020","0000-00-00","London","United Kingdom",NA,NA,"","","",2020
+21692264,2016,"01.07.2021",3.02,"DCS Digital Customs Services","Other","Business Development Assistant Specialist","01.03.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2021
+21692446,2016,"06.07.2020",3.04,"Detay Yazılım","Software","SAP MM Consultant","02.11.2020","0000-00-00","İstanbul","Turkey",1,2018,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2020
+21692629,2016,"05.02.2020",2.48,"Aksan Çelik Dövme","Steel","Research & Development Engineer","30.04.2019","13.11.2020","Ankara","Turkey",NA,NA,"","","",2020
+21692629,2016,"05.02.2020",2.48,"Vektora Bilişim Sistemleri","Consulting","Consultant","16.11.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21692672,2016,"05.02.2020",2.4,"Aksan Çelik Dövme","Steel","Research & Development Engineer","30.04.2019","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21692835,2016,"05.09.2019",2.86,"BMS Defence Technologies","Aerospace & Defense","Software Engineer","11.07.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2019
+21692959,2016,"12.10.2020",2.46,"Cadı Design","Home Furnishing","Production Planning Engineer","08.01.2021","07.10.2021","İstanbul","Turkey",NA,NA,"","","",2020
+21692964,2016,"24.06.2019",2.84,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","0000-00-00","0000-00-00","Ankara","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21692997,2016,"27.07.2017",3.28,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Vehicle Production Planning & Control Engineer","24.09.2017","0000-00-00","Kocaeli","Turkey",NA,NA,"","","",2017
+21693003,2016,"03.02.2020",3.05,"Industrial Application Software","Software","ERP Consultant","17.08.2020","02.04.2021","Ankara","Turkey",NA,NA,"","","",2020
+21693003,2016,"03.02.2020",3.05,"MAN Türkiye","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","07.04.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2020
+21693069,2016,"24.06.2019",3.28,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Supply Chain Engineer","24.02.2020","0000-00-00","Eskişehir","Turkey",1,2017,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2019
+21693088,2016,"12.07.2018",2.28,"Decathlon","Department Stores","Salesman","23.10.2016","12.12.2016","Ankara","Turkey",NA,NA,"","","",2018
+21693088,2016,"12.07.2018",2.28,"ALBASEC","Software","Technical Consultant","13.07.2018","01.11.2019","Ankara","Turkey",NA,NA,"","","",2018
+21693088,2016,"12.07.2018",2.28,"Enerjisa","Electric Utilities","IT Specialist","01.06.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2018
+21693146,2016,"15.02.2021",2.74,"KPMG","Consulting","IT Advisory Analyst","03.01.2022","0000-00-00","","Turkey",NA,NA,"","","",2021
+21693146,2016,"15.02.2021",2.74,"Aydin Bilgi İşlem","IT Services & Consulting","ERP Consultant","20.04.2021","31.12.2021","Ankara","Turkey",NA,NA,"","","",2021
+21731073,2017,"04.08.2022",2.92,"FNSS Savunma Sistemleri","Aerospace & Defense","Candidate Engineer","0000-00-00","0000-00-00","","Turkey",NA,NA,"","","",2022
+21731087,2017,"30.05.2022",3,"ASELSAN","Aerospace & Defense","Candidate Engineer","22.11.2021","0000-00-00","Ankara","Turkey",1,2020,"Westsächsische Hochschule Zwickau","Zwickau","Germany",2022
+21731112,2017,"30.05.2022",3,"Mt. Olympus Resort & Theme Park","Hotels, Motels & Cruiselines","Lifeguard","21.06.2019","21.09.2019","Wisconsin Dells","United States",1,2020,"University of Lodz","Łódź","Poland",2022
+21731112,2017,"30.05.2022",3,"Alp Havacılık","Aerospace & Defense","Candidate Engineer","17.01.2022","0000-00-00","Eskişehir","Turkey",1,2020,"University of Lodz","Łódź","Poland",2022
+21731126,2017,"01.07.2021",3.33,"ASELSAN","Aerospace & Defense","Integrated Logistics Support Planning and Analysis Engineer","03.01.2022","0000-00-00","Ankara","Turkey",1,2019,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2021
+21731126,2017,"01.07.2021",3.33,"Groupe Renault","Auto, Truck & Motorcycle Manufacturers","Purchasing Engineer","02.08.2021","30.12.2021","Bursa","Turkey",1,2019,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2021
+21731126,2017,"01.07.2021",3.33,"Groupe Renault","Auto, Truck & Motorcycle Manufacturers","Long-Term Project Intern","21.12.2020","0000-00-00","Bursa","Turkey",1,2019,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2021
+21731131,2017,"30.05.2022",3,"Vestel Elektronik","Consumer Electronics","Part-Time Production Planning Engineer","18.01.2022","0000-00-00","Manisa","Turkey",NA,NA,"","","",2022
+21731164,2017,"16.06.2022",3,"Manas Energy Management","Energy","Procees Improvement Engineer","14.02.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731183,2017,"30.05.2022",3,"ASELSAN","Aerospace & Defense","Production & Control Engineer","01.06.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731183,2017,"30.05.2022",3,"ASELSAN","Aerospace & Defense","Candidate Engineer","22.11.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731222,2017,"30.05.2022",2,"Yıldız Holding","Food Processing","Project Assistant Specialist","26.09.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2022
+21731308,2017,"30.05.2022",3,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","01.07.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731308,2017,"30.05.2022",3,"Mercedes Benz Türk","Auto, Truck & Motorcycle Manufacturers","PEP Trainee","06.09.2021","01.12.2021","Aksaray","Turkey",NA,NA,"","","",2022
+21731308,2017,"30.05.2022",3,"ASELSAN","Aerospace & Defense","Candidate Engineer","23.11.2021","30.06.2022","Ankara","Turkey",NA,NA,"","","",2022
+21731313,2017,"01.07.2021",3.61,"ASELSAN","Aerospace & Defense","Project Engineer","13.10.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21731313,2017,"01.07.2021",3.61,"FNSS Savunma Sistemleri","Aerospace & Defense","Candidate Engineer","09.11.2020","30.06.2021","Ankara","Turkey",NA,NA,"","","",2021
+21731327,2017,"17.01.2022",2.71,"Virgosol","Software","Software Quality Assurance Engineer","01.03.2022","0000-00-00","","Turkey",NA,NA,"","","",2022
+21731346,2017,"30.05.2022",2,"Garanti BBVA Teknoloji","Banks","Junior Business Analyst","24.04.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2022
+21731346,2017,"30.05.2022",2,"Eczacıbaşı İlaç Pazarlama","Advertising & Marketing","KTS IT Intern","18.10.2021","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2022
+21731346,2017,"30.05.2022",2,"Thales Bilişim","IT Services & Consulting","ERP Consultant","21.09.2020","13.10.2021","Ankara","Turkey",NA,NA,"","","",2022
+21731384,2017,"30.05.2022",3,"Enerjisa","Electric Utilities","Business Analyst","23.06.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731398,2017,"30.05.2022",3,"TAI - TUSAŞ","Aerospace & Defense","Candidate Engineer","07.12.2021","31.05.2022","Ankara","Turkey",NA,NA,"","","",2022
+21731437,2017,"30.05.2022",3,"SDT Uzay ve Savunma Teknolojileri","Aerospace & Defense","Project Management Intern","06.09.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731456,2017,"07.07.2022",3,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Customer Relations Value Management Team Member","27.07.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2022
+21731456,2017,"07.07.2022",3,"FORD Otosan","Auto, Truck & Motorcycle Manufacturers","Candidate Engineer","08.10.2021","24.06.2022","İstanbul","Turkey",NA,NA,"","","",2022
+21731494,2017,"07.07.2022",2,"Yıldız Holding","Food Processing","Junior Specialist","18.07.2022","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2022
+21731529,2017,"01.07.2021",3.36,"TÜBİTAK BİLGEM YTE","Software","Junior Data Scientist","05.04.2021","0000-00-00","Ankara","Turkey",1,2019,"Technical University of Liberec","Liberec","Czech Republic",2021
+21731534,2017,"07.07.2022",3,"ASELSAN","Aerospace & Defense","Project Evaluation and Analysis Engineer","01.08.2022","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21731534,2017,"07.07.2022",3,"ATILABS | Advanced Technologies & Innovation LABS","Software","Marketing & Sales Engineer","30.07.2021","16.09.2021","Ankara","Turkey",NA,NA,"","","",2022
+21731534,2017,"07.07.2022",3,"ASELSAN","Aerospace & Defense","Candidate Engineer","22.11.2021","31.07.2022","Ankara","Turkey",NA,NA,"","","",2022
+21731553,2017,"13.06.2022",2,"OTOKAR","Auto, Truck & Motorcycle Manufacturers","Candidate Engineer","17.01.2022","0000-00-00","","Turkey",NA,NA,"","","",2022
+21731586,2017,"01.07.2021",3.57,"Hacettepe University","Education","Social Media Specialist","31.05.2020","0000-00-00","","Turkey",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21731586,2017,"01.07.2021",3.57,"Garanti BBVA Teknoloji","Banks","Junior Data Analyst","24.05.2021","16.08.2022","İstanbul","Turkey",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21731586,2017,"01.07.2021",3.57,"Nurol Technology","IT Services & Consulting","Candidate Engineer","01.09.2020","0000-00-00","Ankara","Turkey",1,2019,"RWTH Aachen University","Aachen","Germany",2021
+21731606,2017,"07.07.2022",3,"TAI - TUSAŞ","Aerospace & Defense","Candidate Engineer","06.12.2021","31.05.2022","","Turkey",1,2020,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2022
+21731606,2017,"07.07.2022",3,"Garanti BBVA","Banks","Management Trainee","01.08.2022","0000-00-00","İstanbul","Turkey",1,2020,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2022
+21731639,2017,"04.08.2022",3,"ASELSAN","Aerospace & Defense","Production & Planning Engineer","22.08.2022","0000-00-00","Ankara","Turkey",1,2021,"Universitaet Duisburg-Essen","Duisburg-Essen","Germany",2022
+21731644,2017,"01.07.2021",3,"HAVELSAN","Aerospace & Defense","Product Manager","01.09.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2021
+21731644,2017,"01.07.2021",3,"HAVELSAN","Aerospace & Defense","Candidate Engineer","01.02.2021","30.08.2021","Ankara","Turkey",NA,NA,"","","",2021
+21783517,2017,"06.07.2020",3.59,"ASELSAN","Aerospace & Defense","Candidate Engineer","05.12.2019","16.06.2020","Ankara","Turkey",NA,NA,"","","",2020
+21783517,2017,"06.07.2020",3.59,"Amazon","Other","RBS Senior Catalog Associate","21.12.2020","0000-00-00","İstanbul","Turkey",NA,NA,"","","",2020
+21783899,2017,"06.07.2020",3.72,"ASELSAN","Aerospace & Defense","Candidate Engineer","0000-00-00","0000-00-00","Ankara","Turkey",1,2018,"RWTH Aachen University","Aachen","Germany",2020
+21783899,2017,"06.07.2020",3.72,"ASELSAN","Aerospace & Defense","Warehouse Management Engineer","04.08.2020","0000-00-00","Ankara","Turkey",1,2018,"RWTH Aachen University","Aachen","Germany",2020
+21784662,2017,"27.11.2020",3.22,"MilSOFT","Software","Sharepoint System Designer","12.01.2021","0000-00-00","Ankara","Turkey",1,2018,"University of Lodz","Łódź","Poland",2020
+21791299,2017,"04.08.2022",3,"KOTON Tekstil ve Mağazacılık","Textiles & Leather Goods","Salesman","13.06.2018","29.09.2018","Ankara","Turkey",NA,NA,"","","",2022
+21791299,2017,"04.08.2022",3,"AÇILIM","Publishing","Storehouse supervisor","0000-00-00","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21791299,2017,"04.08.2022",3,"UDEMY","Education","Instructor","15.03.2020","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21889041,2018,"10.03.2022",3.06,"TÜBİTAK - Sage","Aerospace & Defense","Candidate Engineer","05.11.2021","15.04.2022","","Turkey",NA,NA,"","","",2022
+21889041,2018,"10.03.2022",3.06,"TÜBİTAK - Sage","Aerospace & Defense","Researcher","15.04.2022","0000-00-00","","Turkey",NA,NA,"","","",2022
+21889481,2018,"30.05.2022",2,"Kochendörfer Hydro A.Ş.","Energy","Quality and Process Engineer","08.03.2021","14.06.2021","Ankara","Turkey",NA,NA,"","","",2022
+21994524,2019,"30.05.2022",3,"ASELSAN","Aerospace & Defense","Candidate Engineer","22.11.2021","0000-00-00","Ankara","Turkey",NA,NA,"","","",2022
+21995549,2019,"01.09.2022",3,"Türk Traktör","Auto, Truck & Motorcycle Manufacturers","Risk Management and Management Systems Assistant","02.08.2021","14.01.2022","Ankara","Turkey",NA,NA,"","","",2022
