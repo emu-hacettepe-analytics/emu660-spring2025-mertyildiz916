@@ -40,7 +40,7 @@ The electricity market consists of various sub-markets. Making accurate price fo
 
 ## 2.4 Preprocessing
 
-In the preprocessing stage, the data stored in Excel files was converted into RData format. No additional preprocessing steps were required at this stage.
+In the preprocessing stage, the data stored in Excel files was converted into RData format.
 
 ```{r}
 
@@ -57,6 +57,8 @@ head(epias_data)
 head(botas_data)
 
 ```
+
+The natural gas price data obtained from BOTAŞ was available on a monthly basis. These monthly values were integrated into the hourly dataset.
 
 ```{r}
 
@@ -87,8 +89,9 @@ epias_merged <- epias_merged %>%
 
 save(epias_merged, file = "electricity_merged.RData")
 
-head(epias_merged)
 ```
+
+The hourly data was converted into daily averages to enable analysis at a daily resolution.
 
 ```{r}
 library(dplyr)
@@ -97,8 +100,12 @@ epias_daily <- epias_merged %>%
   group_by(date) %>%
   summarise(across(where(is.numeric), mean, na.rm = TRUE))
 
-head(epias_daily)
+
 ```
+
+Finally, a feature aggregation process was carried out to prepare the data for forecasting. Generation sources with similar characteristics were grouped under common categories. Fueloil, naphta, lignite, and hard coal were combined under the label cheap_thermal. Wind, run-of-river, biomass, and geothermal sources were grouped under renewables.
+
+Solar and hydro (dam) generation were excluded from the renewables group, as they exhibit distinct production characteristics. The category other was disregarded due to its low share and lack of detailed classification.
 
 ```{r}
 library(dplyr)
@@ -118,124 +125,26 @@ head(epias_simplified_daily)
 ```
 
 ```{r}
-library(dplyr)
-library(ggplot2)
-library(lubridate)
-
-nov_demand <- epias_merged %>%
-  filter(date >= as.Date("2024-11-01") & date <= as.Date("2024-11-10")) %>%
-  mutate(
-    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M"),
-    day_num = day(date) + hour(datetime) / 24 
-  )
-
-ggplot(nov_demand, aes(x = day_num, y = demand)) +
-  geom_line(color = "steelblue", size = 1.2) +
-  scale_x_continuous(breaks = 1:10) +
-  labs(
-    title = "November 2024 - First 10 Days Hourly Demand",
-    x = "Day of Month",
-    y = "Demand (MW)"
-  ) +
-  theme_minimal() +
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold")
-  )
-```
-
-```{r}
-
-library(dplyr)
-library(ggplot2)
-library(lubridate)
-
-nov_renew <- epias_merged %>%
-  filter(date >= as.Date("2024-11-01") & date <= as.Date("2024-11-10")) %>%
-  mutate(
-    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M")
-  )
-
-ggplot(nov_renew, aes(x = datetime)) +
-  geom_line(aes(y = solar, color = "Solar"), size = 1.2) +
-  geom_line(aes(y = wind, color = "Wind"), size = 1.2) +
-  scale_color_manual(values = c("Solar" = "orange", "Wind" = "steelblue")) +
-  labs(
-    title = "Solar and Wind Generation – November 1–10, 2024",
-    x = "Datetime",
-    y = "Generation (MW)",
-    color = "Source"
-  ) +
-  theme_minimal() +
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold")
-  )
-
-```
-
-```{r}
-library(dplyr)
-library(ggplot2)
-library(lubridate)
-library(zoo)
-
-demand_yoy <- epias_merged %>%
-  filter(year(date) %in% c(2023, 2024)) %>%
-  arrange(date, hour) %>%
-  mutate(
-    year = year(date),
-    doy = yday(date),
-    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M")
-  ) %>%
-  group_by(year) %>%
-  arrange(datetime) %>%
-  mutate(
-    demand_7day_avg = rollmean(demand, k = 24 * 7, fill = NA, align = "right")
-  ) %>%
-  ungroup()
-
-ggplot(demand_yoy, aes(x = doy, y = demand_7day_avg, color = as.factor(year))) +
-  geom_line(size = 1.2) +
-  labs(
-    title = "Year-over-Year Demand Comparison (7-Day Moving Average)",
-    x = "Day of Year",
-    y = "Demand (MW)",
-    color = "Year"
-  ) +
-  scale_color_manual(values = c("2023" = "purple", "2024" = "gold")) +
-  expand_limits(y = 20000) +
-  theme_minimal() +
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold")
-  )
-
-```
-
-```{r}
 # Gerekli paketler
 library(dplyr)
 library(car)
 library(ggplot2)
 
-# 1. Veriyi hazırlama: sadece gerekli sütunları seç ve eksik değerleri çıkar
 reg_data <- epias_simplified_daily %>%
   select(price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
   na.omit()
 
-# 2. Regresyon modeli oluştur
 model <- lm(price ~ cheap_thermal + naturalgas + importedcoal + renewables + demand + solar + dam + natgasprice, data = reg_data)
 
-# 3. Modelin özetini al
 summary(model)
 
-# 4. Değişkenler arası çoklu bağlantıyı kontrol et (VIF)
 vif(model)
 
-# 5. Artıkların dağılımını kontrol et (lineerlik ve normallik varsayımları için)
-par(mfrow = c(2, 2))  # Tüm grafiklere bir pencerede bakmak için
+par(mfrow = c(2, 2))
 plot(model)
-par(mfrow = c(1, 1))  # Varsayılan görünüme dön
+par(mfrow = c(1, 1))
 
-# 6. Gerçek vs Tahmin edilen değerlerin grafiği
+
 reg_data$predicted_price <- predict(model)
 
 ggplot(reg_data, aes(x = predicted_price, y = price)) +
@@ -284,13 +193,303 @@ actualvspredicted
 
 # 3. Analysis
 
-## 3.1 Exploratory Data Analysis
+## 3.1 Why It's Important to Create a Forecast?
 
-xxxxxx
+Electricity price forecasting plays a critical role in the power market. Accurate forecasts are essential not only for making commercial decisions but also for managing financial processes. Cash flow management is a key factor for maintaining an active and balanced presence in the market. Portfolios with constant inflows and outflows must manage their commercial balance while simultaneously overseeing their cash flows. Daily electricity price forecasting can provide significant advantages in both commercial and financial foresight.
 
-## 3.2 Trend Analysis
+## 3.2 How Electricity Prices are Determined?
 
-xxxxxx
+Electricity prices are determined through a system known as the merit order. Similar to basic economic pricing, supply and demand are matched for each hour, and the price is set at the point where supply meets demand. However, unlike other markets, electricity is a fundamental need—so demand does not respond to price, but instead determines it.
+
+For any given hour, demand is met starting from the cheapest suppliers, moving up to the more expensive ones. The price of electricity is then set based on the bid of the most expensive accepted supplier. Electricity generation resources can generally be ranked from cheapest to most expensive as follows: renewables, hydro, nuclear, domestic coal, imported coal, and natural gas.
+
+![](images/Merit-Order-Effect-Chart_Squeaky-01.png)
+
+## 3.3 **Exploratory Data Analysis & Trend Analysis**
+
+Electricity prices can be highly volatile even on the same type of day. The chart below shows the prices for two different Mondays in November 2024
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+
+# Veri seçimi
+price_data <- epias_merged %>%
+  filter(date %in% as.Date(c("2024-11-04", "2024-11-18"))) %>%
+  mutate(hour_numeric = as.numeric(substr(hour, 1, 2))) %>%
+  select(date, hour_numeric, price)
+
+# Grafik
+ggplot(price_data, aes(x = hour_numeric, y = price, color = as.factor(date), group = date)) +
+  geom_line(size = 1.2) +
+  scale_color_manual(
+    values = c("2024-11-04" = "red", "2024-11-18" = "blue"),
+    labels = c("4 November 2024", "18 November 2024")
+  ) +
+  scale_x_continuous(
+    breaks = 0:23,
+    labels = sprintf("%02d:00", 0:23)
+  ) +
+  labs(
+    title = "Hourly Electricity Price – 4 & 18 November 2024",
+    x = "Hour of Day",
+    y = "Price (TL/MWh)",
+    color = "Date"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+
+
+```
+
+Electricity prices exhibit high volatility across different hours of the day. This volatility is clearly visible in the chart below, with midday hours standing out as particularly volatile.
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+# 1. Saat sütunu sayıya çevrilir
+epias_merged <- epias_merged %>%
+  mutate(hour_numeric = as.numeric(substr(hour, 1, 2)))
+
+# 2. Sadece 2024 yılı alınır
+price_2024 <- epias_merged %>%
+  filter(year(date) == 2024) %>%
+  select(hour_numeric, price)
+
+# 3. Violin plot: her saat için fiyat yoğunluğu
+ggplot(price_2024, aes(x = factor(hour_numeric), y = price, fill = factor(hour_numeric))) +
+  geom_violin(scale = "width", adjust = 1.2, alpha = 0.8, color = NA) +
+  scale_fill_viridis_d(option = "C", begin = 0.1, end = 0.9) +
+  coord_cartesian(ylim = c(0, 3400)) +  # Görsel netlik için üst sınır
+  labs(
+    title = "Hourly Electricity Price Distribution – 2024",
+    x = "Hour of Day",
+    y = "Electricity Price (TL/MWh)",
+    fill = "Hour"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "none"
+  )
+
+
+
+```
+
+To understand the electricity market, it is essential to first examine the factors that influence it. Among these, the most critical elements are generation and consumption data.
+
+```{r}
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(lubridate)
+
+prod_data <- epias_merged %>%
+  filter(date == as.Date("2024-06-12")) %>%
+  select(hour, solar, wind, runofriver, dam, geothermal, biomass, naturalgas,
+         fueloil, naphta, lignite, darkcoal, importedcoal, other)
+
+prod_long <- prod_data %>%
+  pivot_longer(
+    cols = -hour,
+    names_to = "source",
+    values_to = "generation"
+  )
+
+source_colors <- c(
+  solar = "gold",
+  wind = "forestgreen",
+  runofriver = "dodgerblue",
+  dam = "steelblue",
+  geothermal = "sienna",
+  biomass = "darkolivegreen",
+  naturalgas = "firebrick",
+  fueloil = "darkred",
+  naphta = "orangered",
+  lignite = "black",
+  darkcoal = "black",
+  importedcoal = "dimgray",
+  other = "purple"
+)
+
+ggplot(prod_long, aes(x = hour, y = generation, fill = source)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = source_colors) +
+  labs(
+    title = "Electricity Generation by Source – 12 June 2024",
+    x = "Hour",
+    y = "Generation (MW)",
+    fill = "Source"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+
+```
+
+This chart clearly shows how electricity demand is met by different generation sources at different hours of the day.
+
+There are two major factors that influence electricity consumption, or demand. The first is air temperature. In Türkiye, electricity demand increases when the average daily temperature rises above or drops below 15°C, due to higher use of heating and cooling systems.
+
+The second factor is more long-term: the country's level of industrial activity and population size. As the population grows and industrial production expands, electricity demand also rises.
+
+The chart below displays the moving average electricity demand data for 2023 and 2024.
+
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(zoo)
+
+demand_yoy <- epias_merged %>%
+  filter(year(date) %in% c(2023, 2024)) %>%
+  arrange(date, hour) %>%
+  mutate(
+    year = year(date),
+    doy = yday(date),
+    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M")
+  ) %>%
+  group_by(year) %>%
+  arrange(datetime) %>%
+  mutate(
+    demand_7day_avg = rollmean(demand, k = 24 * 7, fill = NA, align = "right")
+  ) %>%
+  ungroup()
+
+ggplot(demand_yoy, aes(x = doy, y = demand_7day_avg, color = as.factor(year))) +
+  geom_line(size = 1.2) +
+  labs(
+    title = "Year-over-Year Demand Comparison (7-Day Moving Average)",
+    x = "Day of Year",
+    y = "Demand (MW)",
+    color = "Year"
+  ) +
+  scale_color_manual(values = c("2023" = "purple", "2024" = "gold")) +
+  expand_limits(y = 20000) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+
+```
+
+As seen in the chart, electricity demand increases during the summer due to rising temperatures, and also in winter as temperatures drop. Additionally, demand tends to reach its lowest levels during religious holidays, when industrial activity comes to a near halt.
+
+When examining demand data at a higher resolution, it becomes clear how electricity demand varies across the days of the week.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+nov_demand <- epias_merged %>%
+  filter(date >= as.Date("2024-11-01") & date <= as.Date("2024-11-10")) %>%
+  mutate(
+    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M"),
+    day_num = day(date) + hour(datetime) / 24 
+  )
+
+ggplot(nov_demand, aes(x = day_num, y = demand)) +
+  geom_line(color = "steelblue", size = 1.2) +
+  scale_x_continuous(breaks = 1:10) +
+  labs(
+    title = "November 2024 - First 10 Days Hourly Demand",
+    x = "Day of Month",
+    y = "Demand (MW)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+```
+
+Electricity demand remains relatively consistent during weekdays, whereas a noticeable drop is observed on Saturdays and Sundays.
+
+A comprehensive understanding of the data requires analyzing generation figures in conjunction with demand.
+
+Renewable energy sources exhibit different generation trend characteristics. Among these, the most influential factors are meteorological conditions and seasonal effects. Below is the generation data from various sources for a single day. As seen, solar production peaks around midday and drops to zero after sunset. Wind generation, on the other hand, may display varying patterns from day to day.
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+nov_renew <- epias_merged %>%
+  filter(date >= as.Date("2024-11-01") & date <= as.Date("2024-11-10")) %>%
+  mutate(
+    datetime = as.POSIXct(paste(date, hour), format = "%Y-%m-%d %H:%M")
+  )
+
+ggplot(nov_renew, aes(x = datetime)) +
+  geom_line(aes(y = solar, color = "Solar"), size = 1.2) +
+  geom_line(aes(y = wind, color = "Wind"), size = 1.2) +
+  scale_color_manual(values = c("Solar" = "orange", "Wind" = "darkgreen")) +
+  labs(
+    title = "Solar and Wind Generation – November 1–10, 2024",
+    x = "Datetime",
+    y = "Generation (MW)",
+    color = "Source"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+
+```
+
+An analysis of solar and run-of-river generation data reveals clear seasonal trends. While solar production increases during the summer months, run-of-river generation peaks in the spring.
+
+```{r, warning=FALSE, message=FALSE}
+
+library(dplyr)
+library(ggplot2)
+library(zoo)
+library(lubridate)
+
+solar_river_daily <- epias_merged %>%
+  mutate(date = as.Date(date)) %>%
+  group_by(date) %>%
+  summarise(
+    solar = mean(solar, na.rm = TRUE),
+    runofriver = mean(runofriver, na.rm = TRUE)
+  ) %>%
+  filter(year(date) == 2023) %>%
+  arrange(date) %>%
+  mutate(
+    solar_ma = rollmean(solar, k = 7, fill = NA, align = "right"),
+    runofriver_ma = rollmean(runofriver, k = 7, fill = NA, align = "right")
+  )
+
+ggplot(solar_river_daily, aes(x = date)) +
+  geom_line(aes(y = solar_ma, color = "Solar"), size = 1.2) +
+  geom_line(aes(y = runofriver_ma, color = "Run-of-River"), size = 1.2) +
+  scale_color_manual(values = c("Solar" = "orange", "Run-of-River" = "steelblue")) +
+  labs(
+    title = "7-Day Moving Average of Solar and Run-of-River Generation – 2023",
+    x = "Date",
+    y = "Generation (MWh)",
+    color = "Source"
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+
+```
 
 ## 3.3 Model Fitting
 
