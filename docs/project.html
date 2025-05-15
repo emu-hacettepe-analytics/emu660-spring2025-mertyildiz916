@@ -195,6 +195,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">3.4 Results</a></li>
   </ul></li>
   <li><a href="#results-and-key-takeaways" id="toc-results-and-key-takeaways" class="nav-link" data-scroll-target="#results-and-key-takeaways">4. Results and Key Takeaways</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">4. References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="project.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </nav>
@@ -1193,6 +1194,11 @@ F-statistic: 509.1 on 8 and 722 DF,  p-value: &lt; 2.2e-16</code></pre>
 <p>This project focused on forecasting electricity prices in Turkey’s day-ahead market. The main objective was to demonstrate that accurate price forecasting in this market does not necessarily require highly complex models, and that successful results can be achieved with relatively simple approaches. A forecasting model was developed using publicly available data from EPİAŞ and BOTAŞ. Two different models were built, with the only distinction being their approach to feature usage. While one model included all features individually, the other applied a feature aggregation strategy. Although the aggregated model was initially expected to perform better, it delivered slightly worse results. However, it provided clearer interpretability regarding the influence of each feature on electricity prices.</p>
 <p>The second model differed from the first by only about 1% in terms of error rate, which can be considered an acceptable margin. Given its simplicity, the second model was initially assumed to be more efficient. However, this outcome raises some important considerations. First, the fact that both models underperformed compared to the first model presents a challenge. Future improvements should focus on applying feature aggregation or feature elimination techniques to achieve both a simpler and more accurate model.</p>
 <p>Additionally, some of the features used in the models exhibit high correlation with each other, which may lead to redundancy. Reducing multicollinearity and introducing alternative variables may help better capture the influence of distinct factors on electricity prices. Moreover, while this study relied on multiple linear regression, testing other simple mathematical models could provide further insights into prediction performance and model robustness.</p>
+</section>
+<section id="references" class="level1">
+<h1>4. References</h1>
+<p>[1] Hirth, L., “Marginal Pricing and the Merit Order,” Neon Energy, N/A. [Online]. Available: neon.energy/seminars. Accessed: Apr.&nbsp;21, 2025.</p>
+<p>[2] E. Vivas, H. Allende-Cid, and R. Salas, “A systematic review of statistical and machine learning methods for electrical power forecasting with reported MAPE score,” *Entropy*, vol.&nbsp;22, no. 12, p.&nbsp;1412, Dec.&nbsp;2020</p>
 
 
 </section>

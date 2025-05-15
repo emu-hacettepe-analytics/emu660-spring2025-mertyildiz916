@@ -4,6 +4,8 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
+  11pt,
+  a4paper,
 ]{article}
 
 \usepackage{amsmath,amssymb}
@@ -38,6 +40,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\usepackage[lmargin=2cm,rmargin=2cm,tmargin=2cm,bmargin=2cm]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -202,7 +205,7 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{It's Not Rocket Science, It's Electricity Market}
+\title{\textbf{It's Not Rocket Science, It's Electricity Market}}
 \author{}
 \date{}
 
@@ -215,8 +218,6 @@
 \setcounter{tocdepth}{3}
 \tableofcontents
 }
-
-Welcome to my EMU660 project page.
 
 \section{1. Project Overview and
 Scope}\label{project-overview-and-scope}
@@ -370,28 +371,7 @@ dataset.
 \begin{Highlighting}[]
 \FunctionTok{load}\NormalTok{(}\StringTok{"electricity.RData"}\NormalTok{)}
 \FunctionTok{library}\NormalTok{(dplyr)}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-
-Attaching package: 'dplyr'
-\end{verbatim}
-
-\begin{verbatim}
-The following objects are masked from 'package:stats':
-
-    filter, lag
-\end{verbatim}
-
-\begin{verbatim}
-The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{epias\_data}\SpecialCharTok{$}\NormalTok{date }\OtherTok{\textless{}{-}} \FunctionTok{as.Date}\NormalTok{(epias\_data}\SpecialCharTok{$}\NormalTok{date)}
 
 \NormalTok{epias\_data}\SpecialCharTok{$}\NormalTok{year }\OtherTok{\textless{}{-}} \FunctionTok{format}\NormalTok{(epias\_data}\SpecialCharTok{$}\NormalTok{date, }\StringTok{"\%Y"}\NormalTok{)}
@@ -403,27 +383,6 @@ The following objects are masked from 'package:base':
 
 \NormalTok{epias\_merged }\OtherTok{\textless{}{-}} \FunctionTok{left\_join}\NormalTok{(epias\_data, botas\_data, }\AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"year"}\NormalTok{, }\StringTok{"month"}\NormalTok{))}
 
-\FunctionTok{head}\NormalTok{(epias\_merged)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-# A tibble: 6 x 21
-  date       hour   total naturalgas  wind lignite darkcoal importedcoal fueloil
-  <date>     <chr>  <dbl>      <dbl> <dbl>   <dbl>    <dbl>        <dbl>   <dbl>
-1 2023-01-01 00:00 25945.      3636.  988.   4646.      136        8556.    16.5
-2 2023-01-01 01:00 24494.      2939. 1056.   4646.      136        8556.    16.5
-3 2023-01-01 02:00 22631.      2495. 1123.   4694.      136        8554.    16.5
-4 2023-01-01 03:00 22022.      2667. 1227.   4878.      136        8372.    16.5
-5 2023-01-01 04:00 21404.      2334. 1308.   4910.      136        8373.    16.5
-6 2023-01-01 05:00 21586.      2177. 1406.   5016.      136        8373.    15.5
-# i 12 more variables: geothermal <dbl>, dam <dbl>, naphta <dbl>,
-#   biomass <dbl>, runofriver <dbl>, other <dbl>, demand <dbl>, solar <dbl>,
-#   price <dbl>, year <chr>, month <chr>, natgasprice <dbl>
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{save}\NormalTok{(epias\_merged, }\AttributeTok{file =} \StringTok{"electricity\_merged.RData"}\NormalTok{)}
 
 \NormalTok{epias\_merged }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
@@ -448,21 +407,6 @@ a daily resolution.
   \FunctionTok{summarise}\NormalTok{(}\FunctionTok{across}\NormalTok{(}\FunctionTok{where}\NormalTok{(is.numeric), mean, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-Warning: There was 1 warning in `summarise()`.
-i In argument: `across(where(is.numeric), mean, na.rm = TRUE)`.
-i In group 1: `date = 2023-01-01`.
-Caused by warning:
-! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
-Supply arguments directly to `.fns` through an anonymous function instead.
-
-  # Previously
-  across(a:b, mean, na.rm = TRUE)
-
-  # Now
-  across(a:b, \(x) mean(x, na.rm = TRUE))
-\end{verbatim}
 
 Finally, a feature aggregation process was carried out to prepare the
 data for forecasting. Generation sources with similar characteristics
@@ -489,23 +433,8 @@ classification.
 \NormalTok{    importedcoal, naturalgas, solar, dam, demand, natgasprice, price}
 \NormalTok{  )}
 \FunctionTok{save}\NormalTok{(epias\_simplified\_daily, }\AttributeTok{file =} \StringTok{"epias\_simplified\_daily.RData"}\NormalTok{)}
-
-\FunctionTok{head}\NormalTok{(epias\_simplified\_daily)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-# A tibble: 6 x 10
-  date       cheap_thermal renewables importedcoal naturalgas solar   dam demand
-  <date>             <dbl>      <dbl>        <dbl>      <dbl> <dbl> <dbl>  <dbl>
-1 2023-01-01         4972.      4375.        8332.      3210. 1491. 3100. 28743.
-2 2023-01-02         5128.      3919.        9062.      8888. 1441. 2541. 35772.
-3 2023-01-03         5016.      4079.        9328.     11235. 1417. 2531. 37497.
-4 2023-01-04         4834.      5007.        8810.     10960. 1345. 2213. 38064.
-5 2023-01-05         4849.      4986.        8435.     11628. 1207. 2367. 37877.
-6 2023-01-06         4950.      4648.        8633.     11608. 1126. 2334. 37821.
-# i 2 more variables: natgasprice <dbl>, price <dbl>
-\end{verbatim}
 
 \section{3. Analysis}\label{analysis}
 
@@ -539,9 +468,8 @@ imported coal, and natural gas.
 
 \pandocbounded{\includegraphics[keepaspectratio]{images/Merit-Order-Effect-Chart_Squeaky-01.png}}
 
-\subsection{\texorpdfstring{3.3 \textbf{Exploratory Data Analysis \&
-Trend
-Analysis}}{3.3 Exploratory Data Analysis \& Trend Analysis}}\label{exploratory-data-analysis-trend-analysis}
+\subsection{3.3 Exploratory Data Analysis \& Trend
+Analysis}\label{exploratory-data-analysis-trend-analysis}
 
 Electricity prices can be highly volatile even on the same type of day.
 The chart below shows the prices for two different Mondays in November
@@ -552,13 +480,11 @@ The chart below shows the prices for two different Mondays in November
 \FunctionTok{library}\NormalTok{(dplyr)}
 \FunctionTok{library}\NormalTok{(ggplot2)}
 
-\CommentTok{\# Veri seçimi}
 \NormalTok{price\_data }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\%in\%} \FunctionTok{as.Date}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"2024{-}11{-}04"}\NormalTok{, }\StringTok{"2024{-}11{-}18"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{mutate}\NormalTok{(}\AttributeTok{hour\_numeric =} \FunctionTok{as.numeric}\NormalTok{(}\FunctionTok{substr}\NormalTok{(hour, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{select}\NormalTok{(date, hour\_numeric, price)}
 
-\CommentTok{\# Grafik}
 \FunctionTok{ggplot}\NormalTok{(price\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ hour\_numeric, }\AttributeTok{y =}\NormalTok{ price, }\AttributeTok{color =} \FunctionTok{as.factor}\NormalTok{(date), }\AttributeTok{group =}\NormalTok{ date)) }\SpecialCharTok{+}
   \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{scale\_color\_manual}\NormalTok{(}
@@ -583,11 +509,6 @@ The chart below shows the prices for two different Mondays in November
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-i Please use `linewidth` instead.
-\end{verbatim}
-
 \pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-5-1.pdf}}
 
 Electricity prices exhibit high volatility across different hours of the
@@ -599,36 +520,18 @@ hours standing out as particularly volatile.
 \FunctionTok{library}\NormalTok{(dplyr)}
 \FunctionTok{library}\NormalTok{(ggplot2)}
 \FunctionTok{library}\NormalTok{(lubridate)}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-
-Attaching package: 'lubridate'
-\end{verbatim}
-
-\begin{verbatim}
-The following objects are masked from 'package:base':
-
-    date, intersect, setdiff, union
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# 1. Saat sütunu sayıya çevrilir}
 \NormalTok{epias\_merged }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{mutate}\NormalTok{(}\AttributeTok{hour\_numeric =} \FunctionTok{as.numeric}\NormalTok{(}\FunctionTok{substr}\NormalTok{(hour, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{)))}
 
-\CommentTok{\# 2. Sadece 2024 yılı alınır}
 \NormalTok{price\_2024 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{filter}\NormalTok{(}\FunctionTok{year}\NormalTok{(date) }\SpecialCharTok{==} \DecValTok{2024}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{select}\NormalTok{(hour\_numeric, price)}
 
-\CommentTok{\# 3. Violin plot: her saat için fiyat yoğunluğu}
 \FunctionTok{ggplot}\NormalTok{(price\_2024, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{factor}\NormalTok{(hour\_numeric), }\AttributeTok{y =}\NormalTok{ price, }\AttributeTok{fill =} \FunctionTok{factor}\NormalTok{(hour\_numeric))) }\SpecialCharTok{+}
   \FunctionTok{geom\_violin}\NormalTok{(}\AttributeTok{scale =} \StringTok{"width"}\NormalTok{, }\AttributeTok{adjust =} \FloatTok{1.2}\NormalTok{, }\AttributeTok{alpha =} \FloatTok{0.8}\NormalTok{, }\AttributeTok{color =} \ConstantTok{NA}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{scale\_fill\_viridis\_d}\NormalTok{(}\AttributeTok{option =} \StringTok{"C"}\NormalTok{, }\AttributeTok{begin =} \FloatTok{0.1}\NormalTok{, }\AttributeTok{end =} \FloatTok{0.9}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{coord\_cartesian}\NormalTok{(}\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{3400}\NormalTok{)) }\SpecialCharTok{+}  \CommentTok{\# Görsel netlik için üst sınır}
+  \FunctionTok{coord\_cartesian}\NormalTok{(}\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{3400}\NormalTok{)) }\SpecialCharTok{+}  
   \FunctionTok{labs}\NormalTok{(}
     \AttributeTok{title =} \StringTok{"Hourly Electricity Price Distribution – 2024"}\NormalTok{,}
     \AttributeTok{x =} \StringTok{"Hour of Day"}\NormalTok{,}
@@ -895,32 +798,13 @@ aggregation strategies. In the first model, all available variables were
 used individually as features, whereas in the second model, a feature
 aggregation approach was applied.
 
-3.3.1 What Happens If We Don't Aggregate Features?
+\subsubsection{3.3.1 What Happens If We Don't Aggregate
+Features?}\label{what-happens-if-we-dont-aggregate-features}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(dplyr)}
 \FunctionTok{library}\NormalTok{(car)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-Zorunlu paket yükleniyor: carData
-\end{verbatim}
-
-\begin{verbatim}
-
-Attaching package: 'car'
-\end{verbatim}
-
-\begin{verbatim}
-The following object is masked from 'package:dplyr':
-
-    recode
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(ggplot2)}
 
 \NormalTok{reg\_data1 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
@@ -1015,7 +899,8 @@ F-statistic: 361.9 on 15 and 715 DF,  p-value: < 2.2e-16
 
 \pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-12-2.pdf}}
 
-3.3.2 What If We Aggregate Features?
+\subsubsection{3.3.2 What If We Aggregate
+Features?}\label{what-if-we-aggregate-features}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1142,7 +1027,7 @@ producing outlier or extreme values.
 
 \NormalTok{combined }\OtherTok{\textless{}{-}}\NormalTok{ data1 }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{inner\_join}\NormalTok{(data2 }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(date, predicted\_price2), }\AttributeTok{by =} \StringTok{"date"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\textgreater{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}01"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ date }\SpecialCharTok{\textless{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}30"}\NormalTok{))}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\textgreater{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}01{-}01"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ date }\SpecialCharTok{\textless{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}01{-}31"}\NormalTok{))}
 
 
 \FunctionTok{library}\NormalTok{(tidyr)}
@@ -1221,28 +1106,11 @@ producing outlier or extreme values.
 \FunctionTok{library}\NormalTok{(lubridate)}
 \FunctionTok{library}\NormalTok{(knitr)}
 \FunctionTok{library}\NormalTok{(kableExtra)}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-
-Attaching package: 'kableExtra'
-\end{verbatim}
-
-\begin{verbatim}
-The following object is masked from 'package:dplyr':
-
-    group_rows
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# MAPE fonksiyonu}
 \NormalTok{mape }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(actual, predicted) \{}
   \FunctionTok{mean}\NormalTok{(}\FunctionTok{abs}\NormalTok{((actual }\SpecialCharTok{{-}}\NormalTok{ predicted) }\SpecialCharTok{/}\NormalTok{ actual), }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{*} \DecValTok{100}
 \NormalTok{\}}
 
-\CommentTok{\# Tahminlerin eklendiği ve birleştirilmiş veri}
 \NormalTok{combined\_data }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{select}\NormalTok{(date, price,}
 \NormalTok{         naturalgas, wind, lignite, darkcoal, importedcoal, fueloil,}
@@ -1258,7 +1126,6 @@ The following object is masked from 'package:dplyr':
     \AttributeTok{by =} \StringTok{"date"}
 \NormalTok{  )}
 
-\CommentTok{\# Aylık MAPE hesaplama}
 \NormalTok{mape\_summary }\OtherTok{\textless{}{-}}\NormalTok{ combined\_data }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{mutate}\NormalTok{(}\AttributeTok{month =} \FunctionTok{floor\_date}\NormalTok{(date, }\StringTok{"month"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{group\_by}\NormalTok{(month) }\SpecialCharTok{\%\textgreater{}\%}
@@ -1267,7 +1134,6 @@ The following object is masked from 'package:dplyr':
     \AttributeTok{MAPE\_Model2 =} \FunctionTok{mape}\NormalTok{(price, pred\_model2)}
 \NormalTok{  )}
 
-\CommentTok{\# Ortalama MAPE satırını ekle}
 \NormalTok{mape\_summary\_final }\OtherTok{\textless{}{-}} \FunctionTok{bind\_rows}\NormalTok{(}
 \NormalTok{  mape\_summary,}
   \FunctionTok{summarise}\NormalTok{(mape\_summary,}
@@ -1276,11 +1142,9 @@ The following object is masked from 'package:dplyr':
             \AttributeTok{MAPE\_Model2 =} \FunctionTok{mean}\NormalTok{(MAPE\_Model2))}
 \NormalTok{)}
 
-\CommentTok{\# Tarih sütununu karakter formatına çevir}
 \NormalTok{mape\_summary\_final }\OtherTok{\textless{}{-}}\NormalTok{ mape\_summary\_final }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{mutate}\NormalTok{(}\AttributeTok{month =} \FunctionTok{if\_else}\NormalTok{(month }\SpecialCharTok{==} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"9999{-}12{-}31"}\NormalTok{), }\StringTok{"Average"}\NormalTok{, }\FunctionTok{format}\NormalTok{(month, }\StringTok{"\%Y{-}\%m"}\NormalTok{)))}
 
-\CommentTok{\# Tabloyu yazdır}
 \FunctionTok{kable}\NormalTok{(mape\_summary\_final, }\AttributeTok{digits =} \DecValTok{2}\NormalTok{, }\AttributeTok{caption =} \StringTok{"Monthly MAPE Comparison of Model 1 and Model 2"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{full\_width =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{position =} \StringTok{"center"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{row\_spec}\NormalTok{(}\FunctionTok{nrow}\NormalTok{(mape\_summary\_final), }\AttributeTok{bold =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{background =} \StringTok{"\#f2f2f2"}\NormalTok{, }
@@ -1363,6 +1227,17 @@ capture the influence of distinct factors on electricity prices.
 Moreover, while this study relied on multiple linear regression, testing
 other simple mathematical models could provide further insights into
 prediction performance and model robustness.
+
+\section{4. References}\label{references}
+
+{[}1{]} Hirth, L., ``Marginal Pricing and the Merit Order,'' Neon
+Energy, N/A. {[}Online{]}. Available: neon.energy/seminars. Accessed:
+Apr.~21, 2025.
+
+{[}2{]} E. Vivas, H. Allende-Cid, and R. Salas, ``A systematic review of
+statistical and machine learning methods for electrical power
+forecasting with reported MAPE score,'' *Entropy*, vol.~22, no. 12,
+p.~1412, Dec.~2020
 
 
 
