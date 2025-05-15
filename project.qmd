@@ -670,3 +670,9 @@ This project focused on forecasting electricity prices in Turkey's day-ahead mar
 The second model differed from the first by only about 1% in terms of error rate, which can be considered an acceptable margin. Given its simplicity, the second model was initially assumed to be more efficient. However, this outcome raises some important considerations. First, the fact that both models underperformed compared to the first model presents a challenge. Future improvements should focus on applying feature aggregation or feature elimination techniques to achieve both a simpler and more accurate model.
 
 Additionally, some of the features used in the models exhibit high correlation with each other, which may lead to redundancy. Reducing multicollinearity and introducing alternative variables may help better capture the influence of distinct factors on electricity prices. Moreover, while this study relied on multiple linear regression, testing other simple mathematical models could provide further insights into prediction performance and model robustness.
+
+# 4. References
+
+\[1\] Hirth, L., “Marginal Pricing and the Merit Order," Neon Energy, N/A. \[Online\]. Available: neon.energy/seminars. Accessed: Apr. 21, 2025.
+
+\[2\] E. Vivas, H. Allende-Cid, and R. Salas, "A systematic review of statistical and machine learning methods for electrical power forecasting with reported MAPE score," \*Entropy\*, vol. 22, no. 12, p. 1412, Dec. 2020
