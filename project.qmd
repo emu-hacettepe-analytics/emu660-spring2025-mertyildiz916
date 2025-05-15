@@ -1,8 +1,22 @@
 ---
-title: "It's Not Rocket Science, It's Electricity Market"
+title: "**It's Not Rocket Science, It's Electricity Market**"
+format:
+  html:
+    code-fold: true
+    code-summary: "Show Code"
+  pdf:
+    documentclass: article
+    keep-tex: true
+    toc: true
+    number-sections: true
+    colorlinks: true
+    papersize: a4
+    fontsize: 11pt
+    margin-left: 2cm
+    margin-right: 2cm
+    margin-top: 2cm
+    margin-bottom: 2cm
 ---
-
-Welcome to my EMU660 project page.
 
 # 1. Project Overview and Scope
 
@@ -42,7 +56,7 @@ The electricity market consists of various sub-markets. Making accurate price fo
 
 In the preprocessing stage, the data stored in Excel files was converted into RData format.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 library(readxl)
 
@@ -60,7 +74,7 @@ head(botas_data)
 
 The natural gas price data obtained from BOTAŞ was available on a monthly basis. These monthly values were integrated into the hourly dataset.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 
 load("electricity.RData")
@@ -77,8 +91,6 @@ botas_data$year <- as.character(botas_data$year)
 
 epias_merged <- left_join(epias_data, botas_data, by = c("year", "month"))
 
-head(epias_merged)
-
 save(epias_merged, file = "electricity_merged.RData")
 
 epias_merged <- epias_merged %>%
@@ -93,7 +105,7 @@ save(epias_merged, file = "electricity_merged.RData")
 
 The hourly data was converted into daily averages to enable analysis at a daily resolution.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(dplyr)
 
 epias_daily <- epias_merged %>%
@@ -107,7 +119,7 @@ Finally, a feature aggregation process was carried out to prepare the data for f
 
 Solar and hydro (dam) generation were excluded from the renewables group, as they exhibit distinct production characteristics. The category other was disregarded due to its low share and lack of detailed classification.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(dplyr)
 
 epias_simplified_daily <- epias_daily %>%
@@ -120,74 +132,6 @@ epias_simplified_daily <- epias_daily %>%
     importedcoal, naturalgas, solar, dam, demand, natgasprice, price
   )
 save(epias_simplified_daily, file = "epias_simplified_daily.RData")
-
-head(epias_simplified_daily)
-```
-
-```{r}
-# Gerekli paketler
-library(dplyr)
-library(car)
-library(ggplot2)
-
-reg_data <- epias_simplified_daily %>%
-  select(price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
-  na.omit()
-
-model <- lm(price ~ cheap_thermal + naturalgas + importedcoal + renewables + demand + solar + dam + natgasprice, data = reg_data)
-
-summary(model)
-
-vif(model)
-
-par(mfrow = c(2, 2))
-plot(model)
-par(mfrow = c(1, 1))
-
-
-reg_data$predicted_price <- predict(model)
-
-ggplot(reg_data, aes(x = predicted_price, y = price)) +
-  geom_point(color = "steelblue") +
-  geom_abline(slope = 1, intercept = 0, color = "darkred", linetype = "dashed") +
-  labs(
-    title = "Actual vs Predicted Electricity Price",
-    x = "Predicted Price",
-    y = "Actual Price"
-  ) +
-  theme_minimal()
-
-
-```
-
-```{r}
-library(dplyr)
-library(ggplot2)
-library(lubridate)
-
-reg_data <- epias_simplified_daily %>%
-  select(date, price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
-  na.omit()
-
-reg_data$predicted_price <- predict(model, newdata = reg_data)
-
-december_data <- reg_data %>%
-  filter(date >= as.Date("2024-06-01") & date <= as.Date("2024-06-30"))
-
-actualvspredicted <- ggplot(december_data, aes(x = date)) +
-  geom_line(aes(y = price, color = "Actual"), size = 1.2) +
-  geom_line(aes(y = predicted_price, color = "Predicted"), size = 1.2, linetype = "dashed") +
-  scale_color_manual(values = c("Actual" = "steelblue", "Predicted" = "orange")) +
-  labs(
-    title = "Actual vs Predicted Electricity Price – December 2024",
-    x = "Date",
-    y = "Electricity Price (TL/MWh)",
-    color = ""
-  ) +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
-
-actualvspredicted
 
 ```
 
@@ -205,22 +149,20 @@ For any given hour, demand is met starting from the cheapest suppliers, moving u
 
 ![](images/Merit-Order-Effect-Chart_Squeaky-01.png)
 
-## 3.3 **Exploratory Data Analysis & Trend Analysis**
+## 3.3 Exploratory Data Analysis & Trend Analysis
 
 Electricity prices can be highly volatile even on the same type of day. The chart below shows the prices for two different Mondays in November 2024
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 library(dplyr)
 library(ggplot2)
 
-# Veri seçimi
 price_data <- epias_merged %>%
   filter(date %in% as.Date(c("2024-11-04", "2024-11-18"))) %>%
   mutate(hour_numeric = as.numeric(substr(hour, 1, 2))) %>%
   select(date, hour_numeric, price)
 
-# Grafik
 ggplot(price_data, aes(x = hour_numeric, y = price, color = as.factor(date), group = date)) +
   geom_line(size = 1.2) +
   scale_color_manual(
@@ -249,26 +191,23 @@ ggplot(price_data, aes(x = hour_numeric, y = price, color = as.factor(date), gro
 
 Electricity prices exhibit high volatility across different hours of the day. This volatility is clearly visible in the chart below, with midday hours standing out as particularly volatile.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 library(dplyr)
 library(ggplot2)
 library(lubridate)
 
-# 1. Saat sütunu sayıya çevrilir
 epias_merged <- epias_merged %>%
   mutate(hour_numeric = as.numeric(substr(hour, 1, 2)))
 
-# 2. Sadece 2024 yılı alınır
 price_2024 <- epias_merged %>%
   filter(year(date) == 2024) %>%
   select(hour_numeric, price)
 
-# 3. Violin plot: her saat için fiyat yoğunluğu
 ggplot(price_2024, aes(x = factor(hour_numeric), y = price, fill = factor(hour_numeric))) +
   geom_violin(scale = "width", adjust = 1.2, alpha = 0.8, color = NA) +
   scale_fill_viridis_d(option = "C", begin = 0.1, end = 0.9) +
-  coord_cartesian(ylim = c(0, 3400)) +  # Görsel netlik için üst sınır
+  coord_cartesian(ylim = c(0, 3400)) +  
   labs(
     title = "Hourly Electricity Price Distribution – 2024",
     x = "Hour of Day",
@@ -288,7 +227,7 @@ ggplot(price_2024, aes(x = factor(hour_numeric), y = price, fill = factor(hour_n
 
 To understand the electricity market, it is essential to first examine the factors that influence it. Among these, the most critical elements are generation and consumption data.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 library(dplyr)
 library(tidyr)
@@ -391,7 +330,7 @@ As seen in the chart, electricity demand increases during the summer due to risi
 
 When examining demand data at a higher resolution, it becomes clear how electricity demand varies across the days of the week.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(dplyr)
 library(ggplot2)
 library(lubridate)
@@ -423,7 +362,7 @@ A comprehensive understanding of the data requires analyzing generation figures 
 
 Renewable energy sources exhibit different generation trend characteristics. Among these, the most influential factors are meteorological conditions and seasonal effects. Below is the generation data from various sources for a single day. As seen, solar production peaks around midday and drops to zero after sunset. Wind generation, on the other hand, may display varying patterns from day to day.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 library(dplyr)
 library(ggplot2)
@@ -493,12 +432,241 @@ ggplot(solar_river_daily, aes(x = date)) +
 
 ## 3.3 Model Fitting
 
-xxxxxx
+Daily average electricity prices were forecasted using a multiple linear regression approach.
+
+Two different models were developed. Although both models followed the same computational logic, they differed in feature selection and feature aggregation strategies. In the first model, all available variables were used individually as features, whereas in the second model, a feature aggregation approach was applied.
+
+### 3.3.1 What Happens If We Don't Aggregate Features?
+
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)
+library(car)
+library(ggplot2)
+
+reg_data1 <- epias_daily %>%
+  select(price, naturalgas, wind, lignite, darkcoal, importedcoal, fueloil, geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) %>%
+  na.omit()
+
+model1 <- lm(price ~ naturalgas + wind + lignite + darkcoal + importedcoal + fueloil + geothermal + dam + naphta + biomass + runofriver + other + demand + solar + natgasprice, data = reg_data1)
+
+summary(model1)
+
+vif(model1)
+
+par(mfrow = c(2, 2))
+plot(model1)
+par(mfrow = c(1, 1))
+
+
+reg_data1$predicted_price1 <- predict(model1)
+
+ggplot(reg_data1, aes(x = predicted_price1, y = price)) +
+  geom_point(color = "steelblue") +
+  geom_abline(slope = 1, intercept = 0, color = "darkred", linetype = "dashed") +
+  labs(
+    title = "Actual vs Predicted Electricity Price",
+    x = "Predicted Price",
+    y = "Actual Price"
+  ) +
+  theme_minimal()
+
+
+```
+
+### 3.3.2 What If We Aggregate Features?
+
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)
+library(car)
+library(ggplot2)
+
+reg_data <- epias_simplified_daily %>%
+  select(price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
+  na.omit()
+
+
+model <- lm(price ~ cheap_thermal + naturalgas + importedcoal + renewables + demand + solar + dam + natgasprice, data = reg_data)
+
+summary(model)
+
+vif(model)
+
+par(mfrow = c(2, 2))
+plot(model)
+par(mfrow = c(1, 1))
+
+
+reg_data$predicted_price <- predict(model)
+
+ggplot(reg_data, aes(x = predicted_price, y = price)) +
+  geom_point(color = "steelblue") +
+  geom_abline(slope = 1, intercept = 0, color = "darkred", linetype = "dashed") +
+  labs(
+    title = "Actual vs Predicted Electricity Price",
+    x = "Predicted Price",
+    y = "Actual Price"
+  ) +
+  theme_minimal()
+
+
+```
 
 ## 3.4 Results
 
-xxxxxx
+When both models are evaluated, the model without feature aggregation shows a higher R-squared value and a lower standard error, indicating better predictive performance. However, an inspection of the feature coefficients reveals that the first model includes more features with statistically insignificant coefficients. Furthermore, the near-zero effect of solar generation in this model raises questions about its reliability.
+
+Although the second model exhibits a slightly higher error rate, it offers a clearer explanation of how each feature impacts the electricity price and stands out for its simpler structure. Despite this, both models appear to produce somewhat biased predictions for extreme price values (very high or very low), likely due to the influence of outliers.
+
+The chart below presents the actual and predicted electricity prices for November and June 2024. While both models demonstrate a strong ability to track the general trend, Model 2 shows a greater tendency toward producing outlier or extreme values.
+
+```{r, warning=FALSE, message=FALSE}
+
+data1 <- epias_daily %>%
+  select(date, price, naturalgas, wind, lignite, darkcoal, importedcoal, fueloil, geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) %>%
+  na.omit() %>%
+  mutate(predicted_price1 = predict(model1, newdata = .))
+
+data2 <- epias_simplified_daily %>%
+  select(date, price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
+  na.omit() %>%
+  mutate(predicted_price2 = predict(model, newdata = .))
+
+
+combined <- data1 %>%
+  inner_join(data2 %>% select(date, predicted_price2), by = "date") %>%
+  filter(date >= as.Date("2024-01-01") & date <= as.Date("2024-01-31"))
+
+
+library(tidyr)
+plot_data <- combined %>%
+  select(date, price, predicted_price1, predicted_price2) %>%
+  pivot_longer(cols = c(price, predicted_price1, predicted_price2),
+               names_to = "type", values_to = "value")
+
+
+ggplot(plot_data, aes(x = date, y = value, color = type)) +
+  geom_line(size = 1.2) +
+  scale_color_manual(
+    values = c("price" = "black", "predicted_price1" = "steelblue", "predicted_price2" = "orange"),
+    labels = c("Actual Price", "Model 1 Prediction", "Model 2 Prediction")
+  ) +
+  labs(
+    title = "Electricity Price Forecast Actual vs Model 1 & 2",
+    x = "Date",
+    y = "Price (TL/MWh)",
+    color = "Legend"
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+
+
+```
+
+```{r, warning=FALSE, message=FALSE}
+
+data1 <- epias_daily %>%
+  select(date, price, naturalgas, wind, lignite, darkcoal, importedcoal, fueloil, geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) %>%
+  na.omit() %>%
+  mutate(predicted_price1 = predict(model1, newdata = .))
+
+data2 <- epias_simplified_daily %>%
+  select(date, price, cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
+  na.omit() %>%
+  mutate(predicted_price2 = predict(model, newdata = .))
+
+
+combined <- data1 %>%
+  inner_join(data2 %>% select(date, predicted_price2), by = "date") %>%
+  filter(date >= as.Date("2024-06-01") & date <= as.Date("2024-06-30"))
+
+
+library(tidyr)
+plot_data <- combined %>%
+  select(date, price, predicted_price1, predicted_price2) %>%
+  pivot_longer(cols = c(price, predicted_price1, predicted_price2),
+               names_to = "type", values_to = "value")
+
+
+ggplot(plot_data, aes(x = date, y = value, color = type)) +
+  geom_line(size = 1.2) +
+  scale_color_manual(
+    values = c("price" = "black", "predicted_price1" = "steelblue", "predicted_price2" = "orange"),
+    labels = c("Actual Price", "Model 1 Prediction", "Model 2 Prediction")
+  ) +
+  labs(
+    title = "Electricity Price Forecast Actual vs Model 1 & 2",
+    x = "Date",
+    y = "Price (TL/MWh)",
+    color = "Legend"
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+
+
+```
+
+```{r, warning=FALSE, message=FALSE}
+
+library(dplyr)
+library(lubridate)
+library(knitr)
+library(kableExtra)
+
+mape <- function(actual, predicted) {
+  mean(abs((actual - predicted) / actual), na.rm = TRUE) * 100
+}
+
+combined_data <- epias_daily %>%
+  select(date, price,
+         naturalgas, wind, lignite, darkcoal, importedcoal, fueloil,
+         geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) %>%
+  na.omit() %>%
+  mutate(pred_model1 = predict(model1, newdata = .)) %>%
+  inner_join(
+    epias_simplified_daily %>%
+      select(date,
+             cheap_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) %>%
+      na.omit() %>%
+      mutate(pred_model2 = predict(model, newdata = .)),
+    by = "date"
+  )
+
+mape_summary <- combined_data %>%
+  mutate(month = floor_date(date, "month")) %>%
+  group_by(month) %>%
+  summarise(
+    MAPE_Model1 = mape(price, pred_model1),
+    MAPE_Model2 = mape(price, pred_model2)
+  )
+
+mape_summary_final <- bind_rows(
+  mape_summary,
+  summarise(mape_summary,
+            month = as.Date("9999-12-31"),
+            MAPE_Model1 = mean(MAPE_Model1),
+            MAPE_Model2 = mean(MAPE_Model2))
+)
+
+mape_summary_final <- mape_summary_final %>%
+  mutate(month = if_else(month == as.Date("9999-12-31"), "Average", format(month, "%Y-%m")))
+
+kable(mape_summary_final, digits = 2, caption = "Monthly MAPE Comparison of Model 1 and Model 2") %>%
+  kable_styling(full_width = FALSE, position = "center") %>%
+  row_spec(nrow(mape_summary_final), bold = TRUE, background = "#f2f2f2", 
+           extra_css = "border-top: 2px solid #999;")
+
+```
+
+MAPE, the most widely used performance metric in electricity price forecasting, reveals an approximate 1% difference in error between the two models. The model without feature aggregation outperforms the aggregated one, achieving the lowest error rate at 6.88%.
+
+In both of models, Natural Gas Price is the key indicator of prediction.
 
 # 4. Results and Key Takeaways
 
-xxxxxx
+This project focused on forecasting electricity prices in Turkey's day-ahead market. The main objective was to demonstrate that accurate price forecasting in this market does not necessarily require highly complex models, and that successful results can be achieved with relatively simple approaches. A forecasting model was developed using publicly available data from EPİAŞ and BOTAŞ. Two different models were built, with the only distinction being their approach to feature usage. While one model included all features individually, the other applied a feature aggregation strategy. Although the aggregated model was initially expected to perform better, it delivered slightly worse results. However, it provided clearer interpretability regarding the influence of each feature on electricity prices.
+
+The second model differed from the first by only about 1% in terms of error rate, which can be considered an acceptable margin. Given its simplicity, the second model was initially assumed to be more efficient. However, this outcome raises some important considerations. First, the fact that both models underperformed compared to the first model presents a challenge. Future improvements should focus on applying feature aggregation or feature elimination techniques to achieve both a simpler and more accurate model.
+
+Additionally, some of the features used in the models exhibit high correlation with each other, which may lead to redundancy. Reducing multicollinearity and introducing alternative variables may help better capture the influence of distinct factors on electricity prices. Moreover, while this study relied on multiple linear regression, testing other simple mathematical models could provide further insights into prediction performance and model robustness.

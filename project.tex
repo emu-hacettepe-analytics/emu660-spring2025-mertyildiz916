@@ -1,0 +1,1370 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={It's Not Rocket Science, It's Electricity Market},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{It's Not Rocket Science, It's Electricity Market}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+Welcome to my EMU660 project page.
+
+\section{1. Project Overview and
+Scope}\label{project-overview-and-scope}
+
+Electricity has increasingly become a tradable commodity on global and
+Turkish stock exchanges, subject to specific regulations and
+limitations. In a liberalized market, it is uniquely characterized by a
+third dimension---time---alongside price and volume. In Turkey,
+electricity trading takes place across multiple market platforms, all
+overseen and regulated by the Energy Exchange Istanbul (EXIST). This
+project aims to analyze the formation of electricity prices and
+investigate the impact of total electricity demand as well as
+electricity generation from various sources on price formation.
+Specifically, the daily impact of renewable energy generation on
+electricity prices will be examined, while the influence of natural gas
+prices on the monthly average electricity price will also be explored.
+Electricity prices will be forecasted using multiple linear regression
+models at both daily and monthly resolutions, and the results will be
+evaluated accordingly.
+
+\section{2. Data}\label{data}
+
+This project will utilize three main data sources related to the
+electricity market or influence it. EPİAŞ (Energy Exchange Istanbul),
+TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ
+(Petroleum Pipeline Corporation) are public institutions in Turkey that
+act as decision-makers and regulators in the electricity market. The
+open-access data provided by these institutions will be used throughout
+the analysis and forecasting processes of the project. The whole data
+used in this project starts in first hour of 2023 and end at the end of
+2024.
+
+\subsection{2.1 Data Source}\label{data-source}
+
+This project will utilize three main data sources related to the
+electricity market or influence it. EPİAŞ (Energy Exchange Istanbul),
+TEİAŞ (Turkish Electricity Transmission Corporation), and BOTAŞ
+(Petroleum Pipeline Corporation) are public institutions in Turkey that
+act as decision-makers and regulators in the electricity market. The
+open-access data provided by these institutions will be used throughout
+the analysis and forecasting processes of the project. Data sources can
+be reached by clicking links below.
+
+\href{https://seffaflik.epias.com.tr/home}{EPİAŞ}
+
+\href{https://www.teias.gov.tr/sektor-raporlari}{TEİAŞ}
+
+\href{https://www.botas.gov.tr/Sayfa/satis-fiyat-tarifesi/439}{BOTAŞ}
+
+\subsection{2.2 General Information About
+Data}\label{general-information-about-data}
+
+Data related to the Day-Ahead Market will be obtained from EPİAŞ. The
+data sourced from EPİAŞ can be categorized under three main headings.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  FDDP (Final Daily Production Program): This data is provided at an
+  hourly resolution for 12 different types of energy sources. It
+  includes the planned generation amounts for the following day
+  submitted by power plants operating under each source category. Every
+  day, power plants enter their generation schedules into the system by
+  4 PM, and EPİAŞ collects and publishes this data aggregated by source
+  type.
+\item
+  Real-Time Consumption: This data represents the total amount of
+  electricity consumed across Turkey. It is provided on an hourly basis
+  and can be referred to as the total electricity demand.
+\item
+  MCP (Market Clearing Price): This data refers to the electricity price
+  determined for each hour in the Day-Ahead Market, formed by matching
+  supply and demand for the traded electricity.
+\end{enumerate}
+
+Natural gas tariff data has been sourced from BOTAŞ. The prices of
+natural gas used for electricity generation are determined by BOTAŞ.
+Additionally, water inflow data to the main basin dams, provided by
+TEİAŞ, may be used if deemed necessary.
+
+\subsection{2.3 Reason of Choice}\label{reason-of-choice}
+
+The electricity market consists of various sub-markets. Making accurate
+price forecasts for short-term and long-term electricity sales can
+create significant added value. Especially in long-term purchase or sale
+agreements, forecasting electricity prices can facilitate more
+profitable commercial deals while minimizing risk. For instance, the
+analyses and models developed in this project can help establish a
+relationship between renewable energy generation and electricity prices
+over specific periods. These forecasts can then be used to assess buy
+and sell offers in the market for future periods, enabling more informed
+and strategic positioning.
+
+\subsection{2.4 Preprocessing}\label{preprocessing}
+
+In the preprocessing stage, the data stored in Excel files was converted
+into RData format.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(readxl)}
+
+\NormalTok{epias\_data }\OtherTok{\textless{}{-}} \FunctionTok{read\_excel}\NormalTok{(}\StringTok{"epias\_data.xlsx"}\NormalTok{)}
+
+\NormalTok{botas\_data }\OtherTok{\textless{}{-}} \FunctionTok{read\_excel}\NormalTok{(}\StringTok{"botas\_data.xlsx"}\NormalTok{)}
+
+\FunctionTok{save}\NormalTok{(epias\_data, botas\_data, }\AttributeTok{file =} \StringTok{"electricity.RData"}\NormalTok{)}
+
+\FunctionTok{head}\NormalTok{(epias\_data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 6 x 18
+  date                hour   total naturalgas  wind lignite darkcoal
+  <dttm>              <chr>  <dbl>      <dbl> <dbl>   <dbl>    <dbl>
+1 2023-01-01 00:00:00 00:00 25945.      3636.  988.   4646.      136
+2 2023-01-01 01:00:00 01:00 24494.      2939. 1056.   4646.      136
+3 2023-01-01 02:00:00 02:00 22631.      2495. 1123.   4694.      136
+4 2023-01-01 03:00:00 03:00 22022.      2667. 1227.   4878.      136
+5 2023-01-01 04:00:00 04:00 21404.      2334. 1308.   4910.      136
+6 2023-01-01 05:00:00 05:00 21586.      2177. 1406.   5016.      136
+# i 11 more variables: importedcoal <dbl>, fueloil <dbl>, geothermal <dbl>,
+#   dam <dbl>, naphta <dbl>, biomass <dbl>, runofriver <dbl>, other <dbl>,
+#   demand <dbl>, solar <dbl>, price <dbl>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(botas\_data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 6 x 3
+   year month natgasprice
+  <dbl> <dbl>       <dbl>
+1  2023     1       18000
+2  2023     2       15000
+3  2023     3       12000
+4  2023     4       10000
+5  2023     5       10000
+6  2023     6       10000
+\end{verbatim}
+
+The natural gas price data obtained from BOTAŞ was available on a
+monthly basis. These monthly values were integrated into the hourly
+dataset.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{load}\NormalTok{(}\StringTok{"electricity.RData"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:stats':
+
+    filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{epias\_data}\SpecialCharTok{$}\NormalTok{date }\OtherTok{\textless{}{-}} \FunctionTok{as.Date}\NormalTok{(epias\_data}\SpecialCharTok{$}\NormalTok{date)}
+
+\NormalTok{epias\_data}\SpecialCharTok{$}\NormalTok{year }\OtherTok{\textless{}{-}} \FunctionTok{format}\NormalTok{(epias\_data}\SpecialCharTok{$}\NormalTok{date, }\StringTok{"\%Y"}\NormalTok{)}
+\NormalTok{epias\_data}\SpecialCharTok{$}\NormalTok{month }\OtherTok{\textless{}{-}} \FunctionTok{format}\NormalTok{(epias\_data}\SpecialCharTok{$}\NormalTok{date, }\StringTok{"\%m"}\NormalTok{)}
+
+\NormalTok{botas\_data}\SpecialCharTok{$}\NormalTok{month }\OtherTok{\textless{}{-}} \FunctionTok{sprintf}\NormalTok{(}\StringTok{"\%02d"}\NormalTok{, botas\_data}\SpecialCharTok{$}\NormalTok{month)}
+
+\NormalTok{botas\_data}\SpecialCharTok{$}\NormalTok{year }\OtherTok{\textless{}{-}} \FunctionTok{as.character}\NormalTok{(botas\_data}\SpecialCharTok{$}\NormalTok{year)}
+
+\NormalTok{epias\_merged }\OtherTok{\textless{}{-}} \FunctionTok{left\_join}\NormalTok{(epias\_data, botas\_data, }\AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"year"}\NormalTok{, }\StringTok{"month"}\NormalTok{))}
+
+\FunctionTok{head}\NormalTok{(epias\_merged)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 6 x 21
+  date       hour   total naturalgas  wind lignite darkcoal importedcoal fueloil
+  <date>     <chr>  <dbl>      <dbl> <dbl>   <dbl>    <dbl>        <dbl>   <dbl>
+1 2023-01-01 00:00 25945.      3636.  988.   4646.      136        8556.    16.5
+2 2023-01-01 01:00 24494.      2939. 1056.   4646.      136        8556.    16.5
+3 2023-01-01 02:00 22631.      2495. 1123.   4694.      136        8554.    16.5
+4 2023-01-01 03:00 22022.      2667. 1227.   4878.      136        8372.    16.5
+5 2023-01-01 04:00 21404.      2334. 1308.   4910.      136        8373.    16.5
+6 2023-01-01 05:00 21586.      2177. 1406.   5016.      136        8373.    15.5
+# i 12 more variables: geothermal <dbl>, dam <dbl>, naphta <dbl>,
+#   biomass <dbl>, runofriver <dbl>, other <dbl>, demand <dbl>, solar <dbl>,
+#   price <dbl>, year <chr>, month <chr>, natgasprice <dbl>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{save}\NormalTok{(epias\_merged, }\AttributeTok{file =} \StringTok{"electricity\_merged.RData"}\NormalTok{)}
+
+\NormalTok{epias\_merged }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, year, month, }\FunctionTok{everything}\NormalTok{(), }\SpecialCharTok{{-}}\NormalTok{year, }\SpecialCharTok{{-}}\NormalTok{month)}
+
+\NormalTok{epias\_merged }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{price, }\FunctionTok{everything}\NormalTok{(), price)}
+
+\FunctionTok{save}\NormalTok{(epias\_merged, }\AttributeTok{file =} \StringTok{"electricity\_merged.RData"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The hourly data was converted into daily averages to enable analysis at
+a daily resolution.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+
+\NormalTok{epias\_daily }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(date) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\FunctionTok{across}\NormalTok{(}\FunctionTok{where}\NormalTok{(is.numeric), mean, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Warning: There was 1 warning in `summarise()`.
+i In argument: `across(where(is.numeric), mean, na.rm = TRUE)`.
+i In group 1: `date = 2023-01-01`.
+Caused by warning:
+! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
+Supply arguments directly to `.fns` through an anonymous function instead.
+
+  # Previously
+  across(a:b, mean, na.rm = TRUE)
+
+  # Now
+  across(a:b, \(x) mean(x, na.rm = TRUE))
+\end{verbatim}
+
+Finally, a feature aggregation process was carried out to prepare the
+data for forecasting. Generation sources with similar characteristics
+were grouped under common categories. Fueloil, naphta, lignite, and hard
+coal were combined under the label cheap\_thermal. Wind, run-of-river,
+biomass, and geothermal sources were grouped under renewables.
+
+Solar and hydro (dam) generation were excluded from the renewables
+group, as they exhibit distinct production characteristics. The category
+other was disregarded due to its low share and lack of detailed
+classification.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+
+\NormalTok{epias\_simplified\_daily }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{cheap\_thermal =}\NormalTok{ fueloil }\SpecialCharTok{+}\NormalTok{ naphta }\SpecialCharTok{+}\NormalTok{ lignite }\SpecialCharTok{+}\NormalTok{ darkcoal,}
+    \AttributeTok{renewables =}\NormalTok{ wind }\SpecialCharTok{+}\NormalTok{ runofriver }\SpecialCharTok{+}\NormalTok{ biomass }\SpecialCharTok{+}\NormalTok{ geothermal}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(}
+\NormalTok{    date, cheap\_thermal, renewables,}
+\NormalTok{    importedcoal, naturalgas, solar, dam, demand, natgasprice, price}
+\NormalTok{  )}
+\FunctionTok{save}\NormalTok{(epias\_simplified\_daily, }\AttributeTok{file =} \StringTok{"epias\_simplified\_daily.RData"}\NormalTok{)}
+
+\FunctionTok{head}\NormalTok{(epias\_simplified\_daily)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 6 x 10
+  date       cheap_thermal renewables importedcoal naturalgas solar   dam demand
+  <date>             <dbl>      <dbl>        <dbl>      <dbl> <dbl> <dbl>  <dbl>
+1 2023-01-01         4972.      4375.        8332.      3210. 1491. 3100. 28743.
+2 2023-01-02         5128.      3919.        9062.      8888. 1441. 2541. 35772.
+3 2023-01-03         5016.      4079.        9328.     11235. 1417. 2531. 37497.
+4 2023-01-04         4834.      5007.        8810.     10960. 1345. 2213. 38064.
+5 2023-01-05         4849.      4986.        8435.     11628. 1207. 2367. 37877.
+6 2023-01-06         4950.      4648.        8633.     11608. 1126. 2334. 37821.
+# i 2 more variables: natgasprice <dbl>, price <dbl>
+\end{verbatim}
+
+\section{3. Analysis}\label{analysis}
+
+\subsection{3.1 Why It's Important to Create a
+Forecast?}\label{why-its-important-to-create-a-forecast}
+
+Electricity price forecasting plays a critical role in the power market.
+Accurate forecasts are essential not only for making commercial
+decisions but also for managing financial processes. Cash flow
+management is a key factor for maintaining an active and balanced
+presence in the market. Portfolios with constant inflows and outflows
+must manage their commercial balance while simultaneously overseeing
+their cash flows. Daily electricity price forecasting can provide
+significant advantages in both commercial and financial foresight.
+
+\subsection{3.2 How Electricity Prices are
+Determined?}\label{how-electricity-prices-are-determined}
+
+Electricity prices are determined through a system known as the merit
+order. Similar to basic economic pricing, supply and demand are matched
+for each hour, and the price is set at the point where supply meets
+demand. However, unlike other markets, electricity is a fundamental
+need---so demand does not respond to price, but instead determines it.
+
+For any given hour, demand is met starting from the cheapest suppliers,
+moving up to the more expensive ones. The price of electricity is then
+set based on the bid of the most expensive accepted supplier.
+Electricity generation resources can generally be ranked from cheapest
+to most expensive as follows: renewables, hydro, nuclear, domestic coal,
+imported coal, and natural gas.
+
+\pandocbounded{\includegraphics[keepaspectratio]{images/Merit-Order-Effect-Chart_Squeaky-01.png}}
+
+\subsection{\texorpdfstring{3.3 \textbf{Exploratory Data Analysis \&
+Trend
+Analysis}}{3.3 Exploratory Data Analysis \& Trend Analysis}}\label{exploratory-data-analysis-trend-analysis}
+
+Electricity prices can be highly volatile even on the same type of day.
+The chart below shows the prices for two different Mondays in November
+2024
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\CommentTok{\# Veri seçimi}
+\NormalTok{price\_data }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\%in\%} \FunctionTok{as.Date}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"2024{-}11{-}04"}\NormalTok{, }\StringTok{"2024{-}11{-}18"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{hour\_numeric =} \FunctionTok{as.numeric}\NormalTok{(}\FunctionTok{substr}\NormalTok{(hour, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, hour\_numeric, price)}
+
+\CommentTok{\# Grafik}
+\FunctionTok{ggplot}\NormalTok{(price\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ hour\_numeric, }\AttributeTok{y =}\NormalTok{ price, }\AttributeTok{color =} \FunctionTok{as.factor}\NormalTok{(date), }\AttributeTok{group =}\NormalTok{ date)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_manual}\NormalTok{(}
+    \AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"2024{-}11{-}04"} \OtherTok{=} \StringTok{"red"}\NormalTok{, }\StringTok{"2024{-}11{-}18"} \OtherTok{=} \StringTok{"blue"}\NormalTok{),}
+    \AttributeTok{labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"4 November 2024"}\NormalTok{, }\StringTok{"18 November 2024"}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{scale\_x\_continuous}\NormalTok{(}
+    \AttributeTok{breaks =} \DecValTok{0}\SpecialCharTok{:}\DecValTok{23}\NormalTok{,}
+    \AttributeTok{labels =} \FunctionTok{sprintf}\NormalTok{(}\StringTok{"\%02d:00"}\NormalTok{, }\DecValTok{0}\SpecialCharTok{:}\DecValTok{23}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Hourly Electricity Price – 4 \& 18 November 2024"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Hour of Day"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Price (TL/MWh)"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Date"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{),}
+    \AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{45}\NormalTok{, }\AttributeTok{hjust =} \DecValTok{1}\NormalTok{)}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+i Please use `linewidth` instead.
+\end{verbatim}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-5-1.pdf}}
+
+Electricity prices exhibit high volatility across different hours of the
+day. This volatility is clearly visible in the chart below, with midday
+hours standing out as particularly volatile.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Attaching package: 'lubridate'
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 1. Saat sütunu sayıya çevrilir}
+\NormalTok{epias\_merged }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{hour\_numeric =} \FunctionTok{as.numeric}\NormalTok{(}\FunctionTok{substr}\NormalTok{(hour, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{)))}
+
+\CommentTok{\# 2. Sadece 2024 yılı alınır}
+\NormalTok{price\_2024 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(}\FunctionTok{year}\NormalTok{(date) }\SpecialCharTok{==} \DecValTok{2024}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(hour\_numeric, price)}
+
+\CommentTok{\# 3. Violin plot: her saat için fiyat yoğunluğu}
+\FunctionTok{ggplot}\NormalTok{(price\_2024, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{factor}\NormalTok{(hour\_numeric), }\AttributeTok{y =}\NormalTok{ price, }\AttributeTok{fill =} \FunctionTok{factor}\NormalTok{(hour\_numeric))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_violin}\NormalTok{(}\AttributeTok{scale =} \StringTok{"width"}\NormalTok{, }\AttributeTok{adjust =} \FloatTok{1.2}\NormalTok{, }\AttributeTok{alpha =} \FloatTok{0.8}\NormalTok{, }\AttributeTok{color =} \ConstantTok{NA}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_fill\_viridis\_d}\NormalTok{(}\AttributeTok{option =} \StringTok{"C"}\NormalTok{, }\AttributeTok{begin =} \FloatTok{0.1}\NormalTok{, }\AttributeTok{end =} \FloatTok{0.9}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{coord\_cartesian}\NormalTok{(}\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{3400}\NormalTok{)) }\SpecialCharTok{+}  \CommentTok{\# Görsel netlik için üst sınır}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Hourly Electricity Price Distribution – 2024"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Hour of Day"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Electricity Price (TL/MWh)"}\NormalTok{,}
+    \AttributeTok{fill =} \StringTok{"Hour"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{, }\AttributeTok{size =} \DecValTok{14}\NormalTok{),}
+    \AttributeTok{plot.subtitle =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{),}
+    \AttributeTok{legend.position =} \StringTok{"none"}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-6-1.pdf}}
+
+To understand the electricity market, it is essential to first examine
+the factors that influence it. Among these, the most critical elements
+are generation and consumption data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(tidyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+
+\NormalTok{prod\_data }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{==} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}06{-}12"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(hour, solar, wind, runofriver, dam, geothermal, biomass, naturalgas,}
+\NormalTok{         fueloil, naphta, lignite, darkcoal, importedcoal, other)}
+
+\NormalTok{prod\_long }\OtherTok{\textless{}{-}}\NormalTok{ prod\_data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{pivot\_longer}\NormalTok{(}
+    \AttributeTok{cols =} \SpecialCharTok{{-}}\NormalTok{hour,}
+    \AttributeTok{names\_to =} \StringTok{"source"}\NormalTok{,}
+    \AttributeTok{values\_to =} \StringTok{"generation"}
+\NormalTok{  )}
+
+\NormalTok{source\_colors }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}
+  \AttributeTok{solar =} \StringTok{"gold"}\NormalTok{,}
+  \AttributeTok{wind =} \StringTok{"forestgreen"}\NormalTok{,}
+  \AttributeTok{runofriver =} \StringTok{"dodgerblue"}\NormalTok{,}
+  \AttributeTok{dam =} \StringTok{"steelblue"}\NormalTok{,}
+  \AttributeTok{geothermal =} \StringTok{"sienna"}\NormalTok{,}
+  \AttributeTok{biomass =} \StringTok{"darkolivegreen"}\NormalTok{,}
+  \AttributeTok{naturalgas =} \StringTok{"firebrick"}\NormalTok{,}
+  \AttributeTok{fueloil =} \StringTok{"darkred"}\NormalTok{,}
+  \AttributeTok{naphta =} \StringTok{"orangered"}\NormalTok{,}
+  \AttributeTok{lignite =} \StringTok{"black"}\NormalTok{,}
+  \AttributeTok{darkcoal =} \StringTok{"black"}\NormalTok{,}
+  \AttributeTok{importedcoal =} \StringTok{"dimgray"}\NormalTok{,}
+  \AttributeTok{other =} \StringTok{"purple"}
+\NormalTok{)}
+
+\FunctionTok{ggplot}\NormalTok{(prod\_long, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ hour, }\AttributeTok{y =}\NormalTok{ generation, }\AttributeTok{fill =}\NormalTok{ source)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat =} \StringTok{"identity"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =}\NormalTok{ source\_colors) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Electricity Generation by Source – 12 June 2024"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Hour"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Generation (MW)"}\NormalTok{,}
+    \AttributeTok{fill =} \StringTok{"Source"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{),}
+    \AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{45}\NormalTok{, }\AttributeTok{hjust =} \DecValTok{1}\NormalTok{)}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-7-1.pdf}}
+
+This chart clearly shows how electricity demand is met by different
+generation sources at different hours of the day.
+
+There are two major factors that influence electricity consumption, or
+demand. The first is air temperature. In Türkiye, electricity demand
+increases when the average daily temperature rises above or drops below
+15°C, due to higher use of heating and cooling systems.
+
+The second factor is more long-term: the country's level of industrial
+activity and population size. As the population grows and industrial
+production expands, electricity demand also rises.
+
+The chart below displays the moving average electricity demand data for
+2023 and 2024.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+\FunctionTok{library}\NormalTok{(zoo)}
+
+\NormalTok{demand\_yoy }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(}\FunctionTok{year}\NormalTok{(date) }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\DecValTok{2023}\NormalTok{, }\DecValTok{2024}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(date, hour) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{year =} \FunctionTok{year}\NormalTok{(date),}
+    \AttributeTok{doy =} \FunctionTok{yday}\NormalTok{(date),}
+    \AttributeTok{datetime =} \FunctionTok{as.POSIXct}\NormalTok{(}\FunctionTok{paste}\NormalTok{(date, hour), }\AttributeTok{format =} \StringTok{"\%Y{-}\%m{-}\%d \%H:\%M"}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(year) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(datetime) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{demand\_7day\_avg =} \FunctionTok{rollmean}\NormalTok{(demand, }\AttributeTok{k =} \DecValTok{24} \SpecialCharTok{*} \DecValTok{7}\NormalTok{, }\AttributeTok{fill =} \ConstantTok{NA}\NormalTok{, }\AttributeTok{align =} \StringTok{"right"}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ungroup}\NormalTok{()}
+
+\FunctionTok{ggplot}\NormalTok{(demand\_yoy, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ doy, }\AttributeTok{y =}\NormalTok{ demand\_7day\_avg, }\AttributeTok{color =} \FunctionTok{as.factor}\NormalTok{(year))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Year{-}over{-}Year Demand Comparison (7{-}Day Moving Average)"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Day of Year"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Demand (MW)"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Year"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_manual}\NormalTok{(}\AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"2023"} \OtherTok{=} \StringTok{"purple"}\NormalTok{, }\StringTok{"2024"} \OtherTok{=} \StringTok{"gold"}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{expand\_limits}\NormalTok{(}\AttributeTok{y =} \DecValTok{20000}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{)}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-8-1.pdf}}
+
+As seen in the chart, electricity demand increases during the summer due
+to rising temperatures, and also in winter as temperatures drop.
+Additionally, demand tends to reach its lowest levels during religious
+holidays, when industrial activity comes to a near halt.
+
+When examining demand data at a higher resolution, it becomes clear how
+electricity demand varies across the days of the week.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+
+\NormalTok{nov\_demand }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\textgreater{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}01"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ date }\SpecialCharTok{\textless{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}10"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{datetime =} \FunctionTok{as.POSIXct}\NormalTok{(}\FunctionTok{paste}\NormalTok{(date, hour), }\AttributeTok{format =} \StringTok{"\%Y{-}\%m{-}\%d \%H:\%M"}\NormalTok{),}
+    \AttributeTok{day\_num =} \FunctionTok{day}\NormalTok{(date) }\SpecialCharTok{+} \FunctionTok{hour}\NormalTok{(datetime) }\SpecialCharTok{/} \DecValTok{24} 
+\NormalTok{  )}
+
+\FunctionTok{ggplot}\NormalTok{(nov\_demand, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ day\_num, }\AttributeTok{y =}\NormalTok{ demand)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{color =} \StringTok{"steelblue"}\NormalTok{, }\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_x\_continuous}\NormalTok{(}\AttributeTok{breaks =} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"November 2024 {-} First 10 Days Hourly Demand"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Day of Month"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Demand (MW)"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{)}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-9-1.pdf}}
+
+Electricity demand remains relatively consistent during weekdays,
+whereas a noticeable drop is observed on Saturdays and Sundays.
+
+A comprehensive understanding of the data requires analyzing generation
+figures in conjunction with demand.
+
+Renewable energy sources exhibit different generation trend
+characteristics. Among these, the most influential factors are
+meteorological conditions and seasonal effects. Below is the generation
+data from various sources for a single day. As seen, solar production
+peaks around midday and drops to zero after sunset. Wind generation, on
+the other hand, may display varying patterns from day to day.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+
+\NormalTok{nov\_renew }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\textgreater{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}01"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ date }\SpecialCharTok{\textless{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}10"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{datetime =} \FunctionTok{as.POSIXct}\NormalTok{(}\FunctionTok{paste}\NormalTok{(date, hour), }\AttributeTok{format =} \StringTok{"\%Y{-}\%m{-}\%d \%H:\%M"}\NormalTok{)}
+\NormalTok{  )}
+
+\FunctionTok{ggplot}\NormalTok{(nov\_renew, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ datetime)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ solar, }\AttributeTok{color =} \StringTok{"Solar"}\NormalTok{), }\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ wind, }\AttributeTok{color =} \StringTok{"Wind"}\NormalTok{), }\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_manual}\NormalTok{(}\AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"Solar"} \OtherTok{=} \StringTok{"orange"}\NormalTok{, }\StringTok{"Wind"} \OtherTok{=} \StringTok{"darkgreen"}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Solar and Wind Generation – November 1–10, 2024"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Datetime"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Generation (MW)"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Source"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{)}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-10-1.pdf}}
+
+An analysis of solar and run-of-river generation data reveals clear
+seasonal trends. While solar production increases during the summer
+months, run-of-river generation peaks in the spring.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(zoo)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+
+\NormalTok{solar\_river\_daily }\OtherTok{\textless{}{-}}\NormalTok{ epias\_merged }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{date =} \FunctionTok{as.Date}\NormalTok{(date)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(date) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{solar =} \FunctionTok{mean}\NormalTok{(solar, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{runofriver =} \FunctionTok{mean}\NormalTok{(runofriver, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(}\FunctionTok{year}\NormalTok{(date) }\SpecialCharTok{==} \DecValTok{2023}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(date) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{solar\_ma =} \FunctionTok{rollmean}\NormalTok{(solar, }\AttributeTok{k =} \DecValTok{7}\NormalTok{, }\AttributeTok{fill =} \ConstantTok{NA}\NormalTok{, }\AttributeTok{align =} \StringTok{"right"}\NormalTok{),}
+    \AttributeTok{runofriver\_ma =} \FunctionTok{rollmean}\NormalTok{(runofriver, }\AttributeTok{k =} \DecValTok{7}\NormalTok{, }\AttributeTok{fill =} \ConstantTok{NA}\NormalTok{, }\AttributeTok{align =} \StringTok{"right"}\NormalTok{)}
+\NormalTok{  )}
+
+\FunctionTok{ggplot}\NormalTok{(solar\_river\_daily, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ date)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ solar\_ma, }\AttributeTok{color =} \StringTok{"Solar"}\NormalTok{), }\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ runofriver\_ma, }\AttributeTok{color =} \StringTok{"Run{-}of{-}River"}\NormalTok{), }\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_manual}\NormalTok{(}\AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"Solar"} \OtherTok{=} \StringTok{"orange"}\NormalTok{, }\StringTok{"Run{-}of{-}River"} \OtherTok{=} \StringTok{"steelblue"}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"7{-}Day Moving Average of Solar and Run{-}of{-}River Generation – 2023"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Date"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Generation (MWh)"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Source"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-11-1.pdf}}
+
+\subsection{3.3 Model Fitting}\label{model-fitting}
+
+Daily average electricity prices were forecasted using a multiple linear
+regression approach.
+
+Two different models were developed. Although both models followed the
+same computational logic, they differed in feature selection and feature
+aggregation strategies. In the first model, all available variables were
+used individually as features, whereas in the second model, a feature
+aggregation approach was applied.
+
+3.3.1 What Happens If We Don't Aggregate Features?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(car)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Zorunlu paket yükleniyor: carData
+\end{verbatim}
+
+\begin{verbatim}
+
+Attaching package: 'car'
+\end{verbatim}
+
+\begin{verbatim}
+The following object is masked from 'package:dplyr':
+
+    recode
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\NormalTok{reg\_data1 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(price, naturalgas, wind, lignite, darkcoal, importedcoal, fueloil, geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{()}
+
+\NormalTok{model1 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ naturalgas }\SpecialCharTok{+}\NormalTok{ wind }\SpecialCharTok{+}\NormalTok{ lignite }\SpecialCharTok{+}\NormalTok{ darkcoal }\SpecialCharTok{+}\NormalTok{ importedcoal }\SpecialCharTok{+}\NormalTok{ fueloil }\SpecialCharTok{+}\NormalTok{ geothermal }\SpecialCharTok{+}\NormalTok{ dam }\SpecialCharTok{+}\NormalTok{ naphta }\SpecialCharTok{+}\NormalTok{ biomass }\SpecialCharTok{+}\NormalTok{ runofriver }\SpecialCharTok{+}\NormalTok{ other }\SpecialCharTok{+}\NormalTok{ demand }\SpecialCharTok{+}\NormalTok{ solar }\SpecialCharTok{+}\NormalTok{ natgasprice, }\AttributeTok{data =}\NormalTok{ reg\_data1)}
+
+\FunctionTok{summary}\NormalTok{(model1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Call:
+lm(formula = price ~ naturalgas + wind + lignite + darkcoal + 
+    importedcoal + fueloil + geothermal + dam + naphta + biomass + 
+    runofriver + other + demand + solar + natgasprice, data = reg_data1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-913.47  -89.95   -1.53  101.26  501.77 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -1.982e+03  2.039e+02  -9.725  < 2e-16 ***
+naturalgas    4.853e-02  1.083e-02   4.481 8.63e-06 ***
+wind         -4.299e-02  1.021e-02  -4.212 2.85e-05 ***
+lignite       1.250e-02  2.292e-02   0.545  0.58566    
+darkcoal      1.293e-01  9.810e-02   1.318  0.18779    
+importedcoal  7.100e-02  1.422e-02   4.993 7.47e-07 ***
+fueloil       2.881e+00  1.219e+00   2.364  0.01834 *  
+geothermal    2.114e-01  1.384e-01   1.528  0.12707    
+dam          -5.017e-02  1.136e-02  -4.415 1.16e-05 ***
+naphta       -4.473e+01  6.276e+01  -0.713  0.47623    
+biomass       8.360e-04  1.765e-01   0.005  0.99622    
+runofriver    1.168e-01  1.824e-02   6.404 2.74e-10 ***
+other        -4.118e-02  8.859e-02  -0.465  0.64217    
+demand        3.037e-02  9.991e-03   3.040  0.00245 ** 
+solar         2.519e-02  1.683e-02   1.496  0.13501    
+natgasprice   1.701e-01  6.133e-03  27.736  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 168.9 on 715 degrees of freedom
+Multiple R-squared:  0.8836,    Adjusted R-squared:  0.8812 
+F-statistic: 361.9 on 15 and 715 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{vif}\NormalTok{(model1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+  naturalgas         wind      lignite     darkcoal importedcoal      fueloil 
+   36.019212    11.420398     3.354866     1.503104    13.072816     1.279864 
+  geothermal          dam       naphta      biomass   runofriver        other 
+    5.939204    10.702876     1.057892     2.303100    11.131208     4.756550 
+      demand        solar  natgasprice 
+   51.610155     8.003321     2.753763 
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(model1)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-12-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+
+
+\NormalTok{reg\_data1}\SpecialCharTok{$}\NormalTok{predicted\_price1 }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(model1)}
+
+\FunctionTok{ggplot}\NormalTok{(reg\_data1, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ predicted\_price1, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{color =} \StringTok{"steelblue"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_abline}\NormalTok{(}\AttributeTok{slope =} \DecValTok{1}\NormalTok{, }\AttributeTok{intercept =} \DecValTok{0}\NormalTok{, }\AttributeTok{color =} \StringTok{"darkred"}\NormalTok{, }\AttributeTok{linetype =} \StringTok{"dashed"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Actual vs Predicted Electricity Price"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Predicted Price"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Actual Price"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-12-2.pdf}}
+
+3.3.2 What If We Aggregate Features?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(car)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\NormalTok{reg\_data }\OtherTok{\textless{}{-}}\NormalTok{ epias\_simplified\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(price, cheap\_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{()}
+
+
+\NormalTok{model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ cheap\_thermal }\SpecialCharTok{+}\NormalTok{ naturalgas }\SpecialCharTok{+}\NormalTok{ importedcoal }\SpecialCharTok{+}\NormalTok{ renewables }\SpecialCharTok{+}\NormalTok{ demand }\SpecialCharTok{+}\NormalTok{ solar }\SpecialCharTok{+}\NormalTok{ dam }\SpecialCharTok{+}\NormalTok{ natgasprice, }\AttributeTok{data =}\NormalTok{ reg\_data)}
+
+\FunctionTok{summary}\NormalTok{(model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Call:
+lm(formula = price ~ cheap_thermal + naturalgas + importedcoal + 
+    renewables + demand + solar + dam + natgasprice, data = reg_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1078.97   -97.87     7.74   114.92   587.23 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   -6.994e+02  1.027e+02  -6.812 2.03e-11 ***
+cheap_thermal  5.054e-03  2.295e-02   0.220 0.825754    
+naturalgas     1.977e-02  1.026e-02   1.926 0.054483 .  
+importedcoal  -3.961e-02  1.080e-02  -3.666 0.000264 ***
+renewables    -7.091e-02  9.712e-03  -7.302 7.52e-13 ***
+demand         5.646e-02  8.919e-03   6.330 4.29e-10 ***
+solar         -4.154e-02  1.038e-02  -4.003 6.91e-05 ***
+dam           -4.511e-02  1.023e-02  -4.412 1.18e-05 ***
+natgasprice    1.544e-01  4.778e-03  32.311  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 191.1 on 722 degrees of freedom
+Multiple R-squared:  0.8494,    Adjusted R-squared:  0.8477 
+F-statistic: 509.1 on 8 and 722 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{vif}\NormalTok{(model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+cheap_thermal    naturalgas  importedcoal    renewables        demand 
+     2.984234     25.250485      5.887888      9.567100     32.098596 
+        solar           dam   natgasprice 
+     2.374800      6.767137      1.304383 
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(model)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-13-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+
+
+\NormalTok{reg\_data}\SpecialCharTok{$}\NormalTok{predicted\_price }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(model)}
+
+\FunctionTok{ggplot}\NormalTok{(reg\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ predicted\_price, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{color =} \StringTok{"steelblue"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_abline}\NormalTok{(}\AttributeTok{slope =} \DecValTok{1}\NormalTok{, }\AttributeTok{intercept =} \DecValTok{0}\NormalTok{, }\AttributeTok{color =} \StringTok{"darkred"}\NormalTok{, }\AttributeTok{linetype =} \StringTok{"dashed"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Actual vs Predicted Electricity Price"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Predicted Price"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Actual Price"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-13-2.pdf}}
+
+\subsection{3.4 Results}\label{results}
+
+When both models are evaluated, the model without feature aggregation
+shows a higher R-squared value and a lower standard error, indicating
+better predictive performance. However, an inspection of the feature
+coefficients reveals that the first model includes more features with
+statistically insignificant coefficients. Furthermore, the near-zero
+effect of solar generation in this model raises questions about its
+reliability.
+
+Although the second model exhibits a slightly higher error rate, it
+offers a clearer explanation of how each feature impacts the electricity
+price and stands out for its simpler structure. Despite this, both
+models appear to produce somewhat biased predictions for extreme price
+values (very high or very low), likely due to the influence of outliers.
+
+The chart below presents the actual and predicted electricity prices for
+November and June 2024. While both models demonstrate a strong ability
+to track the general trend, Model 2 shows a greater tendency toward
+producing outlier or extreme values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data1 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price, naturalgas, wind, lignite, darkcoal, importedcoal, fueloil, geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{predicted\_price1 =} \FunctionTok{predict}\NormalTok{(model1, }\AttributeTok{newdata =}\NormalTok{ .))}
+
+\NormalTok{data2 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_simplified\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price, cheap\_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{predicted\_price2 =} \FunctionTok{predict}\NormalTok{(model, }\AttributeTok{newdata =}\NormalTok{ .))}
+
+
+\NormalTok{combined }\OtherTok{\textless{}{-}}\NormalTok{ data1 }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{inner\_join}\NormalTok{(data2 }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(date, predicted\_price2), }\AttributeTok{by =} \StringTok{"date"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\textgreater{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}01"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ date }\SpecialCharTok{\textless{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}11{-}30"}\NormalTok{))}
+
+
+\FunctionTok{library}\NormalTok{(tidyr)}
+\NormalTok{plot\_data }\OtherTok{\textless{}{-}}\NormalTok{ combined }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price, predicted\_price1, predicted\_price2) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{pivot\_longer}\NormalTok{(}\AttributeTok{cols =} \FunctionTok{c}\NormalTok{(price, predicted\_price1, predicted\_price2),}
+               \AttributeTok{names\_to =} \StringTok{"type"}\NormalTok{, }\AttributeTok{values\_to =} \StringTok{"value"}\NormalTok{)}
+
+
+\FunctionTok{ggplot}\NormalTok{(plot\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ date, }\AttributeTok{y =}\NormalTok{ value, }\AttributeTok{color =}\NormalTok{ type)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_manual}\NormalTok{(}
+    \AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"price"} \OtherTok{=} \StringTok{"black"}\NormalTok{, }\StringTok{"predicted\_price1"} \OtherTok{=} \StringTok{"steelblue"}\NormalTok{, }\StringTok{"predicted\_price2"} \OtherTok{=} \StringTok{"orange"}\NormalTok{),}
+    \AttributeTok{labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Actual Price"}\NormalTok{, }\StringTok{"Model 1 Prediction"}\NormalTok{, }\StringTok{"Model 2 Prediction"}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Electricity Price Forecast Actual vs Model 1 \& 2"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Date"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Price (TL/MWh)"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Legend"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-14-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data1 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price, naturalgas, wind, lignite, darkcoal, importedcoal, fueloil, geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{predicted\_price1 =} \FunctionTok{predict}\NormalTok{(model1, }\AttributeTok{newdata =}\NormalTok{ .))}
+
+\NormalTok{data2 }\OtherTok{\textless{}{-}}\NormalTok{ epias\_simplified\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price, cheap\_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{predicted\_price2 =} \FunctionTok{predict}\NormalTok{(model, }\AttributeTok{newdata =}\NormalTok{ .))}
+
+
+\NormalTok{combined }\OtherTok{\textless{}{-}}\NormalTok{ data1 }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{inner\_join}\NormalTok{(data2 }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(date, predicted\_price2), }\AttributeTok{by =} \StringTok{"date"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(date }\SpecialCharTok{\textgreater{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}06{-}01"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ date }\SpecialCharTok{\textless{}=} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"2024{-}06{-}30"}\NormalTok{))}
+
+
+\FunctionTok{library}\NormalTok{(tidyr)}
+\NormalTok{plot\_data }\OtherTok{\textless{}{-}}\NormalTok{ combined }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price, predicted\_price1, predicted\_price2) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{pivot\_longer}\NormalTok{(}\AttributeTok{cols =} \FunctionTok{c}\NormalTok{(price, predicted\_price1, predicted\_price2),}
+               \AttributeTok{names\_to =} \StringTok{"type"}\NormalTok{, }\AttributeTok{values\_to =} \StringTok{"value"}\NormalTok{)}
+
+
+\FunctionTok{ggplot}\NormalTok{(plot\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ date, }\AttributeTok{y =}\NormalTok{ value, }\AttributeTok{color =}\NormalTok{ type)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_manual}\NormalTok{(}
+    \AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"price"} \OtherTok{=} \StringTok{"black"}\NormalTok{, }\StringTok{"predicted\_price1"} \OtherTok{=} \StringTok{"steelblue"}\NormalTok{, }\StringTok{"predicted\_price2"} \OtherTok{=} \StringTok{"orange"}\NormalTok{),}
+    \AttributeTok{labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Actual Price"}\NormalTok{, }\StringTok{"Model 1 Prediction"}\NormalTok{, }\StringTok{"Model 2 Prediction"}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Electricity Price Forecast Actual vs Model 1 \& 2"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Date"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Price (TL/MWh)"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Legend"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{project_files/figure-pdf/unnamed-chunk-15-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(lubridate)}
+\FunctionTok{library}\NormalTok{(knitr)}
+\FunctionTok{library}\NormalTok{(kableExtra)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Attaching package: 'kableExtra'
+\end{verbatim}
+
+\begin{verbatim}
+The following object is masked from 'package:dplyr':
+
+    group_rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# MAPE fonksiyonu}
+\NormalTok{mape }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(actual, predicted) \{}
+  \FunctionTok{mean}\NormalTok{(}\FunctionTok{abs}\NormalTok{((actual }\SpecialCharTok{{-}}\NormalTok{ predicted) }\SpecialCharTok{/}\NormalTok{ actual), }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{*} \DecValTok{100}
+\NormalTok{\}}
+
+\CommentTok{\# Tahminlerin eklendiği ve birleştirilmiş veri}
+\NormalTok{combined\_data }\OtherTok{\textless{}{-}}\NormalTok{ epias\_daily }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(date, price,}
+\NormalTok{         naturalgas, wind, lignite, darkcoal, importedcoal, fueloil,}
+\NormalTok{         geothermal, dam, naphta, biomass, runofriver, other, demand, solar, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{pred\_model1 =} \FunctionTok{predict}\NormalTok{(model1, }\AttributeTok{newdata =}\NormalTok{ .)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{inner\_join}\NormalTok{(}
+\NormalTok{    epias\_simplified\_daily }\SpecialCharTok{\%\textgreater{}\%}
+      \FunctionTok{select}\NormalTok{(date,}
+\NormalTok{             cheap\_thermal, naturalgas, importedcoal, renewables, demand, solar, dam, natgasprice) }\SpecialCharTok{\%\textgreater{}\%}
+      \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+      \FunctionTok{mutate}\NormalTok{(}\AttributeTok{pred\_model2 =} \FunctionTok{predict}\NormalTok{(model, }\AttributeTok{newdata =}\NormalTok{ .)),}
+    \AttributeTok{by =} \StringTok{"date"}
+\NormalTok{  )}
+
+\CommentTok{\# Aylık MAPE hesaplama}
+\NormalTok{mape\_summary }\OtherTok{\textless{}{-}}\NormalTok{ combined\_data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{month =} \FunctionTok{floor\_date}\NormalTok{(date, }\StringTok{"month"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(month) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{MAPE\_Model1 =} \FunctionTok{mape}\NormalTok{(price, pred\_model1),}
+    \AttributeTok{MAPE\_Model2 =} \FunctionTok{mape}\NormalTok{(price, pred\_model2)}
+\NormalTok{  )}
+
+\CommentTok{\# Ortalama MAPE satırını ekle}
+\NormalTok{mape\_summary\_final }\OtherTok{\textless{}{-}} \FunctionTok{bind\_rows}\NormalTok{(}
+\NormalTok{  mape\_summary,}
+  \FunctionTok{summarise}\NormalTok{(mape\_summary,}
+            \AttributeTok{month =} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"9999{-}12{-}31"}\NormalTok{),}
+            \AttributeTok{MAPE\_Model1 =} \FunctionTok{mean}\NormalTok{(MAPE\_Model1),}
+            \AttributeTok{MAPE\_Model2 =} \FunctionTok{mean}\NormalTok{(MAPE\_Model2))}
+\NormalTok{)}
+
+\CommentTok{\# Tarih sütununu karakter formatına çevir}
+\NormalTok{mape\_summary\_final }\OtherTok{\textless{}{-}}\NormalTok{ mape\_summary\_final }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{month =} \FunctionTok{if\_else}\NormalTok{(month }\SpecialCharTok{==} \FunctionTok{as.Date}\NormalTok{(}\StringTok{"9999{-}12{-}31"}\NormalTok{), }\StringTok{"Average"}\NormalTok{, }\FunctionTok{format}\NormalTok{(month, }\StringTok{"\%Y{-}\%m"}\NormalTok{)))}
+
+\CommentTok{\# Tabloyu yazdır}
+\FunctionTok{kable}\NormalTok{(mape\_summary\_final, }\AttributeTok{digits =} \DecValTok{2}\NormalTok{, }\AttributeTok{caption =} \StringTok{"Monthly MAPE Comparison of Model 1 and Model 2"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{full\_width =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{position =} \StringTok{"center"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{row\_spec}\NormalTok{(}\FunctionTok{nrow}\NormalTok{(mape\_summary\_final), }\AttributeTok{bold =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{background =} \StringTok{"\#f2f2f2"}\NormalTok{, }
+           \AttributeTok{extra\_css =} \StringTok{"border{-}top: 2px solid \#999;"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[t]{lrr}
+\caption{Monthly MAPE Comparison of Model 1 and Model 2}\\
+\toprule
+month & MAPE\_Model1 & MAPE\_Model2\\
+\midrule
+2023-01 & 3.11 & 2.71\\
+2023-02 & 6.06 & 6.66\\
+2023-03 & 7.05 & 5.51\\
+2023-04 & 17.37 & 21.19\\
+2023-05 & 9.31 & 11.19\\
+\addlinespace
+2023-06 & 9.52 & 11.38\\
+2023-07 & 6.01 & 7.88\\
+2023-08 & 4.85 & 6.78\\
+2023-09 & 4.64 & 4.53\\
+2023-10 & 4.29 & 3.17\\
+\addlinespace
+2023-11 & 6.27 & 7.84\\
+2023-12 & 3.98 & 6.02\\
+2024-01 & 6.74 & 9.20\\
+2024-02 & 8.44 & 9.70\\
+2024-03 & 5.82 & 5.49\\
+\addlinespace
+2024-04 & 17.65 & 22.54\\
+2024-05 & 8.61 & 9.92\\
+2024-06 & 8.79 & 10.63\\
+2024-07 & 3.29 & 3.51\\
+2024-08 & 3.06 & 3.86\\
+\addlinespace
+2024-09 & 3.89 & 3.94\\
+2024-10 & 6.23 & 7.30\\
+2024-11 & 4.62 & 4.58\\
+2024-12 & 5.41 & 4.08\\
+\cellcolor[HTML]{f2f2f2}{\textbf{Average}} & \cellcolor[HTML]{f2f2f2}{\textbf{6.88}} & \cellcolor[HTML]{f2f2f2}{\textbf{7.90}}\\
+\bottomrule
+\end{longtable}
+
+MAPE, the most widely used performance metric in electricity price
+forecasting, reveals an approximate 1\% difference in error between the
+two models. The model without feature aggregation outperforms the
+aggregated one, achieving the lowest error rate at 6.88\%.
+
+In both of models, Natural Gas Price is the key indicator of prediction.
+
+\section{4. Results and Key Takeaways}\label{results-and-key-takeaways}
+
+This project focused on forecasting electricity prices in Turkey's
+day-ahead market. The main objective was to demonstrate that accurate
+price forecasting in this market does not necessarily require highly
+complex models, and that successful results can be achieved with
+relatively simple approaches. A forecasting model was developed using
+publicly available data from EPİAŞ and BOTAŞ. Two different models were
+built, with the only distinction being their approach to feature usage.
+While one model included all features individually, the other applied a
+feature aggregation strategy. Although the aggregated model was
+initially expected to perform better, it delivered slightly worse
+results. However, it provided clearer interpretability regarding the
+influence of each feature on electricity prices.
+
+The second model differed from the first by only about 1\% in terms of
+error rate, which can be considered an acceptable margin. Given its
+simplicity, the second model was initially assumed to be more efficient.
+However, this outcome raises some important considerations. First, the
+fact that both models underperformed compared to the first model
+presents a challenge. Future improvements should focus on applying
+feature aggregation or feature elimination techniques to achieve both a
+simpler and more accurate model.
+
+Additionally, some of the features used in the models exhibit high
+correlation with each other, which may lead to redundancy. Reducing
+multicollinearity and introducing alternative variables may help better
+capture the influence of distinct factors on electricity prices.
+Moreover, while this study relied on multiple linear regression, testing
+other simple mathematical models could provide further insights into
+prediction performance and model robustness.
+
+
+
+
+\end{document}
